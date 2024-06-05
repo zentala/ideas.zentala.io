@@ -8,20 +8,29 @@ gdybym mial duzy kapital do zainwestowania w tym momencie - zyjac w poslce i maj
     - w tym samum czasie mamy mnostwo programistow wysokiej jakosci
 - jest odpowiedzia na niz demograficzny, alternatywna lub uzupelniajaca dla imigracji
 
+## Obszary działaności 
+
+...które można łatwo zeskalować, tak aby koszt rozwoju hardware i robota był niski, ponieważ rozkładada się na szerokie zastosowanie. 
 
 ## Usługi komunalne
 
-Robotyka. Zacząłbym od floty sami autonomicznych pojazdów do świadczenia usług komunalnych:
+Ile wydaje na nie miasteczko 15k? Ile Warszawa? A ile jest miast większych niż Warszawa? A gdyby zbudować firmę która świadczy zrobotyzowane usługi komunalne w 50% Europejskich miast powyżej 20k mieszkańców? Jak duży potencjal biznesy tu mamy?
+
+Zacząłbym od floty sami autonomicznych pojazdów do świadczenia usług komunalnych:
 - wywóz śmieci,
 - koszenie trawników, wywóz skoszonej trawy,
 - precyzyjne usuwanie chwastow,
 - automatyczny monitoring terenow zielonych,
 - czyszzczenie płytek chodnikowych (usuwanie brudu miedzy laczeniami),
 - grabienie / zbieranie liści jesienią,
-- sprzątanie petów i innych śmieci na plażach,
-- sprzątanie drobnych ścieci na chodnikach,
-- zamiatanie dróg,
-- odśnieżanie dróg zimą,
+- sprzątanie:
+  - petów i innych śmieci na plażach,
+  - sprzątanie drobnych ścieci na chodnikach,
+  - sprzątanie przy jezdniach,
+  - monitoring i sprzątanie lasów,
+- jezdnie:
+    - zamiatanie jezdni,
+    - zimą: odśnieżanie, posypywanie piaskiem lub solą
 - przycinanie trawy przy drogach,
 - monitoring i czyszczenie rowów i przepustów melioracyjnych.
 
@@ -31,7 +40,7 @@ Robotyka. Zacząłbym od floty sami autonomicznych pojazdów do świadczenia us�
 
 ## Rolnictwo
 
-Jako drugi filar budowałbym semi-autonomiczne roboty na potrzeby rolnictwa.
+Jako drugi filar budowałbym semi-autonomiczne roboty na potrzeby rolnictwa. 
 
 rozpoznawanie dzwiekow zwierzat za pomoca ML, ich dobrostranu
 autonomiczne pojazdy, ciagniki, etc.
