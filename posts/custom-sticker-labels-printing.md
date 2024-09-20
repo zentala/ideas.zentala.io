@@ -115,3 +115,139 @@ Please create an application skeleton using the above technologies, focusing on:
 5. Backend skeleton with Node.js and Express.js, including basic API endpoints
 
 The code should include comments explaining key parts of the implementation and instructions for further project development.
+
+# Prompt: Online Sticker Generator and Sales Website
+
+## 13. File Structure and App Architecture
+
+Please implement the following file structure and application architecture:
+
+```
+sticker-generator/
+│
+├── frontend/
+│   ├── pages/
+│   │   ├── index.tsx
+│   │   ├── generator.tsx
+│   │   ├── gallery.tsx
+│   │   ├── cart.tsx
+│   │   └── checkout.tsx
+│   ├── components/
+│   │   ├── Layout/
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Layout.tsx
+│   │   ├── StickerGenerator/
+│   │   │   ├── Canvas.tsx
+│   │   │   ├── ToolBar.tsx
+│   │   │   └── Controls.tsx
+│   │   ├── Gallery/
+│   │   │   ├── StickerCard.tsx
+│   │   │   └── StickerGrid.tsx
+│   │   └── Cart/
+│   │       ├── CartItem.tsx
+│   │       └── CartSummary.tsx
+│   ├── hooks/
+│   │   ├── useCanvas.ts
+│   │   └── useCart.ts
+│   ├── contexts/
+│   │   ├── CartContext.tsx
+│   │   └── UserContext.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── utils/
+│   │   ├── api.ts
+│   │   └── helpers.ts
+│   ├── types/
+│   │   └── index.ts
+│   ├── public/
+│   │   └── assets/
+│   └── next.config.js
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   ├── stickerController.ts
+│   │   │   ├── orderController.ts
+│   │   │   └── userController.ts
+│   │   ├── models/
+│   │   │   ├── Sticker.ts
+│   │   │   ├── Order.ts
+│   │   │   └── User.ts
+│   │   ├── routes/
+│   │   │   ├── stickerRoutes.ts
+│   │   │   ├── orderRoutes.ts
+│   │   │   └── userRoutes.ts
+│   │   ├── services/
+│   │   │   ├── stickerService.ts
+│   │   │   ├── orderService.ts
+│   │   │   └── paymentService.ts
+│   │   ├── middleware/
+│   │   │   ├── auth.ts
+│   │   │   └── errorHandler.ts
+│   │   ├── config/
+│   │   │   └── database.ts
+│   │   ├── utils/
+│   │   │   └── helpers.ts
+│   │   └── app.ts
+│   ├── prisma/
+│   │   └── schema.prisma
+│   └── package.json
+│
+├── shared/
+│   └── types/
+│       └── index.ts
+│
+├── docker-compose.yml
+└── README.md
+```
+
+### Frontend Architecture:
+- Use Next.js with TypeScript for the frontend
+- Implement a component-based architecture with reusable UI components
+- Use React Context for global state management (e.g., cart, user authentication)
+- Implement custom hooks for shared logic (e.g., canvas manipulation, cart operations)
+- Use CSS modules or Tailwind CSS for styling
+- Implement server-side rendering (SSR) for improved SEO and initial load performance
+
+### Backend Architecture:
+- Use Express.js with TypeScript for the backend
+- Implement a layered architecture: Controllers > Services > Models
+- Use Prisma as an ORM for database operations
+- Implement middleware for authentication and error handling
+- Use environment variables for configuration
+- Implement input validation and sanitization
+
+### API Design:
+- Design RESTful API endpoints for sticker operations, user management, and orders
+- Implement proper error handling and status codes
+- Use JWT for authentication
+
+### Database Design:
+- Use PostgreSQL as the primary database
+- Design schemas for users, stickers, orders, and any other necessary entities
+- Implement proper indexing and relationships between tables
+
+### Integration Points:
+- Integrate Stripe for payment processing
+- Implement file upload and storage using Amazon S3 or similar service for sticker designs
+
+### Testing:
+- Implement unit tests for both frontend and backend
+- Use Jest for testing framework
+- Implement integration tests for critical paths
+
+### Deployment:
+- Use Docker for containerization
+- Implement CI/CD pipeline using GitHub Actions or GitLab CI
+- Deploy frontend to Vercel or Netlify
+- Deploy backend to DigitalOcean, Heroku, or AWS
+
+Please provide a basic implementation of this architecture, including:
+1. Sample components for the sticker generator and gallery
+2. Basic API endpoints for sticker creation and retrieval
+3. Integration with Prisma for database operations
+4. Basic Stripe integration for checkout process
+5. Example of a custom hook (e.g., useCanvas or useCart)
+
+Ensure to include comments explaining the purpose of each major component and any complex logic.
