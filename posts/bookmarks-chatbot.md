@@ -1,5 +1,7 @@
 # Semantic Bookmark Manager
 
+An LLM-powered bookmark manager that organizes, searches, and enhances your bookmarks with smart automation, semantic search, and collaborative tools.
+
 ## Features
 
 ### Key Features
