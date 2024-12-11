@@ -5,8 +5,6 @@ category: Urban Development
 imageUrl: /images/bridge-tagging.jpg
 excerpt: A thought-provoking discussion about establishing a database system for tracking graffiti taggers and their impact on urban infrastructure. 
 authorName: Paweł Żentała 
-authorRole: Urban Development Enthusiast
-authorAvatar: [https://avatars.githubusercontent.com/u/7286123?v=4](https://avatars.githubusercontent.com/u/7286123?v=4)
 ---
 
 Recently, I came across a disturbing situation that sparked an idea for solving urban vandalism. Someone had climbed the 90-meter pylon of the Świętokrzyski Bridge in Warsaw, Poland to leave their mark - a graffiti tag. 
@@ -24,7 +22,7 @@ Building on this initial concept, I'd like to present a practical implementation
 The core idea isn't about prevention - it's about creating a strong deterrent effect. By establishing a comprehensive database of tags, we increase:
 
 *   The probability of catching perpetrators when connecting them to their other tags in the database
-*   The financial consequences through accumulated cleaning costs
+*   The financial consequences through accumulated punishment & cleaning costs
 *   The risk of being caught even years after the act
 
 ## The Role of Forensic Analysis
@@ -59,16 +57,3 @@ This database could be implemented as part of the broader European digitalizatio
 
 This is exactly the kind of project that demonstrates the advantages of common digitalization - it provides both standardization benefits and cost-sharing opportunities across the EU.
 
-## Privacy and Legal Considerations
-
-Of course, any such system would need to carefully balance enforcement with privacy rights and legal considerations. Questions we'd need to address include:
-
-*   Data protection and storage under GDPR guidelines
-*   Due process in identification and prosecution
-*   Integration with existing law enforcement systems
-
-## Moving Forward
-
-While this might seem like an extensive response to graffiti, it represents an efficient way to address a persistent urban problem. The combination of unlimited statute of limitations and a comprehensive European database creates a strong deterrent effect while providing cities with a mechanism for cost recovery.
-
-What are your thoughts on this approach? Would this systematic tracking and deterrence system help reduce urban vandalism, or are there better solutions we should consider?
