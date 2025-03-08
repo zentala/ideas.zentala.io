@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://ideas.zentala.io',
+  site: 'https://ideas.zentala.agency',
   integrations: [
     mdx(),
     sitemap(),

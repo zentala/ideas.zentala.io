@@ -159,13 +159,6 @@ declare module 'astro:content' {
   render(): Render[".md"];
 }>;
 "posts": {
-"AutoSzrot.md": {
-	id: "AutoSzrot.md";
-  slug: "autoszrot";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "agd-for-airbnb.md": {
 	id: "agd-for-airbnb.md";
   slug: "agd-for-airbnb";
@@ -176,6 +169,13 @@ declare module 'astro:content' {
 "agd-for-offices.md": {
 	id: "agd-for-offices.md";
   slug: "agd-for-offices";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"auto-szrot.md": {
+	id: "auto-szrot.md";
+  slug: "auto-szrot";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
@@ -264,6 +264,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"free-volunteer-service-platform.md": {
+	id: "free-volunteer-service-platform.md";
+  slug: "free-volunteer-service-platform";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "future-file-explorer.md": {
 	id: "future-file-explorer.md";
   slug: "future-file-explorer";
@@ -341,9 +348,9 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"robotic-managment-system.md": {
-	id: "robotic-managment-system.md";
-  slug: "robotic-managment-system";
+"robotic-management-system.md": {
+	id: "robotic-management-system.md";
+  slug: "robotic-management-system";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
@@ -365,13 +372,6 @@ declare module 'astro:content' {
 "sending-gits-abroad.md": {
 	id: "sending-gits-abroad.md";
   slug: "sending-gits-abroad";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"serwis-wolontariusze-za-darmo.md": {
-	id: "serwis-wolontariusze-za-darmo.md";
-  slug: "serwis-wolontariusze-za-darmo";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">

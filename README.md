@@ -1,6 +1,20 @@
 # Innovations & Ideas Collection
 
-A personal idea collection website built with Astro.
+A personal idea collection website built with Astro and deployed to GitHub Pages.
+
+[![Deploy to GitHub Pages](https://github.com/zentala/ideas.zentala.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/zentala/ideas.zentala.io/actions/workflows/deploy.yml)
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. It's accessible at:
+- [https://ideas.zentala.agency](https://ideas.zentala.agency)
+
+### Custom Domain Setup
+
+This repository is configured to use the custom domain ideas.zentala.agency through:
+1. A CNAME file in the public directory
+2. GitHub Pages settings in the repository
+3. DNS configuration at the domain registrar
 
 ## Features
 
