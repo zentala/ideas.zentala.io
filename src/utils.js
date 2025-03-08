@@ -4,7 +4,7 @@ import fs from 'fs';
 // Try to load taxonomy if it exists
 let taxonomyData = { bilingualTags: {}, synonymMap: {} };
 try {
-  const taxonomyPath = path.join(process.cwd(), 'src/content/taxonomy.json');
+  const taxonomyPath = path.join(process.cwd(), 'src/data/taxonomy.json');
   if (fs.existsSync(taxonomyPath)) {
     taxonomyData = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
   }

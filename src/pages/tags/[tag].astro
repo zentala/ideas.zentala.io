@@ -9,7 +9,7 @@ import path from 'path';
 // Load taxonomy if it exists
 let taxonomy = { bilingualTags: {}, synonymMap: {} };
 try {
-  const taxonomyPath = path.join(process.cwd(), 'src/content/taxonomy.json');
+  const taxonomyPath = path.join(process.cwd(), 'src/data/taxonomy.json');
   if (fs.existsSync(taxonomyPath)) {
     taxonomy = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
   }
@@ -79,10 +79,21 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts, tagInfo } = Astro.props;
 
-// Sort posts by date
-const sortedPosts = posts.sort((a, b) => 
-  b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// Get language from URL query parameter
+const langParam = Astro.url.searchParams.get('lang');
+const currentLanguage = (langParam === 'en' || langParam === 'pl') ? langParam : 'en';
+
+// Filter posts by language
+const languageFilteredPosts = posts.filter(post => 
+  post.data.language === undefined || post.data.language === currentLanguage
 );
+
+// Sort posts by date (using created from Git if available, otherwise pubDate)
+const sortedPosts = languageFilteredPosts.sort((a, b) => {
+  const dateA = new Date(a.data.created || a.data.pubDate);
+  const dateB = new Date(b.data.created || b.data.pubDate);
+  return dateB.valueOf() - dateA.valueOf();
+});
 
 // Get custom card components for posts that have them
 const customCardComponents = import.meta.glob('../../components/custom-cards/*.{jsx,tsx,astro}');
@@ -91,6 +102,7 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
 <MainLayout 
   title={`Ideas tagged with ${tag}`}
   description={`Browse all ideas related to ${tag}`}
+  language={currentLanguage}
 >
   <div class="container mx-auto px-4">
     <header class="border-b border-white/10 pb-8 mb-12">
@@ -100,15 +112,17 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
       
       {(tagInfo.en || tagInfo.pl) && (
         <div class="max-w-2xl mx-auto mb-6 text-center">
-          {tagInfo.en && <p class="text-white/80 mb-2">{tagInfo.en}</p>}
-          {tagInfo.pl && <p class="text-white/60 italic">{tagInfo.pl}</p>}
+          {currentLanguage === 'en' && tagInfo.en && <p class="text-white/80 mb-2">{tagInfo.en}</p>}
+          {currentLanguage === 'pl' && tagInfo.pl && <p class="text-white/80 mb-2">{tagInfo.pl}</p>}
+          {currentLanguage === 'en' && tagInfo.pl && <p class="text-white/60 italic">{tagInfo.pl}</p>}
+          {currentLanguage === 'pl' && tagInfo.en && <p class="text-white/60 italic">{tagInfo.en}</p>}
         </div>
       )}
       
       <p class="text-center text-white/70 mb-6">Found {sortedPosts.length} idea{sortedPosts.length !== 1 ? 's' : ''}</p>
       
       <div class="flex justify-center">
-        <a href="/tags" class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
+        <a href={`/tags?lang=${currentLanguage}`} class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
           hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
           ← Back to all tags
         </a>
@@ -134,9 +148,10 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
               title={data.title}
               description={data.description}
               image={data.image}
-              url={url}
+              url={`${url}${url.includes('?') ? '&' : '?'}lang=${currentLanguage}`}
               tags={data.tags}
               isDraft={isDraft}
+              language={currentLanguage}
             />
           );
         }
@@ -144,7 +159,7 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
     </div>
     
     <div class="text-center mt-12 pt-8 border-t border-white/10">
-      <a href="/tags" class="inline-block px-6 py-3 bg-[#5b34da] text-white border border-[#5b34da]/50 hover:bg-[#4a2ab8] transition-colors">
+      <a href={`/tags?lang=${currentLanguage}`} class="inline-block px-6 py-3 bg-[#5b34da] text-white border border-[#5b34da]/50 hover:bg-[#4a2ab8] transition-colors">
         View All Tags
       </a>
     </div>

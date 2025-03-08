@@ -24,12 +24,24 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const { title, description, image, tags, pubDate, draft } = entry.data;
-const date = pubDate.toLocaleDateString('en-US', {
+// Get language from URL query parameter
+const langParam = Astro.url.searchParams.get('lang');
+const language = (langParam === 'en' || langParam === 'pl') ? langParam : entry.data.language || 'en';
+
+const { title, description, image, tags, pubDate, created, modified, draft } = entry.data;
+
+// Use created date from Git if available, otherwise use pubDate
+const displayDate = created ? new Date(created) : pubDate;
+const formattedDate = displayDate.toLocaleDateString(language === 'pl' ? 'pl-PL' : 'en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric'
 });
+
+// Import utility for tag normalization
+import { normalizeTag } from '../../utils';
+// Normalize tags to the current language
+const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
 ---
 
 <MainLayout 
@@ -37,12 +49,13 @@ const date = pubDate.toLocaleDateString('en-US', {
   description={description}
   image={image}
   isDraft={draft || entry.collection === 'drafts'}
+  language={language}
 >
   <article class="max-w-3xl mx-auto">
     <div class="bg-[#1a1a1a] p-8 border border-white/10 mb-8">
       <header class="mb-8">
         <h1 class="text-3xl md:text-4xl font-bold mb-4 font-['Playfair_Display']">{title}</h1>
-        <p class="text-white/60 text-sm mb-6">Published on {date}</p>
+        <p class="text-white/60 text-sm mb-6">Published on {formattedDate}</p>
         
         {image && (
           <img 
@@ -57,13 +70,13 @@ const date = pubDate.toLocaleDateString('en-US', {
         <Content />
       </div>
       
-      {tags && tags.length > 0 && (
+      {normalizedTags && normalizedTags.length > 0 && (
         <div class="mt-12 pt-8 border-t border-white/20">
           <h3 class="text-lg font-bold mb-4 font-['Playfair_Display']">Tags</h3>
           <div class="flex flex-wrap gap-2">
-            {tags.map(tag => (
+            {normalizedTags.map(tag => (
               <a 
-                href={`/tags/${tag}`}
+                href={`/tags/${tag}?lang=${language}`}
                 class="px-3 py-1 bg-[#2a2a2a] text-white/70 text-sm border border-white/10
                   hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all"
               >
@@ -73,15 +86,23 @@ const date = pubDate.toLocaleDateString('en-US', {
           </div>
         </div>
       )}
+      
+      {/* Display editing history if available */}
+      {modified && (
+        <div class="mt-8 text-sm text-white/50">
+          <p>Last modified: {new Date(modified).toLocaleDateString(language === 'pl' ? 'pl-PL' : 'en-US')}</p>
+          {entry.data.edits && <p>Edit count: {entry.data.edits}</p>}
+        </div>
+      )}
     </div>
     
     <div class="flex justify-between mt-8">
-      <a href="/" class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
+      <a href={`/?lang=${language}`} class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
         hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
         ← Back to ideas
       </a>
       
-      <a href="/tags" class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
+      <a href={`/tags?lang=${language}`} class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
         hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
         Browse by tags
       </a>

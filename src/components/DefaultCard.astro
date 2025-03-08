@@ -1,4 +1,6 @@
 ---
+import { normalizeTag } from "../utils";
+
 interface Props {
   title: string;
   description?: string;
@@ -6,9 +8,13 @@ interface Props {
   url: string;
   tags?: string[];
   isDraft?: boolean;
+  language?: 'en' | 'pl';
 }
 
-const { title, description, image, url, tags = [], isDraft = false } = Astro.props;
+const { title, description, image, url, tags = [], isDraft = false, language = 'en' } = Astro.props;
+
+// Normalize tags to current language
+const normalizedTags = tags.map(tag => normalizeTag(tag, language));
 ---
 
 <a 
@@ -43,16 +49,16 @@ const { title, description, image, url, tags = [], isDraft = false } = Astro.pro
       <p class="text-white/80 text-sm mb-4 flex-1">{description}</p>
     )}
     
-    {tags.length > 0 && (
+    {normalizedTags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-auto">
-        {tags.slice(0, 3).map(tag => (
+        {normalizedTags.slice(0, 3).map(tag => (
           <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5 hover:bg-[#3a3a3a] transition-colors">
             {tag}
           </span>
         ))}
-        {tags.length > 3 && (
+        {normalizedTags.length > 3 && (
           <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5">
-            +{tags.length - 3}
+            +{normalizedTags.length - 3}
           </span>
         )}
       </div>

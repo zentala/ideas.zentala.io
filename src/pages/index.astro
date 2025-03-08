@@ -4,6 +4,10 @@ import DefaultCard from "../components/DefaultCard.astro";
 import { getUniqueTagsFromPosts } from "../utils";
 import { getCollection } from 'astro:content';
 
+// Try to get language preference from URL
+const langParam = Astro.url.searchParams.get('lang');
+const currentLanguage = (langParam === 'en' || langParam === 'pl') ? langParam : 'en';
+
 // Get all posts sorted by date (excluding drafts in production)
 const isDev = import.meta.env.DEV;
 const allPosts = await getCollection('posts');
@@ -18,23 +22,34 @@ if (isDev) {
   }
 }
 
-// Filter drafts in production
+// Filter by language and drafts in production
 const posts = [...allPosts, ...(isDev ? allDrafts : [])]
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .filter(post => post.data.language === undefined || post.data.language === currentLanguage)
+  .sort((a, b) => {
+    // Sort by creation date if available, otherwise use pubDate
+    const dateA = new Date(a.data.created || a.data.pubDate);
+    const dateB = new Date(b.data.created || b.data.pubDate);
+    return dateB.valueOf() - dateA.valueOf();
+  });
 
 // Get custom card components for posts that have them
 const customCardComponents = import.meta.glob('../components/custom-cards/*.{jsx,tsx,astro}');
+
+import { normalizeTag } from "../utils";
 
 // Get all tags from posts
 const allTags = posts
   .flatMap(post => post.data.tags || []);
   
-const tags = [...new Set(allTags)].sort();
+// Normalize tags to current language
+const normalizedTags = allTags.map(tag => normalizeTag(tag, currentLanguage));
+const tags = [...new Set(normalizedTags)].sort();
 ---
 
 <MainLayout 
   title="Ideas Collection"
   description="A collection of innovative ideas by Paweł Zentala"
+  language={currentLanguage}
 >
   <section class="hero border border-white/10 bg-[#1a1a1a] text-white py-16 mb-12 relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-[#3b1d89]/20 to-transparent"></div>
@@ -100,9 +115,10 @@ const tags = [...new Set(allTags)].sort();
               title={data.title}
               description={data.description}
               image={data.image}
-              url={url}
+              url={`${url}${url.includes('?') ? '&' : '?'}lang=${currentLanguage}`}
               tags={data.tags}
               isDraft={isDraft}
+              language={currentLanguage}
             />
           );
         }
