@@ -1,0 +1,97 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import DefaultCard from "../components/DefaultCard.astro";
+import { getUniqueTagsFromPosts } from "../utils";
+import { getCollection } from 'astro:content';
+
+// Get all posts sorted by date (excluding drafts in production)
+const isDev = import.meta.env.DEV;
+const allPosts = await getCollection('posts');
+
+// Try to get drafts, but handle the case when the collection doesn't exist
+let allDrafts = [];
+if (isDev) {
+  try {
+    allDrafts = await getCollection('drafts');
+  } catch (error) {
+    console.warn('No drafts collection found or it is empty');
+  }
+}
+
+// Filter drafts in production
+const posts = [...allPosts, ...(isDev ? allDrafts : [])]
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Get custom card components for posts that have them
+const customCardComponents = import.meta.glob('../components/custom-cards/*.{jsx,tsx,astro}');
+
+// Get all tags from posts
+const allTags = posts
+  .flatMap(post => post.data.tags || []);
+  
+const tags = [...new Set(allTags)].sort();
+---
+
+<MainLayout 
+  title="Ideas Collection"
+  description="A collection of innovative ideas by Paweł Zentala"
+>
+  <section class="hero border border-white/10 bg-[#1a1a1a] text-white py-16 mb-12 rounded-lg relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#3b1d89]/20 to-transparent"></div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 font-['Space_Grotesk']">
+        <span class="text-[#5b34da]">Innovations</span> & Ideas
+      </h1>
+      <p class="text-xl max-w-2xl mx-auto text-white/80 leading-relaxed">
+        A collection of innovative concepts, thought experiments, and creative solutions by Paweł Zentala.
+        Browse through the ideas and get inspired!
+      </p>
+      
+      {tags.length > 0 && (
+        <div class="mt-10">
+          <div class="flex flex-wrap justify-center gap-3">
+            {tags.map(tag => (
+              <a 
+                href={`/tags/${tag}`}
+                class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm rounded-md border border-white/10 
+                  hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 auto-rows-auto">
+      {posts.map(post => {
+        const { data, slug, collection } = post;
+        const isDraft = data.draft || collection === 'drafts';
+        
+        // Generate URL
+        const url = `/${collection}/${slug}`;
+        
+        // Custom cards are currently disabled until framework integrations are set up
+        if (false) {
+          // This code is disabled to prevent errors with custom components
+          // We'll need to add the proper framework integration first
+        } else {
+          // Otherwise use the default card component
+          return (
+            <DefaultCard
+              title={data.title}
+              description={data.description}
+              image={data.image}
+              url={url}
+              tags={data.tags}
+              isDraft={isDraft}
+            />
+          );
+        }
+      })}
+    </div>
+  </div>
+</MainLayout>

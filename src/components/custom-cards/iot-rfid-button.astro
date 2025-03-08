@@ -1,0 +1,80 @@
+---
+interface Props {
+  frontmatter: {
+    title: string;
+    description?: string;
+    image?: string;
+    tags?: string[];
+  };
+  url: string;
+  isDraft?: boolean;
+}
+
+const { frontmatter, url, isDraft = false } = Astro.props;
+---
+
+<a 
+  href={url} 
+  class={`
+    relative card overflow-hidden bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-lg h-full
+    ${isDraft ? 'opacity-85' : ''}
+  `}
+>
+  {isDraft && (
+    <div class="absolute top-2 right-2 bg-yellow-200 text-yellow-800 text-xs px-2 py-1 rounded z-10">
+      Draft
+    </div>
+  )}
+  
+  <div class="p-4 grid grid-cols-2 gap-4 h-full">
+    <div class="flex flex-col">
+      <h3 class="text-xl font-bold mb-2 text-gray-900">{frontmatter.title}</h3>
+      
+      {frontmatter.description && (
+        <p class="text-gray-700 text-sm mb-4">{frontmatter.description}</p>
+      )}
+      
+      {frontmatter.tags && frontmatter.tags.length > 0 && (
+        <div class="flex flex-wrap gap-1 mt-auto">
+          {frontmatter.tags.slice(0, 3).map(tag => (
+            <span class="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs rounded-md">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+    
+    <div class="bg-gray-100 rounded-lg p-3 flex items-center justify-center relative overflow-hidden">
+      <!-- Custom visualization for the IoT RFID button -->
+      <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center shadow-lg relative">
+        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-inner relative">
+          <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center text-white font-bold">
+            RFID
+          </div>
+        </div>
+        <!-- Animated signal waves -->
+        <div class="absolute w-full h-full animate-ping opacity-30 bg-blue-400 rounded-full"></div>
+        <div class="absolute w-36 h-36 animate-ping opacity-20 bg-blue-300 rounded-full" style="animation-delay: 0.5s;"></div>
+        <div class="absolute w-48 h-48 animate-ping opacity-10 bg-blue-200 rounded-full" style="animation-delay: 1s;"></div>
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  @keyframes ping {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .animate-ping {
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+</style>

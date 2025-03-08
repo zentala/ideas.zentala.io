@@ -1,0 +1,25 @@
+{
+  "name": "ideas-zentala-io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "convert-posts": "node scripts/convert-posts.js",
+    "generate-tags": "node scripts/generate-tags.js",
+    "generate-tags:all": "node scripts/generate-tags.js"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.0.3",
+    "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.1.1",
+    "dotenv": "^16.4.5",
+    "openai": "^4.32.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
