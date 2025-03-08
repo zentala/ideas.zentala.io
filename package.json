@@ -12,7 +12,8 @@
     "enhance-post": "node scripts/generate-tags.js",
     "enhance-all": "node scripts/generate-tags.js",
     "generate-taxonomy": "node scripts/taxonomy-generator.js",
-    "translate-post": "node scripts/translate-post.js"
+    "translate-post": "node scripts/translate-post.js",
+    "create-bilingual": "node scripts/create-bilingual-post.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",

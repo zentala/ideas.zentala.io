@@ -127,6 +127,21 @@ These commands improve post formatting, fix typos, and generate appropriate tags
 
 ### Multilingual Features
 
+#### Creating Bilingual Content
+
+To create a new post in both English and Polish simultaneously:
+
+```bash
+npm run create-bilingual
+```
+
+This interactive tool will:
+1. Ask you for a topic
+2. Generate high-quality content in both English and Polish
+3. Create properly formatted Markdown files for both languages
+4. Apply appropriate tags and metadata
+5. Save both versions to the content directory
+
 #### Bilingual Taxonomy Generation
 
 The system supports a bilingual tag taxonomy where tags have both English and Polish versions:
@@ -143,7 +158,7 @@ This intelligently analyzes all posts and:
 
 #### Content Translation
 
-To create a translation of a post in the opposite language:
+To create a translation of an existing post in the opposite language:
 
 ```bash
 npm run translate-post src/content/posts/your-post.md
