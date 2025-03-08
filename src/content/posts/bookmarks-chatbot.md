@@ -3,7 +3,7 @@ title: "Semantic Bookmark Manager"
 description: "An LLM-powered bookmark manager that organizes, searches, and enhances your bookmarks with smart automation, semantic search, and collaborative tools."
 
 pubDate: "2025-03-08"
-tags: ["semantic-bookmark-manager", "ai-powered", "smart-organization", "visual-improvements", "collaborative-tools", "browser-integration", "task-manager-integration"]
+tags: ["semantic-bookmark-manager", "ai-generated-summaries", "smart-organization", "visual-improvements", "collaborative-tools", "browser-integration", "task-manager-integration"]
 ---
 
 # Semantic Bookmark Manager

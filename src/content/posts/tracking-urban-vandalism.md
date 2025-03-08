@@ -3,7 +3,7 @@ title: "tracking urban vandalism"
 description: "--- title: Graffiti Tagging Database - A Solution to Urban Vandalism?  date: 2023-12-11  category: Urban Development  imageUrl: /images/bridge-tagging.jpg excer..."
 
 pubDate: "2025-03-08"
-tags: ["urban-vandalism", "graffiti-tracking", "database-solution", "forensic-analysis", "deterrence-strategy", "cost-recovery", "digital-initiatives"]
+tags: ["graffiti-tracking", "urban-vandalism", "database-solution", "forensic-analysis", "cost-recovery", "statute-of-limitations", "eu-digital-initiatives"]
 ---
 
 ---

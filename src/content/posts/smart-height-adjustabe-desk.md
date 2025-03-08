@@ -3,7 +3,7 @@ title: "smart height adjustabe desk"
 description: "kupoiklem burkoi z regulacja wysokosci ale zauwazylem ze go nie uzywam zauwazylem ze inni wlkascieile tekich burek tez rzadko ich uzywaja, a szkoda przeciez po ..."
 
 pubDate: "2025-03-08"
-tags: ["smart-height-adjustable-desk", "innovation", "health-tracking", "ergonomic-design", "office-furniture", "posture-awareness"]
+tags: ["smart-height-adjustable-desk", "innovation", "health", "ergonomic", "smart-controller", "posture-awareness", "gamification"]
 ---
 
 

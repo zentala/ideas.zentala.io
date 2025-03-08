@@ -3,7 +3,7 @@ title: "Fortress Europe: A Zombie Apocalypse Story"
 description: "**Logline:** In a Europe ravaged by the undead, survivors find strength in community, ingenuity, and the resilient spirit of their homelands."
 
 pubDate: "2025-03-08"
-tags: ["zombie-apocalypse", "europe", "community-resilience", "ingenuity-resourcefulness", "cultural-heritage", "survival", "fortified-structures", "medieval-strongholds", "renewable-energy", "european-culture"]
+tags: ["zombie-apocalypse", "european-culture", "ingenuity", "resilience", "community", "survival", "cultural-heritage"]
 ---
 
 # Fortress Europe: A Zombie Apocalypse Story

@@ -3,7 +3,7 @@ title: "customizable.com"
 description: "Sklep z produktami wykonywanymi na wymiar, indywidualne zamówienie lub customizowalnymi."
 
 pubDate: "2025-03-08"
-tags: ["custom-products", "personalized-items", "online-marketplace", "customization-platform", "bespoke-designs", "innovative-manufacturing", "tailored-solutions"]
+tags: ["customizable-products", "personalized-orders", "custom-designs", "innovative-ideas", "automation-solutions", "bespoke-items", "tailored-creations"]
 ---
 
 # customizable.com

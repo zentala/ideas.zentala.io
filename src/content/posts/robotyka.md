@@ -3,7 +3,7 @@ title: "Robotyka"
 description: "gdybym mial duzy kapital do zainwestowania w tym momencie - zyjac w poslce i majac dostep do naszych srodokwko europsjekich ifnormtykow -0 zalozbyjm firme robot..."
 
 pubDate: "2025-03-08"
-tags: ["innovation", "ideas", "robotics", "automation", "urban-services", "agriculture", "technology"]
+tags: ["robotyka", "innowacje", "automatyzacja", "usługi-komunalne", "rolnictwo", "technologia", "efektywność"]
 ---
 
 # Robotyka

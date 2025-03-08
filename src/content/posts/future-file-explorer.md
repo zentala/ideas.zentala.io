@@ -3,7 +3,7 @@ title: "future file explorer"
 description: "1) Explorer z AI ktory robi mape plikow - sczczegolnie archiwalnyc - aby pomoc je uporzadkowac. Chce aby laczyl mi dane  klientow, projekty, robil timeline, roz..."
 
 pubDate: "2025-03-08"
-tags: ["explorer-ai", "file-management", "nas-os", "cloud-storage", "data-organization", "innovation", "future-technology"]
+tags: ["file-explorer", "ai-assistant", "data-organization", "cloud-storage", "innovation", "future-technology", "nas-os"]
 ---
 
 1) Explorer z AI ktory robi mape plikow - sczczegolnie archiwalnyc - aby pomoc je uporzadkowac. Chce aby laczyl mi dane  klientow, projekty, robil timeline, rozumial co do czego. Aby np mogl mi wziac i z folderow v1, v2, final_version zrboic repo. Aby uporzadkowal mi duplikaty zdjec, usunal wersje nizszej jakości i zachowal wyzszej, aby wybrał jedno zrodlo prawdy (przechowywania tych zdjec), a pozostałe wersje zsymlinkował. Etc. Explorer z AI do porzadkowania plikow. Chce aby zaproponowal mi strukture dla moich katalogow ze starymi zdjeciami, chce aby ustrulturyzowal i zebral w jedno miejsce moje rozne projekty. Hurtowe zmienianie nazw. Dodawanie danych, tagów, do utworów muzycznych. Analiza obrazow pod katem zawartosci i sortowanie ich (np pobieram sobie z netu obrazki domow co mnie inspiruja, memow roznych na przyszlosc, infografiki techniczne itd i chcialbym aby podzielil mi je na foldery. Wyciagnie plikow zawierajacych te same dane ale w najwyzsej rozdzielczosci.. Laczenie danych na dysku lokalnym z kontekstem ze starych rozmow i emaili oraz innymi danymi z internetu. 

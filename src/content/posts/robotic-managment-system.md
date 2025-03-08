@@ -3,7 +3,7 @@ title: "robotic managment system"
 description: "pracujac z ROSem wpadlem na pomysl stworzenia GUI do jego konfiguracji jego podstawowa konfiguracja to: - URDF (plik opisujacy strukture robota wraz z jego mode..."
 
 pubDate: "2025-03-08"
-tags: ["robotic-management-system", "ros-configuration", "robot-urdf", "slam-configuration", "gui-development", "robot-innovation", "robotics-cms"]
+tags: ["robotic-management-system", "gui-configuration", "ros", "robot-configuration", "automation", "innovation", "robotics-development"]
 ---
 
 pracujac z ROSem wpadlem na pomysl stworzenia GUI do jego konfiguracji

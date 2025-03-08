@@ -3,7 +3,7 @@ title: "iot smarthome products"
 description: "* pl govement should organize some financing and evenrs around home iot   * polish people have high level of flat funtishing   * there is huge potiential with d..."
 
 pubDate: "2025-03-08"
-tags: ["iot-smarthome", "innovation", "smart-home-design", "technology", "polish-iot-solutions", "smart-home-appliances", "financing-and-events"]
+tags: ["iot", "smarthome", "innovation", "technology", "polish-market", "smart-home-appliances"]
 ---
 
 * pl govement should organize some financing and evenrs around home iot

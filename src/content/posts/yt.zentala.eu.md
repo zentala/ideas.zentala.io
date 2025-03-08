@@ -3,7 +3,7 @@ title: "yt.zentala.eu"
 description: "Technical Specification for LLM-based YouTube Summarizer Service ----------------------------------------------------------------"
 
 pubDate: "2025-03-08"
-tags: ["innovation", "ideas", "youtube-summarizer", "content-automation", "chrome-plugin", "technology-stack", "seo-friendly"]
+tags: ["innovation", "ideas", "youtube-summarizer", "content-generation", "technology-stack", "chrome-plugin", "automation"]
 ---
 
 Technical Specification for LLM-based YouTube Summarizer Service

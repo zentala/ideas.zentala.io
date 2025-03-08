@@ -3,7 +3,7 @@ title: "remote rental"
 description: "wynajem monitorow i krzesl oraz ew biurek dla praacownikow zdalnych."
 
 pubDate: "2025-03-08"
-tags: ["remote-rental", "innovation", "remote-workers", "startup", "rental-services", "convenience", "remote-lifestyle"]
+tags: ["remote-rental", "innovation", "startup", "remote-workers", "rental-services", "digital-nomads", "convenience"]
 ---
 
 wynajem monitorow i krzesl oraz ew biurek dla praacownikow zdalnych. 

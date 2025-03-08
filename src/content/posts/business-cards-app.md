@@ -3,7 +3,7 @@ title: "business cards app"
 description: "Wirtualize business cards.  * Whenever we touch others phones with NFC we can automatically exchange our business cards. * This could be default behavior for NF..."
 
 pubDate: "2025-03-08"
-tags: ["nfc", "digital-business-cards", "mobile-app", "innovation", "networking", "technology"]
+tags: ["innovation", "business-cards", "mobile-app", "nfc-technology", "networking", "digital-business-cards"]
 ---
 
 Wirtualize business cards. 

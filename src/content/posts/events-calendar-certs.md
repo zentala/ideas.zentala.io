@@ -3,7 +3,7 @@ title: "rozwiaznaie dla eventow i skzolen"
 description: "tyypy tresci - aredytator - organizacja (firma/uczelnia) - trener - uczestnik - certyfikat - test - szablon certyfikatu (shared, free, paid, private) - szkoleni..."
 
 pubDate: "2025-03-08"
-tags: ["event-management", "training-solutions", "certification", "online-platform", "innovation"]
+tags: ["event-solutions", "training", "certification", "innovation", "event-management", "idea-generation"]
 ---
 
 # rozwiaznaie dla eventow i skzolen

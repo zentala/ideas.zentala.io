@@ -3,7 +3,7 @@ title: "mikroplatnosci za artykuly i wiedze"
 description: "ze masz konto u nas i mozesz komus placic rozne male kwoty (do 50gr ew do 5zł) i to sie embedduje na stronie, tworcy maja u nas profil i mozna im wplacac za roz..."
 
 pubDate: "2025-03-08"
-tags: ["microtransactions", "articles", "knowledge", "payments", "innovation", "ideas"]
+tags: ["mikroplatnosci", "artykuly", "wiedza", "nano-platnosci", "dotacje", "tworcy", "platforma"]
 ---
 
 # mikroplatnosci za artykuly i wiedze

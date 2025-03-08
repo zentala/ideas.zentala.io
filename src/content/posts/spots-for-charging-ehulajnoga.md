@@ -3,7 +3,7 @@ title: "spots for charging ehulajnoga"
 description: "eg near lawki. w ogole prywatne hulajnogi wyposarzone w chargery jakiegos standardu np 24v. w ogole standard ladowania malych urzadzen i publiczne ladowarki do ..."
 
 pubDate: "2025-03-08"
-tags: ["charging-stations", "electric-scooters", "mobile-devices", "public-infrastructure", "innovation", "urban-mobility", "technology"]
+tags: ["charging-stations", "electric-scooters", "public-charging", "mobile-devices", "innovation", "urban-infrastructure", "community-service"]
 ---
 
 eg near lawki. w ogole prywatne hulajnogi wyposarzone w chargery jakiegos standardu np 24v. w ogole standard ladowania malych urzadzen i publiczne ladowarki do nich. moga byc platne. masz laweczki na malym osiedlu, masz obok nich zlacza i placisz zblizeniowo albo kupujesz token w pobliskim sklepiku (jak nie masz baterii w telefonie aby zaplacic nim). 

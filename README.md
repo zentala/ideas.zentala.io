@@ -5,10 +5,13 @@ A personal idea collection website built with Astro.
 ## Features
 
 - Dark-themed design with modern aesthetics
+- Bilingual content support (English & Polish)
+- Multilingual tag system with tag synonyms across languages
 - Responsive layout optimized for all devices
 - Content authored in Markdown format
 - Tag-based organization of ideas
 - Automated tag generation using AI
+- AI-powered content translation
 - SEO optimized content
 
 ## Getting Started
@@ -121,6 +124,37 @@ npm run enhance-all
 ```
 
 These commands improve post formatting, fix typos, and generate appropriate tags.
+
+### Multilingual Features
+
+#### Bilingual Taxonomy Generation
+
+The system supports a bilingual tag taxonomy where tags have both English and Polish versions:
+
+```bash
+npm run generate-taxonomy
+```
+
+This intelligently analyzes all posts and:
+1. Creates a comprehensive taxonomy with 20-30 primary concepts
+2. Establishes tag synonyms across languages (e.g., "smart-home" ↔ "inteligentny-dom")
+3. Applies consistent tagging across all posts
+4. Makes content discoverable in both languages via tag search
+
+#### Content Translation
+
+To create a translation of a post in the opposite language:
+
+```bash
+npm run translate-post src/content/posts/your-post.md
+```
+
+This will:
+1. Detect the source language (English or Polish)
+2. Generate a high-quality translation in the other language
+3. Create a new file with the translated content
+4. Preserve metadata, formatting, and links
+5. Add the appropriate language flag to the frontmatter
 
 ## Styling and Customization
 

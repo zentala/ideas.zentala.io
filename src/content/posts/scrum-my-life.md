@@ -3,7 +3,7 @@ title: "scrum my life"
 description: "I was just thinking about a personal project management tool. I named my project idea \"Scrum My Life,\" but I never had the time or a complete vision to finish i..."
 
 pubDate: "2025-03-08"
-tags: ["scrum", "project-management", "chatbot", "habit-tracking", "eisenhower-matrix", "personal-development", "innovation"]
+tags: ["scrum-my-life", "project-management", "chatbot", "habits", "rewards", "eisenhower-matrix", "personal-development"]
 ---
 
 I was just thinking about a personal project management tool. I named my project idea "Scrum My Life," but I never had the time or a complete vision to finish it. 

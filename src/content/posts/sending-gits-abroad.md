@@ -3,7 +3,7 @@ title: "sending gits abroad"
 description: "miales ten problem ze chciales kupc pamiatke ale nie bylo miejsca w bagazu podrecznym albo nie chciales tego tragac? nasz startup pozwala Ci zakupic ja i wyslac..."
 
 pubDate: "2025-03-08"
-tags: ["gifts-abroad", "startup", "souvenir-shopping", "international-shipping", "innovative-ideas", "cross-border-commerce"]
+tags: ["gifts-abroad", "souvenir-shopping", "international-delivery", "innovative-startup", "cross-border-commerce", "travel-memorabilia", "gift-ideas"]
 ---
 
 miales ten problem ze chciales kupc pamiatke ale nie bylo miejsca w bagazu podrecznym albo nie chciales tego tragac?

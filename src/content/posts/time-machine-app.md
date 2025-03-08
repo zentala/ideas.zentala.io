@@ -3,7 +3,7 @@ title: "time machine app"
 description: "Time Machine App will allow: - post message to the future; eg. I would like to document that today I have some intuition and being able to prove in the future i..."
 
 pubDate: "2025-03-08"
-tags: ["time-machine", "app-development", "future-messaging", "idea-sharing", "innovation", "time-travel", "bet-tracking"]
+tags: ["innovation", "time-machine", "app-development", "future-messaging", "bet-making"]
 ---
 
 Time Machine App will allow:

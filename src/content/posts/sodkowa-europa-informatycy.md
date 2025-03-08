@@ -3,7 +3,7 @@ title: "sodkowa europa informatycy"
 description: "zachopdni biznes zatrudnia  naszych programistow za zawrotne pierniadze, a tymczasem lokalny lokalny biznes ma mase informatokow ale ich nie gospodaruje na amib..."
 
 pubDate: "2025-03-08"
-tags: ["innovacja", "idee", "programisci", "robotyka", "biznes-lokalny"]
+tags: ["innovacja", "idee", "programisci", "biznes-lokalny", "robotyka"]
 ---
 
 zachopdni biznes zatrudnia  naszych programistow za zawrotne pierniadze, a tymczasem lokalny

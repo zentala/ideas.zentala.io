@@ -3,7 +3,7 @@ title: "Mapa cmentarzy"
 description: "Mapa cmentarza z drona. Numery grobów. Połączenie z serwisami odn drzew rodzinnych ale nawet np fb jak ktoś umarł to można by wkleić gdzie pochowany aby każdy m..."
 
 pubDate: "2025-03-08"
-tags: ["cemetery-map", "drone-technology", "family-history", "burial-services", "innovative-ideas", "digital-mapping", "genealogy"]
+tags: ["mapa-cmentarzy", "drony", "uslugi-pogrzebowe", "integracja-danych", "cmentarze-zwierzat", "genealogia", "innowacje"]
 ---
 
 # Mapa cmentarzy

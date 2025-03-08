@@ -3,7 +3,7 @@ title: "showroom iot"
 description: "1) co widzialem w singapurze - co w srodku i jak wyglada partnertwo biznesu oraz instutyucji 2) w PL mozna i potrzebujemy takich showroomow aby unowoczesnic gos..."
 
 pubDate: "2025-03-08"
-tags: ["iot-showroom", "innovation", "industrial-iot", "business-partnership", "robotics", "modernization", "technology-innovation"]
+tags: ["showroom-iot", "innovation", "business-partnership", "industrial-iot", "robotics", "smart-technology", "economic-growth"]
 ---
 
 1) co widzialem w singapurze - co w srodku i jak wyglada partnertwo biznesu oraz instutyucji

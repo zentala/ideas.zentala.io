@@ -1,4 +1,16 @@
 import path from 'path';
+import fs from 'fs';
+
+// Try to load taxonomy if it exists
+let taxonomyData = { bilingualTags: {}, synonymMap: {} };
+try {
+  const taxonomyPath = path.join(process.cwd(), 'src/content/taxonomy.json');
+  if (fs.existsSync(taxonomyPath)) {
+    taxonomyData = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
+  }
+} catch (error) {
+  console.warn('Could not load taxonomy:', error);
+}
 
 /**
  * Extracts unique tags from a collection of posts
@@ -11,6 +23,60 @@ export function getUniqueTagsFromPosts(posts) {
     .flatMap(post => post.frontmatter.tags);
   
   return [...new Set(allTags)].sort();
+}
+
+/**
+ * Normalizes a tag by finding its canonical form
+ * @param {string} tag - Tag to normalize
+ * @param {string} language - Target language ('en' or 'pl')
+ * @returns {string} - Canonical form of the tag
+ */
+export function normalizeTag(tag, language = 'en') {
+  // If we have a synonym mapping for this tag
+  if (taxonomyData.synonymMap && taxonomyData.synonymMap[tag]) {
+    const canonicalTag = taxonomyData.synonymMap[tag];
+    
+    // If we want the Polish version and it exists
+    if (language === 'pl' && 
+        taxonomyData.bilingualTags && 
+        taxonomyData.bilingualTags[canonicalTag] &&
+        taxonomyData.bilingualTags[canonicalTag].pl) {
+      return taxonomyData.bilingualTags[canonicalTag].pl;
+    }
+    
+    // Otherwise return the English canonical form
+    return canonicalTag;
+  }
+  
+  // If no mapping, return the original tag
+  return tag;
+}
+
+/**
+ * Finds all posts containing a tag or its synonyms
+ * @param {Array} posts - Array of post objects
+ * @param {string} tag - Tag to search for
+ * @returns {Array} - Array of posts containing the tag or its synonyms
+ */
+export function getPostsByTag(posts, tag) {
+  // Find canonical form of the tag
+  const canonicalTag = normalizeTag(tag);
+  
+  // Find all synonyms for this tag
+  const synonyms = new Set([tag, canonicalTag]);
+  
+  // Add Polish version if it exists
+  if (taxonomyData.bilingualTags && 
+      taxonomyData.bilingualTags[canonicalTag] &&
+      taxonomyData.bilingualTags[canonicalTag].pl) {
+    synonyms.add(taxonomyData.bilingualTags[canonicalTag].pl);
+  }
+  
+  // Find all posts containing any of the synonyms
+  return posts.filter(post => {
+    if (!post.frontmatter || !post.frontmatter.tags) return false;
+    return post.frontmatter.tags.some(postTag => synonyms.has(postTag));
+  });
 }
 
 /**

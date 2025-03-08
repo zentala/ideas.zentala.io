@@ -1,0 +1,42 @@
+---
+const { currentLanguage = 'en' } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+// Determine if we're on a tag page or post page to create the alternate URL
+let alternateUrl = '';
+if (currentPath.startsWith('/tags/')) {
+  // For tag pages, keep the same tag
+  const tagName = currentPath.split('/').pop();
+  alternateUrl = `/tags/${tagName}?lang=${currentLanguage === 'en' ? 'pl' : 'en'}`;
+} else if (currentPath.includes('/posts/') || currentPath.includes('/drafts/')) {
+  // For post pages, try to find the alternate language version
+  // This would require more complex logic in a real implementation
+  alternateUrl = `${currentPath}?lang=${currentLanguage === 'en' ? 'pl' : 'en'}`;
+} else {
+  // For other pages, just add the language query parameter
+  alternateUrl = `${currentPath}?lang=${currentLanguage === 'en' ? 'pl' : 'en'}`;
+}
+
+// Flags for language selector
+const flags = {
+  en: "🇬🇧",
+  pl: "🇵🇱"
+};
+---
+
+<div class="language-selector">
+  <a 
+    href={alternateUrl}
+    class="flex items-center bg-[#1a1a1a] border border-white/10 px-3 py-1 hover:bg-[#2a2a2a] transition-colors"
+    title={currentLanguage === 'en' ? 'Switch to Polish' : 'Switch to English'}
+  >
+    <span class="mr-2">{currentLanguage === 'en' ? flags.en : flags.pl}</span>
+    <span>{currentLanguage === 'en' ? 'EN' : 'PL'}</span>
+  </a>
+</div>
+
+<style>
+  .language-selector {
+    position: relative;
+  }
+</style>

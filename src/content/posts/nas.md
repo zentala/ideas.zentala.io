@@ -3,7 +3,7 @@ title: "nas"
 description: "nas software sucks; for eample synology: - Drive desktp app   - should support synchronisation via QuickConnet (internet) and local network when avaliable, but ..."
 
 pubDate: "2025-03-08"
-tags: ["innovation", "software", "synology", "synchronization", "rules-based-sync"]
+tags: ["innovation", "software", "synology", "synchronization", "quickconnect", "network", "rules"]
 ---
 
 nas software sucks; for eample synology:

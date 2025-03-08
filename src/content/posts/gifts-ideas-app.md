@@ -3,7 +3,7 @@ title: "gifts ideas app"
 description: "- zakypy, np. syropy do kawy - takie z pomyslem i z zakupem: mieszkanka studencka wzbogacona - rozne do wykonania: np customowe logo,  napisy, etc. kubek wlasny..."
 
 pubDate: "2025-03-08"
-tags: ["gifts-ideas", "app-development", "innovation", "customizable-products", "brand-promotion"]
+tags: ["gifts-ideas", "app-development", "innovative-solutions", "customizable-products", "brand-promotion"]
 ---
 
 - zakypy, np. syropy do kawy

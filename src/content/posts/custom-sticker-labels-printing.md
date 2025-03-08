@@ -3,7 +3,7 @@ title: "Prompt: Online Sticker Generator and Sales Website"
 description: "Wydruki z drukarki etykiet - naklejki z Brothera wysokiej rozdzielczości.  Elektronika, najklejki własnosć telefonu/portfela, etc. Naklejki na przyprwawy itd."
 
 pubDate: "2025-03-08"
-tags: ["online-sticker-generator", "diy-enthusiasts", "personalized-gifts", "web-design", "minimalist", "svg-manipulation", "seo-optimization"]
+tags: ["online-sticker-generator", "sales-website", "diy-enthusiasts", "personalized-gifts", "modern-design", "minimalist-style", "svg-manipulation"]
 ---
 
 Wydruki z drukarki etykiet - naklejki z Brothera wysokiej rozdzielczości. 

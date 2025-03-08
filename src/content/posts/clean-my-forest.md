@@ -3,7 +3,7 @@ title: "posprzataj moj las / darmowy chrust"
 description: "wchodzisz na strone a tam mapka, z zazanczonymi dzialkami skad mozna pobierac chrust,"
 
 pubDate: "2025-03-08"
-tags: ["sustainable-forestry", "community-engagement", "environmental-awareness", "social-innovation", "forest-cleanup", "educational-initiatives"]
+tags: ["innovation", "ideas", "forest-cleanup", "community-engagement", "reforestation", "social-responsibility", "environmental-awareness"]
 ---
 
 # posprzataj moj las / darmowy chrust
