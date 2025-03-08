@@ -3,11 +3,11 @@ title: "Fortress Europe: A Zombie Apocalypse Story"
 description: "A tale of survival and unity in a European zombie apocalypse with community resilience and innovative technology"
 
 pubDate: "2025-03-08"
-tags: ["Apokalipsa zombie", "Europa", "Społeczność", "Innowacje", "Przetrwanie", "Kultura europejska", "Resilience"]
+tags: ["Zombie Apocalypse", "Europe", "Community", "Ingenuity", "Resilience", "Survival", "Cultural Heritage"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 # Fortress Europe: A Zombie Apocalypse Story

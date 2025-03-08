@@ -3,11 +3,11 @@ title: "showroom iot"
 description: "Explore showroom IoT solutions for industrial growth and innovation"
 
 pubDate: "2025-03-08"
-tags: ["IoT", "showroom", "innowacje", "partnerstwo biznesu", "roboty przemysłowe", "programiści", "promocja biznesu"]
+tags: ["IoT", "showroom", "roboty przemysłowe", "maszyny CNC", "Industrial IoT", "drony", "programiści"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 # Showroom IoT

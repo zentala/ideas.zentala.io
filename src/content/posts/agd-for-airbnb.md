@@ -1,13 +1,8 @@
 ---
 title: "agd for airbnb"
-description: "Optimize Airbnb listings with AGD strategies"
+description: "Ideas about agd for airbnb"
 
 pubDate: "2025-03-08"
-tags: ["AGD", "innovation", "Airbnb", "ideas", "technology"]
-created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 3
-language: "en"
+tags: ["innovation", "ideas", "agd", "airbnb"]
 ---
 
-[object Object]

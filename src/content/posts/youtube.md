@@ -3,11 +3,11 @@ title: "youtube"
 description: "Enhancing YouTube for seamless cross-device viewing and easy sharing"
 
 pubDate: "2025-03-08"
-tags: ["YouTube", "innowacje", "pomysły", "technologia", "usability"]
+tags: ["YouTube", "innovations", "ideas", "usprawnienia", "technology", "wideo", "podcast"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 2
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 3
+language: "en"
 ---
 
 # YouTube

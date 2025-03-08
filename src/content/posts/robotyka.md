@@ -3,11 +3,11 @@ title: "Robotyka"
 description: "Innovative robotics solutions for communal services and agriculture, addressing economic challenges and demographic shifts"
 
 pubDate: "2025-03-08"
-tags: ["robotyka", "innowacje", "automatyzacja", "technologia", "przemysł 4.0", "usługi komunalne", "rolnictwo"]
+tags: ["robotyka", "automatyzacja", "innovations", "usługi komunalne", "rolnictwo", "technology", "przemysł 4.0"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 5
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 6
+language: "en"
 ---
 
 # Robotyka

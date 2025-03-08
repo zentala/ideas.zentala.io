@@ -3,11 +3,11 @@ title: "sending gits abroad"
 description: "Innovative service for buying and sending gifts internationally"
 
 pubDate: "2025-03-08"
-tags: ["innowacje", "pomysły", "startup", "prezenty", "podróże", "handel zagraniczny"]
+tags: ["innovations", "ideas", "wysyłka", "prezenty", "podróże", "handel", "reklama"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 # Sending Gifts Abroad

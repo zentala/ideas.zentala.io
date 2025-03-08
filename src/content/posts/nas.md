@@ -3,11 +3,11 @@ title: "nas"
 description: "Tips for improving Synology NAS software usability"
 
 pubDate: "2025-03-08"
-tags: ["innowacje", "pomysły", "oprogramowanie NAS", "synchronizacja plików", "zarządzanie plikami", "technologia", "usprawnienia"]
+tags: ["innovations", "ideas", "technology", "oprogramowanie", "synchronizacja", "przechowywanie danych"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 ## NAS

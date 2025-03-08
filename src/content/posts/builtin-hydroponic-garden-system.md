@@ -3,11 +3,11 @@ title: "Built-In Hydroponic Garden System: The Future of Home Cultivation"
 description: "Revolutionary built-in hydroponic garden system for sustainable home cultivation with smart technology and AI-driven features"
 
 pubDate: "2025-03-08"
-tags: ["Hydroponika", "Innowacje", "Ogrodnictwo domowe", "Automatyzacja", "Zrównoważony styl życia"]
+tags: ["hydroponika", "innovations", "domowy ogród", "automatyzacja", "sztuczna inteligencja", "samozaopatrzenie", "technology"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 # Built-In Hydroponic Garden System: The Future of Home Cultivation

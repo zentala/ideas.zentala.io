@@ -3,11 +3,11 @@ title: "yt.zentala.eu"
 description: "Automated YouTube summarizer service with LLM technology, Polish-English support & secure GitHub integration"
 
 pubDate: "2025-03-08"
-tags: ["innowacje", "pomysły", "technologia", "serwis internetowy", "automatyzacja", "YouTube", "transkrypcja"]
+tags: ["innovations", "ideas", "technology", "web service", "automation", "YouTube", "transcription"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 # yt.zentala.eu
@@ -73,7 +73,7 @@ publish_date_original: "YYYY-MM-DD"
 publish_date_summary: "YYYY-MM-DD"
 youtube_link: "https://youtube.com/..."
 video_language: "en"
-summary_language: "pl"
+summary_language: "en"
 type: "summary" # "transcript", "translated_transcript", "research"
 tags: ["tag1", "tag2", "seo-friendly"]
 meta_description: "Short SEO-friendly description based on content."

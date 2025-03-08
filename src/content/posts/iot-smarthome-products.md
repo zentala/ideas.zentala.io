@@ -3,10 +3,10 @@ title: "iot smarthome products"
 description: "Explore potential in IoT smart home products, leveraging Polish design and software with Asian electronic components."
 
 pubDate: "2025-03-08"
-tags: ["IoT", "Smart Home", "Innovation", "Technology", "Poland", "Smart Home Appliances", "Business Ideas"]
+tags: ["IoT", "Smart Home", "Innovation", "Poland", "Technology", "Smart Home Appliances", "Business Ideas"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 5
+modified: "2025-03-08T16:46:44.000Z"
+edits: 6
 language: "en"
 ---
 

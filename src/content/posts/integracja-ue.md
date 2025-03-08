@@ -3,10 +3,10 @@ title: "integracja ue"
 description: "Explore vision for EU integration & technocratic spirit"
 
 pubDate: "2025-03-08"
-tags: ["EU integration", "European Union", "technocracy", "European integration", "innovation"]
+tags: ["EU integration", "European Union", "technocracy", "European integration", "innovation", "ideas"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 2
+modified: "2025-03-08T16:46:44.000Z"
+edits: 3
 language: "en"
 ---
 

@@ -3,11 +3,11 @@ title: "gifts ideas app"
 description: "Innovative app for gifting solutions, customization, and shopping convenience"
 
 pubDate: "2025-03-08"
-tags: ["aplikacja mobilna", "pomysły na prezenty", "innowacje", "personalizacja", "e-commerce", "marka", "Allegro"]
+tags: ["mobile app", "pomysły na prezenty", "innovations", "personalizacja", "branding", "e-commerce", "Allegro"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
-language: "pl"
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
+language: "en"
 ---
 
 # Gifts Ideas App
