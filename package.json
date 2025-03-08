@@ -9,11 +9,14 @@
     "preview": "astro preview",
     "astro": "astro",
     "convert-posts": "node scripts/convert-posts.js",
-    "enhance-post": "node scripts/generate-tags.js",
-    "enhance-all": "node scripts/generate-tags.js",
     "generate-taxonomy": "node scripts/taxonomy-generator.js",
     "translate-post": "node scripts/translate-post.js",
-    "create-bilingual": "node scripts/create-bilingual-post.js"
+    "create-bilingual": "node scripts/create-bilingual-post.js",
+    "post-history": "node scripts/generate-post-history.js",
+    "post-history:all": "node scripts/generate-post-history.js",
+    "post-history:force": "node scripts/generate-post-history.js --force",
+    "interactive-editor": "node scripts/interactive-content-editor.js",
+    "content-pipeline": "node scripts/content-pipeline.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",

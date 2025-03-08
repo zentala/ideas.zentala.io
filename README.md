@@ -65,8 +65,11 @@ npm run preview
 ---
 title: "Your Innovative Idea Title"
 description: "Brief description of your idea"
-pubDate: "2023-01-01"
 tags: ["innovation", "technology", "future"]
+language: "en"  # or "pl" for Polish
+created: "2023-01-01T12:00:00.000Z"  # First commit date (from git)
+modified: "2023-02-15T15:30:00.000Z" # Latest commit date (from git)
+edits: 7  # Number of commits that modified this file
 ---
 
 # Your Innovative Idea Title
@@ -95,6 +98,48 @@ The project includes AI-powered content enhancement using OpenAI's API:
 OPENAI_API_KEY=your-api-key-here
 ```
 
+#### Interactive Content Editor
+
+The interactive content editor allows conversational development of posts:
+
+```bash
+npm run interactive-editor
+```
+
+This tool provides:
+1. **Content analysis and prioritization** - Scans all content and identifies what needs work most urgently
+2. Interactive discussion with AI about any post idea
+3. The ability to convert legacy posts from the old format
+4. Editing and enhancement of existing posts
+5. Creation of new posts from scratch with AI assistance
+6. Automatic generation of translations
+7. A workspace to save progress and previews
+
+When you select the scan option, the tool will:
+- Analyze all existing and legacy posts
+- Score each post on a 1-10 priority scale
+- Categorize posts as critical/high/medium/low priority
+- Provide specific recommendations for each post
+- Allow you to immediately work on high-priority content
+
+#### Content Pipeline
+
+The content pipeline automates post enhancement:
+
+```bash
+# Process a single post
+npm run content-pipeline path/to/your/post.md
+
+# Process all posts
+npm run content-pipeline
+```
+
+This performs all these enhancements automatically:
+1. Extracts Git history (creation date, modification date, edit count)
+2. Detects and sets language property
+3. Applies taxonomy tags based on content
+4. Identifies missing translations
+
 #### Content Taxonomy System
 
 The taxonomy generator creates a consistent tagging system across all posts:
@@ -109,21 +154,27 @@ This will:
 3. Apply appropriate tags to each post (ensuring related content shares tags)
 4. Save the taxonomy definition to `src/content/taxonomy.json`
 
-#### Individual Post Enhancement
+#### Post History Tracking
 
-For enhancing individual posts:
-
-```bash
-npm run enhance-post path/to/your/post.md
-```
-
-To enhance all posts:
+Extract post history from git commits:
 
 ```bash
-npm run enhance-all
+# Process a single post
+npm run post-history path/to/your/post.md
+
+# Process all posts (using cache when available)
+npm run post-history:all
+
+# Force update all posts (ignore cache)
+npm run post-history:force
 ```
 
-These commands improve post formatting, fix typos, and generate appropriate tags.
+This will add to each post:
+- `created`: Date of first commit (publication date)
+- `modified`: Date of most recent commit
+- `edits`: Number of times the post has been modified
+
+The history data is cached in `src/content/post-history.json` for performance.
 
 ### Multilingual Features
 
