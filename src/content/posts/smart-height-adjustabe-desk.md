@@ -3,11 +3,11 @@ title: "smart height adjustabe desk"
 description: "Innovative desk with smart health features"
 
 pubDate: "2025-03-08"
-tags: ["biurko", "regulacja wysokości", "inteligentny kontroler", "zdrowie", "grywalizacja", "ergonomia"]
+tags: ["remote-work", "mobility-and-transport", "productivity-tools"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 5
+language: "pl"
 ---
 
 # Smart Height Adjustable Desk

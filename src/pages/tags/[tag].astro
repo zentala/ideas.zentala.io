@@ -33,38 +33,10 @@ export async function getStaticPaths() {
   
   const allPosts = [...posts, ...drafts];
   
-  // Polish to English mapping for common tags
-  const plToEnMapping = {
-    "platforma samochodowa": "car platform",
-    "części samochodowe": "car parts", 
-    "subskrypcja": "subscription",
-    "geolokalizacja": "geolocation",
-    "zdjęcia aut": "car photos",
-    "ogłoszenia": "listings",
-    "pomysły": "ideas",
-    "innowacje": "innovations",
-    "produkty": "products",
-    "usługi": "services",
-    "startup": "startup",
-    "aplikacja": "application",
-    "technologia": "technology",
-    "motoryzacja": "automotive",
-    "internet rzeczy": "IoT",
-    "uczenie maszynowe": "machine learning",
-    "biznes": "business",
-    "przedsiębiorczość": "entrepreneurship",
-    "prototyp": "prototype",
-    "inwestycje": "investments",
-    "edukacja": "education",
-    "rozrywka": "entertainment",
-    "społeczność": "community",
-    "media społecznościowe": "social media"
-  };
-
-  // Get all unique tags including synonyms, translate Polish tags to English
+  // Get all unique tags including synonyms, translate to English using taxonomy
   const allTags = allPosts
     .flatMap(post => post.data.tags || [])
-    .map(tag => plToEnMapping[tag] || tag);
+    .map(tag => (taxonomy.synonymMap && taxonomy.synonymMap[tag]) || tag);
   const uniqueTags = [...new Set(allTags)];
   
   // Also add all canonical tags from the taxonomy
@@ -77,21 +49,16 @@ export async function getStaticPaths() {
   
   // Generate a path for each tag
   return [...new Set(uniqueTags)].map(tag => {
-    // For Polish tags, generate paths for their English equivalents too
-    const isPolishTag = Object.keys(plToEnMapping).includes(tag);
-    const englishTag = isPolishTag ? plToEnMapping[tag] : tag;
-    const tagToUse = isPolishTag ? englishTag : tag;
-    
-    // Get all posts that match this tag or its synonyms
-    const matchingPosts = getPostsByTag(allPosts, tagToUse);
-    
-    // Get tag description in both languages
-    let tagInfo = { en: '', pl: '' };
-    
-    // Try to find tag info from taxonomy
+    // For non-canonical tags, generate paths using their canonical form
     const canonicalTag = taxonomy.synonymMap && taxonomy.synonymMap[tag] 
       ? taxonomy.synonymMap[tag] 
       : tag;
+    
+    // Get all posts that match this tag or its synonyms
+    const matchingPosts = getPostsByTag(allPosts, canonicalTag);
+    
+    // Get tag description in both languages
+    let tagInfo = { en: '', pl: '' };
       
     if (taxonomy.bilingualTags && taxonomy.bilingualTags[canonicalTag]) {
       tagInfo = {
@@ -117,36 +84,8 @@ const { posts, tagInfo } = Astro.props;
 // Set English as the only language
 const currentLanguage = 'en';
 
-// Polish to English mapping for common tags
-const plToEnMapping = {
-  "platforma samochodowa": "car platform",
-  "części samochodowe": "car parts", 
-  "subskrypcja": "subscription",
-  "geolokalizacja": "geolocation",
-  "zdjęcia aut": "car photos",
-  "ogłoszenia": "listings",
-  "pomysły": "ideas",
-  "innowacje": "innovations",
-  "produkty": "products",
-  "usługi": "services",
-  "startup": "startup",
-  "aplikacja": "application",
-  "technologia": "technology",
-  "motoryzacja": "automotive",
-  "internet rzeczy": "IoT",
-  "uczenie maszynowe": "machine learning",
-  "biznes": "business",
-  "przedsiębiorczość": "entrepreneurship",
-  "prototyp": "prototype",
-  "inwestycje": "investments",
-  "edukacja": "education",
-  "rozrywka": "entertainment",
-  "społeczność": "community",
-  "media społecznościowe": "social media"
-};
-
 // Get English equivalent of tag if it's Polish
-const displayTag = plToEnMapping[tag] || tag;
+const displayTag = (taxonomy.synonymMap && taxonomy.synonymMap[tag]) || tag;
 
 // Include all posts regardless of language
 const languageFilteredPosts = posts;

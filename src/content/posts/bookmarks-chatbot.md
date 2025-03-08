@@ -3,11 +3,11 @@ title: "Semantic Bookmark Manager"
 description: "LLM-powered bookmark manager with semantic search, smart organization, and enhanced visuals"
 
 pubDate: "2025-03-08"
-tags: ["zarządzanie zakładkami", "inteligentne narzędzia", "analiza semantyczna", "automatyzacja", "wyszukiwanie semantyczne", "usprawnienia wizualne", "integracja z przeglądarką"]
+tags: ["community-and-culture", "sustainability", "education-and-training"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 6
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 7
+language: "pl"
 ---
 
 # Semantic Bookmark Manager

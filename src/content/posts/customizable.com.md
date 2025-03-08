@@ -3,11 +3,11 @@ title: "customizable.com"
 description: "Platform offering customizable products with a focus on user experience and automation. Explore unique items tailored to your needs."
 
 pubDate: "2025-03-08"
-tags: ["customizable", "produkcja na zamówienie", "platforma e-commerce", "customizacja produktów", "innowacje biznesowe", "personalizacja", "technologia CNC"]
+tags: ["education-and-training", "remote-work", "automotive"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 5
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 6
+language: "pl"
 ---
 
 # Customizable.com

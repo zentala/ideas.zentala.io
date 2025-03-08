@@ -3,11 +3,11 @@ title: "future file explorer"
 description: "AI-powered file explorer, cloud integration, NAS OS, data synchronization, remote work, cloud backup, gaming services, AI servers"
 
 pubDate: "2025-03-08"
-tags: ["AI", "przeglądarka plików", "zarządzanie danymi", "chmura", "synchronizacja danych", "technology", "innovations"]
+tags: ["remote-work", "micro-payments", "urban-development"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 5
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 6
+language: "pl"
 ---
 
 # Future File Explorer

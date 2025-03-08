@@ -3,11 +3,11 @@ title: "Robotic Management System"
 description: "A GUI-based configuration system for ROS (Robot Operating System) that simplifies robot setup, configuration, and management."
 
 pubDate: "2025-03-08"
-tags: ["robotic-management-system", "ros-configuration", "robot-urdf", "slam-configuration", "gui-development", "robot-innovation", "robotics-cms"]
-created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+tags: ["environmental-protection", "community-and-culture", "energy-solutions"]
+created: "2025-03-08T18:04:53.000Z"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 1
+language: "pl"
 ---
 
 # Robotic Management System

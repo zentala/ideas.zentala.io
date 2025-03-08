@@ -11,36 +11,8 @@ interface Props {
 
 const { title, description, image, url, tags = [], isDraft = false } = Astro.props;
 
-// Polish to English mapping for common tags
-const plToEnMapping = {
-  "platforma samochodowa": "car platform",
-  "części samochodowe": "car parts",
-  "subskrypcja": "subscription",
-  "geolokalizacja": "geolocation",
-  "zdjęcia aut": "car photos",
-  "ogłoszenia": "listings",
-  "pomysły": "ideas",
-  "innowacje": "innovations",
-  "produkty": "products",
-  "usługi": "services",
-  "startup": "startup",
-  "aplikacja": "application",
-  "technologia": "technology",
-  "motoryzacja": "automotive",
-  "internet rzeczy": "IoT",
-  "uczenie maszynowe": "machine learning",
-  "biznes": "business",
-  "przedsiębiorczość": "entrepreneurship",
-  "prototyp": "prototype",
-  "inwestycje": "investments",
-  "edukacja": "education",
-  "rozrywka": "entertainment",
-  "społeczność": "community",
-  "media społecznościowe": "social media"
-};
-
-// Translate Polish tags to English
-const normalizedTags = tags.map(tag => plToEnMapping[tag] || tag);
+// All tags are now in English
+const normalizedTags = tags;
 ---
 
 <a 
@@ -78,9 +50,9 @@ const normalizedTags = tags.map(tag => plToEnMapping[tag] || tag);
     {normalizedTags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-auto">
         {normalizedTags.slice(0, 3).map(tag => (
-          <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5 hover:bg-[#3a3a3a] transition-colors">
+          <a href={`/tags/${encodeURIComponent(tag)}`} class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5 hover:bg-[#3a3a3a] transition-colors">
             {tag}
-          </span>
+          </a>
         ))}
         {normalizedTags.length > 3 && (
           <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5">

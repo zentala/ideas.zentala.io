@@ -3,11 +3,11 @@ title: "sodkowa europa informatycy"
 description: "Challenges faced by local businesses in utilizing IT talent effectively and suggestions for improvement"
 
 pubDate: "2025-03-08"
-tags: ["informatycy", "Europa", "business", "programiści", "robotyka", "lokalny biznes", "udziały w firmie"]
+tags: ["e-commerce", "micro-payments", "data-management-and-security"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 5
+language: "pl"
 ---
 
 # Sodkowa Europa Informatycy

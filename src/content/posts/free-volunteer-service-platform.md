@@ -3,11 +3,11 @@ title: "Free Volunteer Service Platform"
 description: "A platform connecting individuals seeking portfolio projects with non-profits and social initiatives needing volunteer expertise."
 
 pubDate: "2025-03-08"
-tags: ["innovation", "ideas", "portfolio-building", "collaboration", "social-impact", "volunteerism", "community-driven"]
-created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+tags: ["e-commerce", "agriculture", "mobility-and-transport"]
+created: "2025-03-08T18:04:53.000Z"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 1
+language: "pl"
 ---
 
 # Free Volunteer Service Platform

@@ -87,44 +87,40 @@ async function generateTaxonomy(postSummaries) {
       messages: [
         {
           role: "system",
-          content: `You are a bilingual (English and Polish) taxonomy and classification expert. Your task is to:
+          content: `You are an English taxonomy and classification expert. Your task is to:
 
 1. Analyze the collection of blog posts to understand their themes and topics
-2. Create a consistent taxonomy for categorizing the posts in both English and Polish
+2. Create a consistent taxonomy for categorizing the posts in English only
 3. Apply this taxonomy to generate appropriate tags for each post
 
 Guidelines for the taxonomy:
 - Use a maximum of 20-30 primary categories/tags
-- Each primary tag should have both English and Polish versions
+- All tags should be in English only
 - Tags should be general enough to group related posts
 - Tags should be specific enough to be meaningful
 - Use lowercase, hyphenated format (e.g., "smart-home" not "Smart Home")
 - Look for common themes across posts to ensure tag reuse
 - Avoid creating post-specific tags that would only apply to one post
-- For each tag concept, provide both English and Polish versions as synonyms
 
-Your output will be used to tag a collection of innovation and idea posts in a bilingual website.`
+Your output will be used to tag a collection of innovation and idea posts in English only.`
         },
         {
           role: "user",
           content: `Here are summaries of all posts in the collection. I need you to:
 1. Analyze them to understand all the topics covered
-2. Create a consistent taxonomy with 20-30 primary tag concepts
-3. For each tag concept, provide both English and Polish versions as synonyms
-4. Apply those tags to each post, ensuring related posts share common tags
+2. Create a consistent taxonomy with 20-30 primary tag concepts in English only
+3. Apply those tags to each post, ensuring related posts share common tags
 
 ${JSON.stringify(postSummaries, null, 2)}
 
 Respond with:
 1. A list of 20-30 primary tag concepts, each with:
    - The English version of the tag
-   - The Polish version of the tag
    - A short description in English
-   - A short description in Polish
-2. The tags applied to each post (3-7 tags per post), using the appropriate language based on content language
+2. The tags applied to each post (3-7 tags per post), all in English regardless of the original content language
 
 Return as a JSON object with "bilingualTags" and "postTags" properties.
-The "bilingualTags" should be an object where keys are English tags and values are objects with "pl" (Polish tag), "enDescription", and "plDescription".`
+The "bilingualTags" should be an object where keys are English tags and values are objects with "enDescription".`
         }
       ],
       response_format: { type: "json_object" },
@@ -160,7 +156,7 @@ function detectLanguage(content) {
 }
 
 /**
- * Update post files with consistent bilingual taxonomy
+ * Update post files with consistent English-only taxonomy
  */
 async function updatePostsWithTaxonomy(taxonomy) {
   try {
@@ -168,23 +164,12 @@ async function updatePostsWithTaxonomy(taxonomy) {
     const postTags = taxonomy.postTags;
     const bilingualTags = taxonomy.bilingualTags;
     
-    // Create a mapping from Polish tags to English tags
-    const plToEnMap = {};
-    Object.entries(bilingualTags).forEach(([enTag, data]) => {
-      plToEnMap[data.pl] = enTag;
-    });
-    
     // Create a language-neutral version of the taxonomy for all-language functionality
     const synonymMap = {};
     
     // Add English tags
     Object.keys(bilingualTags).forEach(enTag => {
       synonymMap[enTag] = enTag;
-    });
-    
-    // Add Polish tags as synonyms
-    Object.entries(bilingualTags).forEach(([enTag, data]) => {
-      synonymMap[data.pl] = enTag; // Polish tag maps to English tag
     });
     
     for (const [filename, tags] of Object.entries(postTags)) {
@@ -209,25 +194,8 @@ async function updatePostsWithTaxonomy(taxonomy) {
           ? frontmatter
           : `${frontmatter}\nlanguage: "${language}"`;
         
-        // Convert tags to the appropriate language
-        const localizedTags = tags.map(tag => {
-          // If tag is already in English and we need Polish
-          if (bilingualTags[tag] && language === 'pl') {
-            return bilingualTags[tag].pl;
-          }
-          // If tag is in Polish and we need English
-          if (plToEnMap[tag] && language === 'en') {
-            return plToEnMap[tag];
-          }
-          // Otherwise keep as is
-          return tag;
-        });
-        
-        // Add synonyms for all tags to make them searchable in both languages
-        const tagSet = new Set();
-        localizedTags.forEach(tag => {
-          tagSet.add(tag);
-        });
+        // Always use English tags regardless of content language
+        const tagSet = new Set(tags);
         
         // Replace or add tags in frontmatter
         const updatedFrontmatter = langFrontmatter.includes('tags:') 
@@ -257,7 +225,7 @@ async function updatePostsWithTaxonomy(taxonomy) {
       'utf-8'
     );
     
-    console.log(`Bilingual taxonomy definition saved to ${taxonomyPath}`);
+    console.log(`English taxonomy definition saved to ${taxonomyPath}`);
   } catch (error) {
     console.error('Error updating posts with taxonomy:', error);
   }
@@ -299,14 +267,13 @@ async function main() {
     // Update posts with the new taxonomy
     await updatePostsWithTaxonomy(taxonomy);
     
-    console.log('All posts have been updated with consistent bilingual tags!');
+    console.log('All posts have been updated with consistent English tags!');
     
     // Print primary tag categories
-    console.log('\nPrimary Tag Categories (EN → PL):');
+    console.log('\nPrimary Tag Categories:');
     Object.entries(taxonomy.bilingualTags).forEach(([enTag, data]) => {
-      console.log(`- ${enTag} → ${data.pl}`);
-      console.log(`  EN: ${data.enDescription}`);
-      console.log(`  PL: ${data.plDescription}`);
+      console.log(`- ${enTag}`);
+      console.log(`  ${data.enDescription}`);
       console.log();
     });
   } catch (error) {

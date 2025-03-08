@@ -1,0 +1,118 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Dev Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Preview",
+      "type": "shell",
+      "command": "npm run preview",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Content Pipeline (All)",
+      "type": "shell",
+      "command": "npm run content-pipeline",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Content Pipeline (Current File)",
+      "type": "shell",
+      "command": "npm run content-pipeline ${file}",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Translate Post (Current File)",
+      "type": "shell",
+      "command": "npm run translate-post ${file}",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Taxonomy",
+      "type": "shell",
+      "command": "npm run generate-taxonomy",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Post History (Current File)",
+      "type": "shell",
+      "command": "npm run post-history ${file}",
+      "group": "test",
+      "presentation": {
+        "reveal": "always", 
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Post History (All)",
+      "type": "shell",
+      "command": "npm run post-history:all",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Interactive Content Editor",
+      "type": "shell",
+      "command": "npm run interactive-editor",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

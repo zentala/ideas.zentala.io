@@ -3,11 +3,11 @@ title: "scrum my life"
 description: "Personal project management tool with chatbot coaching for tasks, habits, and goals"
 
 pubDate: "2025-03-08"
-tags: ["zarządzanie projektem", "ideas", "innovations", "chatbot", "scrum", "Eisenhower matrix"]
+tags: ["education-and-training", "urban-development", "agriculture"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 5
+language: "pl"
 ---
 
 # Scrum My Life

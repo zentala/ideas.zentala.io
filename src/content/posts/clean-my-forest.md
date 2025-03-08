@@ -3,11 +3,11 @@ title: "posprzataj moj las / darmowy chrust"
 description: "Engage in forest cleaning and educational initiatives, incentivize participation"
 
 pubDate: "2025-03-08"
-tags: ["innovations", "ekologia", "czystosc", "education", "rekreacja", "spoleczenstwo", "las"]
+tags: ["energy-solutions", "digital-platforms", "community-and-culture"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 5
+language: "pl"
 ---
 
 # Clean Up My Forest / Free Wood Chips

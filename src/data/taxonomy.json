@@ -1,0 +1,126 @@
+{
+  "bilingualTags": {
+    "technology": {
+      "enDescription": "Posts related to technological advancements and tools."
+    },
+    "innovation": {
+      "enDescription": "Creative or novel ideas that introduce new methods, ideas, or products."
+    },
+    "business-and-commerce": {
+      "enDescription": "Topics related to trade, e-commerce, and business strategies."
+    },
+    "digital-platforms": {
+      "enDescription": "Online services, platforms, and applications."
+    },
+    "social-innovation": {
+      "enDescription": "Innovations aimed at improving social interactions or solving societal issues."
+    },
+    "sustainability": {
+      "enDescription": "Environmental sustainability and green technologies."
+    },
+    "remote-work": {
+      "enDescription": "Work conducted remotely, including tools and strategies for telecommuting."
+    },
+    "education-and-training": {
+      "enDescription": "Systems, programs, and tools related to education and professional training."
+    },
+    "smart-home": {
+      "enDescription": "Technologies and innovations for automated and interconnected home environments."
+    },
+    "health-and-wellness": {
+      "enDescription": "Technologies and ideas promoting health, wellness, and well-being."
+    },
+    "data-management-and-security": {
+      "enDescription": "Technologies and methodologies for managing and securing data."
+    },
+    "urban-development": {
+      "enDescription": "Urban planning, smart cities, and infrastructure development."
+    },
+    "robotics": {
+      "enDescription": "Development and innovation in robotics technology."
+    },
+    "community-and-culture": {
+      "enDescription": "Posts related to community development and cultural integration."
+    },
+    "personal-development-and-lifestyle": {
+      "enDescription": "Tools and ideas for personal growth and lifestyle improvements."
+    },
+    "marketing-and-advertising": {
+      "enDescription": "Strategies, platforms, and tools for marketing and advertising."
+    },
+    "entertainment-and-media": {
+      "enDescription": "Content related to media, entertainment technologies, and platforms."
+    },
+    "agriculture": {
+      "enDescription": "Innovations and technologies impacting agricultural practices."
+    },
+    "mobility-and-transport": {
+      "enDescription": "Technologies and ideas revolving around transportation and mobility solutions."
+    },
+    "hospitality": {
+      "enDescription": "Innovations and strategies in the hospitality industry."
+    },
+    "workspace-design": {
+      "enDescription": "Design and arrangement of workspaces for enhanced productivity and ergonomics."
+    },
+    "environmental-protection": {
+      "enDescription": "Initiatives and technologies aimed at protecting the environment."
+    },
+    "automotive": {
+      "enDescription": "Technologies and ideas related to cars and other vehicles."
+    },
+    "e-commerce": {
+      "enDescription": "Online commercial transactions and related technologies."
+    },
+    "productivity-tools": {
+      "enDescription": "Tools and software designed to enhance productivity."
+    },
+    "artificial-intelligence": {
+      "enDescription": "AI technologies and their applications across various domains."
+    },
+    "cybersecurity": {
+      "enDescription": "Technologies and strategies for defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks."
+    },
+    "virtual-reality": {
+      "enDescription": "Technologies that use virtual environments for various applications."
+    },
+    "energy-solutions": {
+      "enDescription": "Innovative solutions for energy production, management, and conservation."
+    },
+    "micro-payments": {
+      "enDescription": "Small financial transactions typically made online."
+    }
+  },
+  "synonymMap": {
+    "technology": "technology",
+    "innovation": "innovation",
+    "business-and-commerce": "business-and-commerce",
+    "digital-platforms": "digital-platforms",
+    "social-innovation": "social-innovation",
+    "sustainability": "sustainability",
+    "remote-work": "remote-work",
+    "education-and-training": "education-and-training",
+    "smart-home": "smart-home",
+    "health-and-wellness": "health-and-wellness",
+    "data-management-and-security": "data-management-and-security",
+    "urban-development": "urban-development",
+    "robotics": "robotics",
+    "community-and-culture": "community-and-culture",
+    "personal-development-and-lifestyle": "personal-development-and-lifestyle",
+    "marketing-and-advertising": "marketing-and-advertising",
+    "entertainment-and-media": "entertainment-and-media",
+    "agriculture": "agriculture",
+    "mobility-and-transport": "mobility-and-transport",
+    "hospitality": "hospitality",
+    "workspace-design": "workspace-design",
+    "environmental-protection": "environmental-protection",
+    "automotive": "automotive",
+    "e-commerce": "e-commerce",
+    "productivity-tools": "productivity-tools",
+    "artificial-intelligence": "artificial-intelligence",
+    "cybersecurity": "cybersecurity",
+    "virtual-reality": "virtual-reality",
+    "energy-solutions": "energy-solutions",
+    "micro-payments": "micro-payments"
+  }
+}

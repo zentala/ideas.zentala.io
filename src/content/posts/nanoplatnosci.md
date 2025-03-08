@@ -3,11 +3,11 @@ title: "mikroplatnosci za artykuly i wiedze"
 description: "Platform for micro payments and knowledge sharing"
 
 pubDate: "2025-03-08"
-tags: ["mikro płatności", "usługi online", "wiedza", "innovations", "platforma płatności", "twórcy treści", "transakcje online"]
+tags: ["cybersecurity", "education-and-training", "artificial-intelligence"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T16:46:44.000Z"
-edits: 4
-language: "en"
+modified: "2025-03-08T18:04:53.000Z"
+edits: 5
+language: "pl"
 ---
 
 # Mikro płatności za artykuły i wiedzę
