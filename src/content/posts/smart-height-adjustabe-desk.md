@@ -1,14 +1,15 @@
 ---
 title: "smart height adjustabe desk"
-description: "kupoiklem burkoi z regulacja wysokosci ale zauwazylem ze go nie uzywam zauwazylem ze inni wlkascieile tekich burek tez rzadko ich uzywaja, a szkoda przeciez po ..."
+description: "Innovative desk with smart health features"
 
 pubDate: "2025-03-08"
-tags: ["smart-height-adjustable-desk", "innovation", "health", "ergonomic", "smart-controller", "posture-awareness", "gamification"]
+tags: ["biurko", "regulacja wysokości", "zdrowie", "inteligentny kontroler", "komputer", "grywalizacja"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 3
+language: "pl"
 ---
 
+# Smart Height Adjustable Desk
 
-kupoiklem burkoi z regulacja wysokosci ale zauwazylem ze go nie uzywam
-zauwazylem ze inni wlkascieile tekich burek tez rzadko ich uzywaja, a szkoda
-przeciez po to wydajemy pieniadze aby zmieniac te pozycje ciala i dbac w ten sposob o swoje zdrowie
-stad narodzil sie pomysl inteligentego kontrolera ktory mierzylby czas spedzony przed komputerem, a nastepnie subtelnie rekomendowal zrobienie przerwy lub zmiane pozycji na stojaca, a nasteprnie w zaleznosci od naszej reakcji naliczal jakiegos rodzjau punkty, tak aby zdrowy nawyk zmienic w grywalizacje
-
+Kupoiklem burkoi z regulacją wysokości, ale zauważyłem, że go nie używam. Zauważyłem, że inni właściwie takich biurek też rzadko używają, a szkoda. Przecież po to wydajemy pieniądze, aby zmieniać pozycję ciała i dbać w ten sposób o swoje zdrowie. Stąd narodził się pomysł inteligentnego kontrolera, który mierzyłby czas spędzony przed komputerem, a następnie subtelnie rekomendował zrobienie przerwy lub zmianę pozycji na stojącą, a następnie, w zależności od naszej reakcji, naliczał jakiegoś rodzaju punkty, tak aby zdrowy nawyk zmienić w grywalizację.

@@ -27,25 +27,14 @@ export function getUniqueTagsFromPosts(posts) {
 
 /**
  * Normalizes a tag by finding its canonical form
+ * Always returns the English version
  * @param {string} tag - Tag to normalize
- * @param {string} language - Target language ('en' or 'pl')
  * @returns {string} - Canonical form of the tag
  */
-export function normalizeTag(tag, language = 'en') {
-  // If we have a synonym mapping for this tag
+export function normalizeTag(tag) {
+  // If we have a synonym mapping for this tag, use it
   if (taxonomyData.synonymMap && taxonomyData.synonymMap[tag]) {
-    const canonicalTag = taxonomyData.synonymMap[tag];
-    
-    // If we want the Polish version and it exists
-    if (language === 'pl' && 
-        taxonomyData.bilingualTags && 
-        taxonomyData.bilingualTags[canonicalTag] &&
-        taxonomyData.bilingualTags[canonicalTag].pl) {
-      return taxonomyData.bilingualTags[canonicalTag].pl;
-    }
-    
-    // Otherwise return the English canonical form
-    return canonicalTag;
+    return taxonomyData.synonymMap[tag];
   }
   
   // If no mapping, return the original tag
@@ -65,17 +54,10 @@ export function getPostsByTag(posts, tag) {
   // Find all synonyms for this tag
   const synonyms = new Set([tag, canonicalTag]);
   
-  // Add Polish version if it exists
-  if (taxonomyData.bilingualTags && 
-      taxonomyData.bilingualTags[canonicalTag] &&
-      taxonomyData.bilingualTags[canonicalTag].pl) {
-    synonyms.add(taxonomyData.bilingualTags[canonicalTag].pl);
-  }
-  
   // Find all posts containing any of the synonyms
   return posts.filter(post => {
-    if (!post.frontmatter || !post.frontmatter.tags) return false;
-    return post.frontmatter.tags.some(postTag => synonyms.has(postTag));
+    if (!post.data || !post.data.tags) return false;
+    return post.data.tags.some(postTag => synonyms.has(postTag));
   });
 }
 

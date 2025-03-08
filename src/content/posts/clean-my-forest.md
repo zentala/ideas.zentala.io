@@ -1,19 +1,19 @@
 ---
 title: "posprzataj moj las / darmowy chrust"
-description: "wchodzisz na strone a tam mapka, z zazanczonymi dzialkami skad mozna pobierac chrust,"
+description: "Engage in forest cleaning and educational initiatives, incentivize participation"
 
 pubDate: "2025-03-08"
-tags: ["innovation", "ideas", "forest-cleanup", "community-engagement", "reforestation", "social-responsibility", "environmental-awareness"]
+tags: ["innowacje", "pomysły", "ochrona środowiska", "edukacja", "rekreacja", "społeczna rehabilitacja", "czyste lasy"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 3
+language: "pl"
 ---
 
-# posprzataj moj las / darmowy chrust
+# Clean Up My Forest / Free Wood Chips
 
-wchodzisz na strone a tam mapka, z zazanczonymi dzialkami skad mozna pobierac chrust,
+On the website, there is a map with marked areas where you can collect wood chips. There is an option to add a forest by providing the land register details and verifying ownership. 
 
-jest ikona dodaj las, a nastrpnie trzeba podac dane ksiegi wieczystej oraz autoryzowac sie ze jest sie wlascicielem i mozna dodac las
+## For Schools and More
 
-## dla szkol i nie tylko
-w ramach resocjhalizacji mozna by tez zglaszac lasy do posprzatania, a nawet wyznaczac jakies nagrody za popsrzaanie. np naucyzciele zabieraja dzieci na wycieczke do lasu i uczya o waznosci zachowania czyzstoscim, dzieciaki z doroslumi sprzataja, a po wszystkim wlasciiel organizuje w lesie ognissko dla dzieciakow
-
-albo mozna by w ogole wieznis czy skazanych na prace spoleczne wysylac do sprztania lasow.
-
+As part of social rehabilitation, one can report forests for cleaning up and even designate rewards for cleaning efforts. For instance, teachers take children on trips to the forest to teach them about the importance of cleanliness. Adults and children clean up together, followed by a bonfire organized by the owner for the kids. Alternatively, one could assign convicted individuals to community service cleaning up forests.

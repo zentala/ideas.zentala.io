@@ -1,6 +1,4 @@
 ---
-import { normalizeTag } from "../utils";
-
 interface Props {
   title: string;
   description?: string;
@@ -11,10 +9,10 @@ interface Props {
   language?: 'en' | 'pl';
 }
 
-const { title, description, image, url, tags = [], isDraft = false, language = 'en' } = Astro.props;
+const { title, description, image, url, tags = [], isDraft = false } = Astro.props;
 
-// Normalize tags to current language
-const normalizedTags = tags.map(tag => normalizeTag(tag, language));
+// Use tags directly without normalization
+const normalizedTags = tags;
 ---
 
 <a 

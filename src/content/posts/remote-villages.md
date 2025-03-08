@@ -1,9 +1,15 @@
 ---
 title: "remote villages"
-description: "wisoki praca zdalna dla programistow"
+description: "Explore opportunities for remote work in villages"
 
 pubDate: "2025-03-08"
-tags: ["remote-villages", "innovation", "ideas", "programming", "work-from-home"]
+tags: ["Remote Villages", "Innovation", "Ideas", "Rural Development", "Technology", "Telecommuting", "Programming"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 2
+language: "en"
 ---
 
-wisoki praca zdalna dla programistow
+## Remote Villages
+
+Wisoki praca zdalna dla programistow

@@ -1,18 +1,17 @@
 ---
 title: "sodkowa europa informatycy"
-description: "zachopdni biznes zatrudnia  naszych programistow za zawrotne pierniadze, a tymczasem lokalny lokalny biznes ma mase informatokow ale ich nie gospodaruje na amib..."
+description: "Challenges faced by local businesses in utilizing IT talent effectively and suggestions for improvement"
 
 pubDate: "2025-03-08"
-tags: ["innovacja", "idee", "programisci", "biznes-lokalny", "robotyka"]
+tags: ["informatycy", "Europa", "biznes", "programiści", "lokalny biznes", "robotyka", "pomysły"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 3
+language: "pl"
 ---
 
-zachopdni biznes zatrudnia  naszych programistow za zawrotne pierniadze, a tymczasem lokalny
-lokalny biznes ma mase informatokow ale ich nie gospodaruje na amibitne projektyky jak np 
+# Sodkowa Europa Informatycy
 
-* robotyka
+Zachodni biznes zatrudnia naszych programistów za zawrotne pieniądze, a tymczasem lokalny biznes ma masę informatyków, ale nie gospodaruje nimi na ambitne projekty, takie jak np. robotyka.
 
-uwazam ze lokalnemiu biznesowi brkuje ideii i pomyslu na nich
-wystrczy dac im udzilay w firmie i beda budowac ja z wami
-
-
-
+Uważam, że lokalnemu biznesowi brakuje pomysłu i idei. Wystarczy dać im udziały w firmie, a będą ją budować razem z wami.

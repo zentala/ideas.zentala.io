@@ -1,15 +1,18 @@
 ---
 title: "showroom iot"
-description: "1) co widzialem w singapurze - co w srodku i jak wyglada partnertwo biznesu oraz instutyucji 2) w PL mozna i potrzebujemy takich showroomow aby unowoczesnic gos..."
+description: "Explore showroom IoT solutions for industrial growth and innovation"
 
 pubDate: "2025-03-08"
-tags: ["showroom-iot", "innovation", "business-partnership", "industrial-iot", "robotics", "smart-technology", "economic-growth"]
+tags: ["IoT", "showroom", "innowacje", "partnerstwo biznesu", "roboty przemysłowe", "programiści", "promocja biznesu"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 3
+language: "pl"
 ---
 
-1) co widzialem w singapurze - co w srodku i jak wyglada partnertwo biznesu oraz instutyucji
-2) w PL mozna i potrzebujemy takich showroomow aby unowoczesnic gospodarke - dodac ze mamy malo (najmneij) robotow i nie utylizuyjemy naszych programistow a to moze byc kolejnym motorem wzrostu na nastrpne dekady; ze dobrze by bylo takie cos pushowac oddolnie, przez biznes
+# Showroom IoT
 
-3) rozwiazania: roboty przemyslowe, maszyny cnc, industrial iot, rtls, drony roznego rodzaju (od latajacych po roboty humanoidalne), iot w roznych zastosowaniach i branzach
-
-4) jesli panstwo da miejsce, uczelnia bedzie organizowala czesc, biezace koszty finansowe z uslug agencji ktore oferuja uslugi, z kolei firmy z produktami same zechca sie tam wystawic
-5) 
+- Co widziałem w Singapurze - co w środku i jak wygląda partnerstwo biznesu oraz instytucji
+- W PL można i potrzebujemy takich showroomów aby unowocześnić gospodarkę - dodać że mamy mało (najmniej) robotów i nie wykorzystujemy naszych programistów, co może być kolejnym motorem wzrostu na następne dekady; że dobrze byłoby takie coś promować oddolnie, przez biznes
+- Rozwiązania: roboty przemysłowe, maszyny CNC, Industrial IoT, RTLS, drony różnego rodzaju (od latających po roboty humanoidalne), IoT w różnych zastosowaniach i branżach
+- Jeśli państwo da miejsce, uczelnia będzie organizowała część, bieżące koszty finansowe z usług agencji, które oferują usługi, z kolei firmy z produktami same zechcą się tam wystawić

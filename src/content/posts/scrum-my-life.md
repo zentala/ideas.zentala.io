@@ -1,17 +1,22 @@
 ---
 title: "scrum my life"
-description: "I was just thinking about a personal project management tool. I named my project idea \"Scrum My Life,\" but I never had the time or a complete vision to finish i..."
+description: "Personal project management tool with chatbot coaching for tasks, habits, and goals"
 
 pubDate: "2025-03-08"
-tags: ["scrum-my-life", "project-management", "chatbot", "habits", "rewards", "eisenhower-matrix", "personal-development"]
+tags: ["innowacje", "pomysły", "zarządzanie projektem", "chatbot", "Scrum", "Eisenhower matrix", "aplikacja mobilna"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 3
+language: "pl"
 ---
 
-I was just thinking about a personal project management tool. I named my project idea "Scrum My Life," but I never had the time or a complete vision to finish it. 
+# Scrum My Life
 
-I would implement a chatbot that asks coaching questions and, based on responses, helps users design projects, tasks, and habits to follow. This is how I wanted to separate entity types in my app (tasks, habits, events (calendar), projects, rewards, goals).
+I was just thinking about a personal project management tool. I named my project idea **'Scrum My Life'** but never had the time or a complete vision to finish it.
 
-* Habbits - check consistency, points for keeping up, minus points for skipping
-* Rewards - for filfulling some goals or getting enough points
+I would implement a chatbot that asks coaching questions and, based on responses, helps users design projects, tasks, and habits to follow. This is how I wanted to separate entity types in my app: tasks, habits, events (calendar), projects, rewards, and goals.
 
-Additionally, I wanted to use the Eisenhower matrix to judge the importance of goals, projects, tasks and scrum points to split them into smaller tasks. 
+- **Habits** - check consistency, points for keeping up, minus points for skipping
+- **Rewards** - for fulfilling goals or gaining enough points
 
+Additionally, I wanted to use the Eisenhower matrix to assess the importance of goals, projects, tasks, and scrum points to break them into smaller tasks.

@@ -1,31 +1,15 @@
 ---
 title: "Mapa cmentarzy"
-description: "Mapa cmentarza z drona. Numery grobów. Połączenie z serwisami odn drzew rodzinnych ale nawet np fb jak ktoś umarł to można by wkleić gdzie pochowany aby każdy m..."
+description: "Interactive cemetery map with grave numbers, genealogy integration, and online services. Unique burials, pet cemeteries, and grave care options."
 
 pubDate: "2025-03-08"
-tags: ["mapa-cmentarzy", "drony", "uslugi-pogrzebowe", "integracja-danych", "cmentarze-zwierzat", "genealogia", "innowacje"]
+tags: ["innowacje", "technologia", "usługi online", "nawigacja", "pamięć", "społeczeństwo", "mapa cmentarzy"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T15:09:08.000Z"
+edits: 3
+language: "pl"
 ---
 
 # Mapa cmentarzy
 
-Mapa cmentarza z drona. Numery grobów. Połączenie z serwisami odn drzew rodzinnych ale nawet np fb jak ktoś umarł to można by wkleić gdzie pochowany aby każdy mógł go znaleźć odsiedzieć grób 
-
-Mapy na całym świecie
-
-Index grobów i napisów na nich
-
-Usługi - pośrednictwo - umyj grób. Śluz kwiaty, zostaw znicz. Opieka nad zielona abonament .A nawet zamówinagrovek, przeprojektoj grub, dopisz nowa osobę. 
-
-W miarę możliwości integracją z danymi cmentarza i możliwość płacenia zdanie 
-
-Możliwość zamawiania miejsca na prywatnych cmentarzach. Cmentarze dla zwierząt domowych podpięte. 
-
-Nietypowe cmentarze i formy pochówku.
-
- Awigacja do gróbow jako darmowy feature.  A każde święto zmarłych wiesz kto gdzie jest pochowany i gdzie znajduje się na drzewie genealogicznym rodziny, jakim jest krewnym.
-
-Przy integracji z portami typu my heritage mógłbyś nawet zobaczyć zdjęcia z życia tej osoby pokolorowane przez AI oraz info np cuxm. Się zajmowała , kkm była. Jakieś wspominki starszych z rodziny posłuchać.
-
-Po za tym przed świętami mOesz zamówić zmywanie grobów. Możesz też zamówić znicze online i odebrać w budce przed cmentarzem.
-
-Skoro mamy starzejące się społeczeństwo to będzie przypadało coraz więcej zmarłych do pamiętania na jednego żywego.
+Mapa cmentarza z drona z numerami grobów, integracja z serwisami drzew genealogicznych. Możliwość opieki nad grobami, zamawiania dodatkowych usług i miejsc na prywatnych cmentarzach. Nietypowe formy pochówku i cmentarze dla zwierząt. Nawigacja do grobów, integracja z danymi cmentarza. Możliwość płacenia online. Możliwość zamawiania zniczy online. Starzejące się społeczeństwo wymaga nowych rozwiązań dla pamięci zmarłych.
