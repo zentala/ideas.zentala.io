@@ -19,7 +19,7 @@ const postsDir = path.join(__dirname, '../src/content/posts');
 const draftsDir = path.join(__dirname, '../src/content/drafts');
 const sourceDir = path.join(__dirname, '../posts'); // Legacy posts directory
 const workspaceDir = path.join(__dirname, '../workspace'); // Workspace for interactive editing
-const taxonomyPath = path.join(__dirname, '../src/content/taxonomy.json');
+const taxonomyPath = path.join(__dirname, '../src/data/taxonomy.json');
 
 // Create readline interface for user interaction
 const rl = readline.createInterface({

@@ -78,8 +78,8 @@ npm run content-pipeline
 - Tags allow grouping related ideas across languages
 - Each post can have multiple tags in its native language
 - A bilingual taxonomy maps tags between languages
-- The taxonomy is stored in `src/content/taxonomy.json`
-- Post history is cached in `src/content/post-history.json`
+- The taxonomy is stored in `src/data/taxonomy.json`
+- Post history is cached in `src/data/post-history.json`
 - Tags can be browsed at `/tags`
 
 ## Post Frontmatter Fields

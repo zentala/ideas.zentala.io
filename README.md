@@ -152,7 +152,7 @@ This will:
 1. Analyze all posts to understand common themes and topics
 2. Create a consistent taxonomy of 20-30 primary tags
 3. Apply appropriate tags to each post (ensuring related content shares tags)
-4. Save the taxonomy definition to `src/content/taxonomy.json`
+4. Save the taxonomy definition to `src/data/taxonomy.json`
 
 #### Post History Tracking
 

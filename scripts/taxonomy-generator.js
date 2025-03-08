@@ -14,6 +14,7 @@ const openai = new OpenAI({
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const postsDir = path.join(__dirname, '../src/content/posts');
+const taxonomyPath = path.join(__dirname, '../src/data/taxonomy.json');
 
 /**
  * Extract titles and short summaries of all posts
@@ -243,9 +244,12 @@ async function updatePostsWithTaxonomy(taxonomy) {
       }
     }
     
+    // Ensure data directory exists
+    await fs.mkdir(path.dirname(taxonomyPath), { recursive: true });
+    
     // Save the taxonomy definition for future reference
     await fs.writeFile(
-      path.join(__dirname, '../src/content/taxonomy.json'), 
+      taxonomyPath, 
       JSON.stringify({
         bilingualTags: taxonomy.bilingualTags,
         synonymMap
@@ -253,7 +257,7 @@ async function updatePostsWithTaxonomy(taxonomy) {
       'utf-8'
     );
     
-    console.log('Bilingual taxonomy definition saved to src/content/taxonomy.json');
+    console.log(`Bilingual taxonomy definition saved to ${taxonomyPath}`);
   } catch (error) {
     console.error('Error updating posts with taxonomy:', error);
   }

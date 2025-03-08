@@ -7,7 +7,7 @@ import { promisify } from 'util';
 const execPromise = promisify(exec);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const postsDir = path.join(__dirname, '../src/content/posts');
-const historyCache = path.join(__dirname, '../src/content/post-history.json');
+const historyCache = path.join(__dirname, '../src/data/post-history.json');
 
 /**
  * Get file history from git log
@@ -65,6 +65,9 @@ async function loadHistoryCache() {
  * Save the history cache
  */
 async function saveHistoryCache(cache) {
+  // Ensure data directory exists
+  await fs.mkdir(path.dirname(historyCache), { recursive: true });
+  
   await fs.writeFile(historyCache, JSON.stringify(cache, null, 2), 'utf-8');
   console.log(`History cache saved to ${historyCache}`);
 }
