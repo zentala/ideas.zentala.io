@@ -22,18 +22,52 @@ if (isDev) {
 // Include all posts regardless of language
 const languageFilteredPosts = [...posts, ...drafts];
 
-// Get all unique tags without normalization
+// Polish to English mapping for common tags
+const plToEnMapping = {
+  "platforma samochodowa": "car platform",
+  "części samochodowe": "car parts", 
+  "subskrypcja": "subscription",
+  "geolokalizacja": "geolocation",
+  "zdjęcia aut": "car photos",
+  "ogłoszenia": "listings",
+  "pomysły": "ideas",
+  "innowacje": "innovations",
+  "produkty": "products",
+  "usługi": "services",
+  "startup": "startup",
+  "aplikacja": "application",
+  "technologia": "technology",
+  "motoryzacja": "automotive",
+  "internet rzeczy": "IoT",
+  "uczenie maszynowe": "machine learning",
+  "biznes": "business",
+  "przedsiębiorczość": "entrepreneurship",
+  "prototyp": "prototype",
+  "inwestycje": "investments",
+  "edukacja": "education",
+  "rozrywka": "entertainment",
+  "społeczność": "community",
+  "media społecznościowe": "social media"
+};
+
+// Get all unique tags and translate Polish tags to English
 const allTags = languageFilteredPosts
-  .flatMap(post => post.data.tags || []);
+  .flatMap(post => post.data.tags || [])
+  .map(tag => plToEnMapping[tag] || tag);
 
 const tags = [...new Set(allTags)].sort();
 
-// Count posts per tag
+// Count posts per tag (considering both English and Polish versions)
 const tagCounts = tags.reduce((acc, tag) => {
+  // Get the Polish equivalent of this tag if it exists
+  const polishTag = Object.entries(plToEnMapping).find(([pl, en]) => en === tag)?.[0];
+  
   acc[tag] = languageFilteredPosts
     .filter(post => {
       if (!post.data.tags) return false;
-      return post.data.tags.includes(tag);
+      // Match either the English tag or its Polish equivalent
+      return post.data.tags.includes(tag) || 
+             (polishTag && post.data.tags.includes(polishTag));
     })
     .length;
   return acc;

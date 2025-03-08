@@ -54,6 +54,40 @@ export function getPostsByTag(posts, tag) {
   // Find all synonyms for this tag
   const synonyms = new Set([tag, canonicalTag]);
   
+  // Polish to English mapping for common tags
+  const plToEnMapping = {
+    "platforma samochodowa": "car platform",
+    "części samochodowe": "car parts",
+    "subskrypcja": "subscription",
+    "geolokalizacja": "geolocation",
+    "zdjęcia aut": "car photos",
+    "ogłoszenia": "listings",
+    "pomysły": "ideas",
+    "innowacje": "innovations",
+    "produkty": "products",
+    "usługi": "services",
+    "startup": "startup",
+    "aplikacja": "application",
+    "technologia": "technology",
+    "motoryzacja": "automotive",
+    "internet rzeczy": "IoT",
+    "uczenie maszynowe": "machine learning",
+    "biznes": "business",
+    "przedsiębiorczość": "entrepreneurship",
+    "prototyp": "prototype",
+    "inwestycje": "investments",
+    "edukacja": "education",
+    "rozrywka": "entertainment",
+    "społeczność": "community",
+    "media społecznościowe": "social media"
+  };
+  
+  // Add English equivalents of Polish tags
+  Object.entries(plToEnMapping).forEach(([pl, en]) => {
+    if (tag === en) synonyms.add(pl);
+    if (tag === pl) synonyms.add(en);
+  });
+  
   // Find all posts containing any of the synonyms
   return posts.filter(post => {
     if (!post.data || !post.data.tags) return false;

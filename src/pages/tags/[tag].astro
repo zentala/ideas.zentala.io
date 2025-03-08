@@ -33,8 +33,38 @@ export async function getStaticPaths() {
   
   const allPosts = [...posts, ...drafts];
   
-  // Get all unique tags including synonyms
-  const allTags = allPosts.flatMap(post => post.data.tags || []);
+  // Polish to English mapping for common tags
+  const plToEnMapping = {
+    "platforma samochodowa": "car platform",
+    "części samochodowe": "car parts", 
+    "subskrypcja": "subscription",
+    "geolokalizacja": "geolocation",
+    "zdjęcia aut": "car photos",
+    "ogłoszenia": "listings",
+    "pomysły": "ideas",
+    "innowacje": "innovations",
+    "produkty": "products",
+    "usługi": "services",
+    "startup": "startup",
+    "aplikacja": "application",
+    "technologia": "technology",
+    "motoryzacja": "automotive",
+    "internet rzeczy": "IoT",
+    "uczenie maszynowe": "machine learning",
+    "biznes": "business",
+    "przedsiębiorczość": "entrepreneurship",
+    "prototyp": "prototype",
+    "inwestycje": "investments",
+    "edukacja": "education",
+    "rozrywka": "entertainment",
+    "społeczność": "community",
+    "media społecznościowe": "social media"
+  };
+
+  // Get all unique tags including synonyms, translate Polish tags to English
+  const allTags = allPosts
+    .flatMap(post => post.data.tags || [])
+    .map(tag => plToEnMapping[tag] || tag);
   const uniqueTags = [...new Set(allTags)];
   
   // Also add all canonical tags from the taxonomy
@@ -47,8 +77,13 @@ export async function getStaticPaths() {
   
   // Generate a path for each tag
   return [...new Set(uniqueTags)].map(tag => {
+    // For Polish tags, generate paths for their English equivalents too
+    const isPolishTag = Object.keys(plToEnMapping).includes(tag);
+    const englishTag = isPolishTag ? plToEnMapping[tag] : tag;
+    const tagToUse = isPolishTag ? englishTag : tag;
+    
     // Get all posts that match this tag or its synonyms
-    const matchingPosts = getPostsByTag(allPosts, tag);
+    const matchingPosts = getPostsByTag(allPosts, tagToUse);
     
     // Get tag description in both languages
     let tagInfo = { en: '', pl: '' };
@@ -82,6 +117,37 @@ const { posts, tagInfo } = Astro.props;
 // Set English as the only language
 const currentLanguage = 'en';
 
+// Polish to English mapping for common tags
+const plToEnMapping = {
+  "platforma samochodowa": "car platform",
+  "części samochodowe": "car parts", 
+  "subskrypcja": "subscription",
+  "geolokalizacja": "geolocation",
+  "zdjęcia aut": "car photos",
+  "ogłoszenia": "listings",
+  "pomysły": "ideas",
+  "innowacje": "innovations",
+  "produkty": "products",
+  "usługi": "services",
+  "startup": "startup",
+  "aplikacja": "application",
+  "technologia": "technology",
+  "motoryzacja": "automotive",
+  "internet rzeczy": "IoT",
+  "uczenie maszynowe": "machine learning",
+  "biznes": "business",
+  "przedsiębiorczość": "entrepreneurship",
+  "prototyp": "prototype",
+  "inwestycje": "investments",
+  "edukacja": "education",
+  "rozrywka": "entertainment",
+  "społeczność": "community",
+  "media społecznościowe": "social media"
+};
+
+// Get English equivalent of tag if it's Polish
+const displayTag = plToEnMapping[tag] || tag;
+
 // Include all posts regardless of language
 const languageFilteredPosts = posts;
 
@@ -104,7 +170,7 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
   <div class="container mx-auto px-4">
     <header class="border-b border-white/10 pb-8 mb-12">
       <h1 class="text-4xl font-bold mb-4 text-center font-['Playfair_Display']">
-        Ideas tagged with <span class="text-[#5b34da]">{tag}</span>
+        Ideas tagged with <span class="text-[#5b34da]">{displayTag}</span>
       </h1>
       
       {(tagInfo.en || tagInfo.pl) && (

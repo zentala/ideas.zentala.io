@@ -3,10 +3,10 @@ title: "AutoSzrot"
 description: "Platform for car parts and vehicles subscriptions with geolocation feature and photos"
 
 pubDate: "2025-03-08"
-tags: ["innowacje", "pomysły", "platforma", "części samochodowe", "geolokalizacja", "subskrypcja", "zdjęcia"]
+tags: ["AutoSzrot", "platforma samochodowa", "części samochodowe", "subskrypcja", "geolokalizacja", "zdjęcia aut", "ogłoszenia"]
 created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T15:09:08.000Z"
-edits: 3
+modified: "2025-03-08T16:46:44.000Z"
+edits: 4
 language: "pl"
 ---
 

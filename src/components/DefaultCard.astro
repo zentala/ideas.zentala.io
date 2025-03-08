@@ -11,8 +11,36 @@ interface Props {
 
 const { title, description, image, url, tags = [], isDraft = false } = Astro.props;
 
-// Use tags directly without normalization
-const normalizedTags = tags;
+// Polish to English mapping for common tags
+const plToEnMapping = {
+  "platforma samochodowa": "car platform",
+  "części samochodowe": "car parts",
+  "subskrypcja": "subscription",
+  "geolokalizacja": "geolocation",
+  "zdjęcia aut": "car photos",
+  "ogłoszenia": "listings",
+  "pomysły": "ideas",
+  "innowacje": "innovations",
+  "produkty": "products",
+  "usługi": "services",
+  "startup": "startup",
+  "aplikacja": "application",
+  "technologia": "technology",
+  "motoryzacja": "automotive",
+  "internet rzeczy": "IoT",
+  "uczenie maszynowe": "machine learning",
+  "biznes": "business",
+  "przedsiębiorczość": "entrepreneurship",
+  "prototyp": "prototype",
+  "inwestycje": "investments",
+  "edukacja": "education",
+  "rozrywka": "entertainment",
+  "społeczność": "community",
+  "media społecznościowe": "social media"
+};
+
+// Translate Polish tags to English
+const normalizedTags = tags.map(tag => plToEnMapping[tag] || tag);
 ---
 
 <a 
