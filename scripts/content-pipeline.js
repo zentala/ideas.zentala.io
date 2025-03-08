@@ -59,21 +59,68 @@ async function runPipeline(filePath) {
 
 /**
  * Detect language of post content
- * Basic detection based on common Polish words
+ * Uses a more sophisticated approach to distinguish between Polish and English
  */
 function detectLanguage(content) {
-  // Polish common words and characters
-  const polishMarkers = ['jest', 'są', 'będzie', 'może', 'nie', 'tak', 'dla', 'jako', 'to', 'się', 'na', 'ą', 'ę', 'ó', 'ś', 'ć', 'ż', 'ź', 'ł'];
+  // Check if language is already set in frontmatter
+  const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+  if (frontmatterMatch) {
+    const langMatch = frontmatterMatch[1].match(/language: ["']([^"']*)["']/);
+    if (langMatch && (langMatch[1] === 'pl' || langMatch[1] === 'en')) {
+      return langMatch[1];
+    }
+  }
+
+  // Strongly Polish-specific words (at least 3 letters) and characters
+  const uniquePolishMarkers = ['będzie', 'są', 'można', 'także', 'również', 'więc', 'których', 'bardzo', 'został', 'między', 
+    'tylko', 'przez', 'wszystkich', 'mógł', 'został', 'według', 'rzeczy', 'właśnie', 'chciał', 
+    'każdy', 'jeszcze', 'ponieważ', 'podczas', 'później', 'zawsze', 'zlokalizowany'];
   
-  // Count occurrences of Polish markers
-  const polishCount = polishMarkers.reduce((count, word) => {
-    const regex = new RegExp(`\\b${word}\\b|${word}`, 'gi');
-    const matches = content.match(regex);
-    return count + (matches ? matches.length : 0);
-  }, 0);
-  
-  // If we have more than 5 Polish markers, assume it's Polish
-  return polishCount > 5 ? 'pl' : 'en';
+  // Common Polish words (at least 3 letters)
+  const commonPolishWords = ['jest', 'nie', 'tak', 'dla', 'jako', 'się', 'ale', 'tego', 'jego', 'ich', 'przy', 'nad', 'pod'];
+
+  // Polish special characters - checking separately
+  const polishChars = ['ą', 'ę', 'ó', 'ś', 'ć', 'ż', 'ź', 'ł'];
+  let polishCharsCount = 0;
+  for (const char of polishChars) {
+    const regex = new RegExp(char, 'gi');
+    const matches = content.match(regex) || [];
+    polishCharsCount += matches.length;
+  }
+
+  // If we have several Polish characters, it's very likely Polish
+  if (polishCharsCount > 5) {
+    return 'pl';
+  }
+
+  // Count occurrences of unique Polish markers
+  let uniquePolishCount = 0;
+  for (const word of uniquePolishMarkers) {
+    const regex = new RegExp(`\\b${word}\\b`, 'gi');
+    const matches = content.match(regex) || [];
+    uniquePolishCount += matches.length;
+  }
+
+  // If we have any unique Polish markers, it's likely Polish
+  if (uniquePolishCount > 1) {
+    return 'pl';
+  }
+
+  // Count occurrences of common Polish words
+  let commonPolishCount = 0;
+  for (const word of commonPolishWords) {
+    const regex = new RegExp(`\\b${word}\\b`, 'gi'); // Match only whole words
+    const matches = content.match(regex) || [];
+    commonPolishCount += matches.length;
+  }
+
+  // Only if we have a high number of common Polish words
+  if (commonPolishCount > 10) {
+    return 'pl';
+  }
+
+  // If not meeting the criteria, assume it's English
+  return 'en';
 }
 
 /**

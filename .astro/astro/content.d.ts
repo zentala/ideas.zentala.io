@@ -215,6 +215,13 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
+"cemetery-map.md": {
+	id: "cemetery-map.md";
+  slug: "cemetery-map";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "clean-my-forest.md": {
 	id: "clean-my-forest.md";
   slug: "clean-my-forest";
@@ -302,13 +309,6 @@ declare module 'astro:content' {
 "iot-smarthome-products.md": {
 	id: "iot-smarthome-products.md";
   slug: "iot-smarthome-products";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
-"mapa-cmentarzy.md": {
-	id: "mapa-cmentarzy.md";
-  slug: "mapa-cmentarzy";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
