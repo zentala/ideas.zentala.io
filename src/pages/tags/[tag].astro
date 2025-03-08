@@ -55,12 +55,12 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
 >
   <div class="container mx-auto px-4">
     <header class="border-b border-white/10 pb-8 mb-12">
-      <h1 class="text-4xl font-bold mb-4 text-center font-['Space_Grotesk']">
+      <h1 class="text-4xl font-bold mb-4 text-center font-['Playfair_Display']">
         Ideas tagged with <span class="text-[#5b34da]">{tag}</span>
       </h1>
       <p class="text-center text-white/70 mb-6">Found {sortedPosts.length} idea{sortedPosts.length !== 1 ? 's' : ''}</p>
       <div class="flex justify-center">
-        <a href="/tags" class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm rounded-md border border-white/10 
+        <a href="/tags" class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 
           hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
           ← Back to all tags
         </a>
@@ -96,7 +96,7 @@ const customCardComponents = import.meta.glob('../../components/custom-cards/*.{
     </div>
     
     <div class="text-center mt-12 pt-8 border-t border-white/10">
-      <a href="/tags" class="inline-block px-6 py-3 bg-[#5b34da] text-white rounded-md hover:bg-[#4a2ab8] transition-colors">
+      <a href="/tags" class="inline-block px-6 py-3 bg-[#5b34da] text-white border border-[#5b34da]/50 hover:bg-[#4a2ab8] transition-colors">
         View All Tags
       </a>
     </div>

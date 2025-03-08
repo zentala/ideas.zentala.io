@@ -14,12 +14,12 @@ const { title, description, image, url, tags = [], isDraft = false } = Astro.pro
 <a 
   href={url} 
   class={`
-    relative card flex flex-col bg-[#1a1a1a] border border-white/10 rounded-lg overflow-hidden transition-all duration-300 hover:border-[#5b34da]
+    relative card flex flex-col bg-[#1a1a1a] border border-white/10 overflow-hidden transition-all duration-300 hover:border-[#5b34da]
     ${isDraft ? 'opacity-85' : ''}
   `}
 >
   {isDraft && (
-    <div class="absolute top-2 right-2 bg-yellow-900/50 text-yellow-200 text-xs px-2 py-1 rounded border border-yellow-500/50 z-10">
+    <div class="absolute top-0 right-0 bg-yellow-900/50 text-yellow-200 text-xs px-2 py-1 border-l border-b border-yellow-500/50 z-10">
       Draft
     </div>
   )}
@@ -37,7 +37,7 @@ const { title, description, image, url, tags = [], isDraft = false } = Astro.pro
   )}
   
   <div class="card-content p-5 flex-1 flex flex-col">
-    <h3 class="text-xl font-bold mb-3 text-white font-['Space_Grotesk']">{title}</h3>
+    <h3 class="text-xl font-bold mb-3 text-white font-['Playfair_Display']">{title}</h3>
     
     {description && (
       <p class="text-white/80 text-sm mb-4 flex-1">{description}</p>
@@ -46,12 +46,12 @@ const { title, description, image, url, tags = [], isDraft = false } = Astro.pro
     {tags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-auto">
         {tags.slice(0, 3).map(tag => (
-          <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs rounded-md border border-white/5 hover:bg-[#3a3a3a] transition-colors">
+          <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5 hover:bg-[#3a3a3a] transition-colors">
             {tag}
           </span>
         ))}
         {tags.length > 3 && (
-          <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs rounded-md border border-white/5">
+          <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5">
             +{tags.length - 3}
           </span>
         )}

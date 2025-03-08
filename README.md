@@ -79,9 +79,9 @@ If you have posts in the root `posts/` directory, you can convert them to the ne
 npm run convert-posts
 ```
 
-### AI Tag Generation
+### AI-Powered Content Enhancement
 
-The project includes an AI-powered tag generation system using OpenAI's API.
+The project includes AI-powered content enhancement using OpenAI's API:
 
 #### Setup
 
@@ -92,19 +92,35 @@ The project includes an AI-powered tag generation system using OpenAI's API.
 OPENAI_API_KEY=your-api-key-here
 ```
 
-#### Usage
+#### Content Taxonomy System
 
-To generate tags for a specific post:
-
-```bash
-npm run generate-tags path/to/your/post.md
-```
-
-To generate tags for all posts:
+The taxonomy generator creates a consistent tagging system across all posts:
 
 ```bash
-npm run generate-tags:all
+npm run generate-taxonomy
 ```
+
+This will:
+1. Analyze all posts to understand common themes and topics
+2. Create a consistent taxonomy of 20-30 primary tags
+3. Apply appropriate tags to each post (ensuring related content shares tags)
+4. Save the taxonomy definition to `src/content/taxonomy.json`
+
+#### Individual Post Enhancement
+
+For enhancing individual posts:
+
+```bash
+npm run enhance-post path/to/your/post.md
+```
+
+To enhance all posts:
+
+```bash
+npm run enhance-all
+```
+
+These commands improve post formatting, fix typos, and generate appropriate tags.
 
 ## Styling and Customization
 

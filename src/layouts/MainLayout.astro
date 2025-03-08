@@ -17,6 +17,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" href="https://id.zentala.io/favicon-32x32.6344800f.png" />
     
     <title>{title} | Innovations & Ideas by Paweł Zentala</title>
     <meta name="description" content={description} />
@@ -24,7 +25,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -50,19 +51,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       }
       
       html {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         background-color: var(--bg-color);
         color: var(--text-color);
       }
       
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Playfair Display', serif;
         font-weight: 600;
         line-height: 1.2;
+        letter-spacing: -0.02em;
       }
       
       pre, code {
-        font-family: 'JetBrains Mono', monospace;
+        font-family: 'Fira Code', monospace;
       }
       
       .prose {
@@ -80,7 +82,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       .prose pre {
         background-color: var(--code-bg);
         border: 1px solid var(--border-color);
-        border-radius: 0.375rem;
+        border-radius: 0;
         padding: 1rem;
         overflow-x: auto;
         margin: 1.5rem 0;
@@ -89,7 +91,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       .prose code {
         background-color: var(--code-bg);
         padding: 0.2rem 0.4rem;
-        border-radius: 0.25rem;
+        border-radius: 0;
         font-size: 0.875em;
       }
       
@@ -123,7 +125,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       
       .card {
         border: 1px solid var(--border-color);
-        border-radius: 8px;
         overflow: hidden;
         transition: all 0.3s ease;
       }
@@ -138,7 +139,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <body class={`min-h-screen bg-[#0f0f0f] text-white ${isDraft ? 'opacity-85' : ''}`}>
     <header class="border-b border-white/10 py-6">
       <div class="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-bold font-['Space_Grotesk']">
+        <a href="/" class="text-2xl font-bold font-['Playfair_Display']">
           <span class="text-[#5b34da]">Innovations</span> & Ideas <span class="text-[#5b34da]">by Paweł Zentala</span>
         </a>
         <nav>

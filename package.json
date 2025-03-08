@@ -9,8 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "convert-posts": "node scripts/convert-posts.js",
-    "generate-tags": "node scripts/generate-tags.js",
-    "generate-tags:all": "node scripts/generate-tags.js"
+    "enhance-post": "node scripts/generate-tags.js",
+    "enhance-all": "node scripts/generate-tags.js",
+    "generate-taxonomy": "node scripts/taxonomy-generator.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
