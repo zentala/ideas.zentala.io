@@ -1,10 +1,7 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages [DEPRECATED]
 
 on:
-  # Uruchom w przypadku każdego pushu do gałęzi main
-  push:
-    branches: [ main ]
-  # Pozwala na ręczne uruchomienie z zakładki Actions
+  # No triggers - this workflow is deprecated
   workflow_dispatch:
 
 # Zezwól na klonowanie repozytorium i wdrażanie na GitHub Pages

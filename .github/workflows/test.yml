@@ -1,11 +1,10 @@
-name: Playwright Tests
+name: Playwright Tests [DEPRECATED]
 
 on:
-  push:
-    branches: [ main ]
+  # Only run on pull requests, as test-and-deploy handles main branch
   pull_request:
     branches: [ main ]
-  # Pozwala na ręczne uruchomienie z zakładki Actions
+  # Allow manual trigger
   workflow_dispatch:
 
 jobs:
