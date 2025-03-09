@@ -8,7 +8,11 @@ export default defineConfig({
   site: 'https://ideas.zentala.io',
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.includes('/api/'),
+      changefreq: 'weekly',
+      lastmod: new Date(),
+    }),
     tailwind(),
     react(),
   ],
