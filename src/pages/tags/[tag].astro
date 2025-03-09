@@ -6,19 +6,19 @@ import { normalizeTag, getPostsByTag } from "../../utils.js";
 import fs from 'fs';
 import path from 'path';
 
-// Load taxonomy if it exists
-let taxonomy = { bilingualTags: {}, synonymMap: {} };
-try {
-  const taxonomyPath = path.join(process.cwd(), 'src/data/taxonomy.json');
-  if (fs.existsSync(taxonomyPath)) {
-    taxonomy = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
-  }
-} catch (error) {
-  console.warn('Could not load taxonomy:', error);
-}
-
 // Generate static paths for all tags
 export async function getStaticPaths() {
+  // Load taxonomy if it exists
+  let taxonomy = { bilingualTags: {}, synonymMap: {} };
+  try {
+    const taxonomyPath = path.join(process.cwd(), 'src/data/taxonomy.json');
+    if (fs.existsSync(taxonomyPath)) {
+      taxonomy = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
+    }
+  } catch (error) {
+    console.warn('Could not load taxonomy:', error);
+  }
+
   const posts = await getCollection('posts');
   
   // Try to get drafts, but handle the case when the collection doesn't exist
@@ -71,7 +71,8 @@ export async function getStaticPaths() {
       params: { tag },
       props: { 
         posts: matchingPosts,
-        tagInfo
+        tagInfo,
+        taxonomy // Przekazujemy taxonomy jako prop
       }
     };
   });
@@ -79,13 +80,13 @@ export async function getStaticPaths() {
 
 // Get the tag from params and filtered posts from props
 const { tag } = Astro.params;
-const { posts, tagInfo } = Astro.props;
+const { posts, tagInfo, taxonomy } = Astro.props;
 
 // Set English as the only language
 const currentLanguage = 'en';
 
 // Get English equivalent of tag if it's Polish
-const displayTag = (taxonomy.synonymMap && taxonomy.synonymMap[tag]) || tag;
+const displayTag = (taxonomy && taxonomy.synonymMap && taxonomy.synonymMap[tag]) || tag;
 
 // Include all posts regardless of language
 const languageFilteredPosts = posts;
