@@ -23,7 +23,7 @@ if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
 }
 
-// Copy sitemap files if they exist
+// Copy and potentially modify sitemap files
 try {
   const sitemapFiles = [
     'sitemap-index.xml',
@@ -36,12 +36,27 @@ try {
     const destPath = path.join(publicDir, file);
     
     if (fs.existsSync(srcPath)) {
-      fs.copyFileSync(srcPath, destPath);
+      // Read the file content
+      let content = fs.readFileSync(srcPath, 'utf8');
+      
+      // We'll keep the original URLs in the XML files
+      // This is intentional, as the production URLs are often better for search engines
+      
+      // Write the file to the public directory
+      fs.writeFileSync(destPath, content);
       console.log(`Copied ${file} to public directory`);
       copiedFiles++;
     } else {
       console.warn(`Warning: ${file} not found in dist directory`);
     }
+  }
+  
+  // Create a development-specific version that uses local URLs
+  if (fs.existsSync(path.join(distDir, 'sitemap-0.xml'))) {
+    const content = fs.readFileSync(path.join(distDir, 'sitemap-0.xml'), 'utf8');
+    const devContent = content.replace(/https:\/\/ideas\.zentala\.io\//g, '/');
+    fs.writeFileSync(path.join(publicDir, 'dev-sitemap-0.xml'), devContent);
+    console.log('Created development-specific sitemap at /dev-sitemap-0.xml');
   }
   
   if (copiedFiles > 0) {

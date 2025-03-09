@@ -12,6 +12,14 @@ export default defineConfig({
       filter: (page) => !page.includes('/api/'),
       changefreq: 'weekly',
       lastmod: new Date(),
+      serialize(item) {
+        // Dokładamy tutaj dodatkowe informacje
+        return {
+          ...item,
+          // Jeśli jest to strona z postami, oznaczamy ją jako ważniejszą
+          priority: item.url.includes('/posts/') ? 0.9 : 0.7,
+        }
+      }
     }),
     tailwind(),
     react(),
