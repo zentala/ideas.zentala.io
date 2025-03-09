@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 
 export default defineConfig({
-  site: 'https://ideas.zentala.agency',
+  site: 'https://ideas.zentala.io',
   integrations: [
     mdx(),
     sitemap(),
