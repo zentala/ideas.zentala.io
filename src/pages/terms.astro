@@ -19,6 +19,37 @@ const currentLanguage = 'en';
       </header>
       
       <div class="prose prose-2xl prose-invert max-w-none">
+        <style is:global>
+          /* Zastosuj te same style co w postach */
+          .prose h2 {
+            margin-top: 4rem;
+            margin-bottom: 2.25rem;
+            font-size: 2.4rem;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 1rem;
+            max-width: 95%;
+          }
+          
+          .prose h3 {
+            margin-top: 3rem;
+            margin-bottom: 1.75rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e5e5e5;
+            max-width: 90%;
+          }
+          
+          .prose p {
+            margin-top: 1.75rem;
+            margin-bottom: 1.75rem;
+            line-height: 1.95;
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 90%;
+          }
+        </style>
+        
         <h2>1. Acceptance of Terms</h2>
         <p>
           By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these terms, please do not use this website.

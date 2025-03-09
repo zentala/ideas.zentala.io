@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "node scripts/generate-local-sitemap.js && astro dev",
+    "start": "node scripts/generate-local-sitemap.js && astro dev",
     "build": "astro build && node scripts/copy-sitemap.js",
     "preview": "astro preview",
     "astro": "astro",
@@ -22,7 +22,8 @@
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "generate-test": "node scripts/generate-post-test.js",
-    "copy-sitemap": "node scripts/copy-sitemap.js"
+    "copy-sitemap": "node scripts/copy-sitemap.js",
+    "generate-local-sitemap": "node scripts/generate-local-sitemap.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
