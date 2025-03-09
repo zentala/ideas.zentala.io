@@ -22,8 +22,8 @@ test.describe('Tags functionality', () => {
     await expect(page.url()).toContain('/tags/');
     
     // Verify posts with this tag are displayed
-    const heading = page.locator('h1');
-    await expect(heading).toBeVisible();
+    const pageTitle = page.locator('h1:has-text("Ideas tagged with")');
+    await expect(pageTitle).toBeVisible();
     
     // Na tej stronie wystarczy sprawdzić, czy nagłówek jest widoczny
     // ponieważ struktura strony z tagami może się różnić

@@ -13,7 +13,7 @@ test.describe('Posts functionality', () => {
     await expect(postContent).toBeVisible();
     
     // Verify post title is present
-    const postTitle = page.locator('h1');
+    const postTitle = page.locator('article h1');
     await expect(postTitle).toBeVisible();
   });
 
