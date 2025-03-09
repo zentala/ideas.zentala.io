@@ -94,3 +94,26 @@ modified: "2023-02-15T15:30:00.000Z" # Latest commit date (from git)
 edits: 7  # Number of commits that modified this file
 ---
 ```
+
+## Testing
+The project includes automated GUI tests using Playwright.
+
+```bash
+# Install Playwright browsers (first time only)
+npx playwright install
+
+# Run all tests
+npm run test
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests with visible browser
+npm run test:headed
+
+# Run tests in debug mode
+npm run test:debug
+
+# Generate test for a specific post
+npm run generate-test [post-slug]
+```
