@@ -117,3 +117,23 @@ npm run test:debug
 # Generate test for a specific post
 npm run generate-test [post-slug]
 ```
+
+## Development Workflow Best Practices
+
+### Pre-Commit Testing
+- Always run tests before committing changes to verify functionality
+- Update existing tests or create new ones to cover your changes
+- Make sure all tests pass before submitting a pull request
+- Run `npm run build` to ensure the site builds successfully
+
+### Test-Driven Updates
+- When fixing bugs, first write a test that reproduces the issue
+- When adding features, write tests that validate the new functionality
+- Update tests when UI or functionality changes significantly
+- Ensure your changes don't break existing tests or site features
+
+### Code Quality Checks
+- Run `npm run build` to verify the site builds without errors
+- Check broken links and site navigation after making layout changes
+- Verify site appearance on both desktop and mobile viewports
+- Ensure any new pages are included in the sitemap
