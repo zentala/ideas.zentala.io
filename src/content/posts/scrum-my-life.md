@@ -3,7 +3,7 @@ title: "scrum my life"
 description: "Personal project management tool with chatbot coaching for tasks, habits, and goals"
 
 pubDate: "2025-03-08"
-tags: ["education-and-training", "urban-development", "agriculture"]
+tags: ["productivity-tools", "personal-development-and-lifestyle", "education-and-training"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

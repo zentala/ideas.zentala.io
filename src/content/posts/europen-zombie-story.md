@@ -3,7 +3,7 @@ title: "Fortress Europe: A Zombie Apocalypse Story"
 description: "A tale of survival and unity in a European zombie apocalypse with community resilience and innovative technology"
 
 pubDate: "2025-03-08"
-tags: ["data-management-and-security", "artificial-intelligence", "urban-development"]
+tags: ["entertainment-and-media", "social-innovation", "technology"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

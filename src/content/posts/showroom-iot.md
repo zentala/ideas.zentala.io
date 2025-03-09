@@ -3,7 +3,7 @@ title: "showroom iot"
 description: "Explore showroom IoT solutions for industrial growth and innovation"
 
 pubDate: "2025-03-08"
-tags: ["digital-platforms", "sustainability", "environmental-protection"]
+tags: ["digital-platforms", "technology", "innovation"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

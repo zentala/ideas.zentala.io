@@ -3,7 +3,7 @@ title: "sodkowa europa informatycy"
 description: "Challenges faced by local businesses in utilizing IT talent effectively and suggestions for improvement"
 
 pubDate: "2025-03-08"
-tags: ["e-commerce", "micro-payments", "data-management-and-security"]
+tags: ["business-and-commerce", "technology", "education-and-training"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

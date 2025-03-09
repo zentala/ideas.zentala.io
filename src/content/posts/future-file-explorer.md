@@ -3,7 +3,7 @@ title: "future file explorer"
 description: "AI-powered file explorer, cloud integration, NAS OS, data synchronization, remote work, cloud backup, gaming services, AI servers"
 
 pubDate: "2025-03-08"
-tags: ["remote-work", "micro-payments", "urban-development"]
+tags: ["technology", "data-management-and-security", "remote-work"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 6

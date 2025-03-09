@@ -3,7 +3,7 @@ title: "Overview "
 description: "Enhance Backstage.io Developer Portal with toolbox, library, and support plugins"
 
 pubDate: "2025-03-08"
-tags: ["health-and-wellness", "environmental-protection", "education-and-training"]
+tags: ["technology", "education-and-training", "digital-platforms"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

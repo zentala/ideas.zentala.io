@@ -3,7 +3,7 @@ title: "franczyza mechaniczna"
 description: "Sieć mechaników co ma wspólny sklep z częściami, wspólne informacje diagnostyczne i aplikacje do tego, dookoła niej forum, połączone ze sklepem aby wiedzieli sz..."
 
 pubDate: "2025-03-08"
-tags: ["health-and-wellness", "hospitality", "social-innovation"]
+tags: ["automotive", "business-and-commerce", "technology"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

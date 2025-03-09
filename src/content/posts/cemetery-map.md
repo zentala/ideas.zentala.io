@@ -2,11 +2,11 @@
 title: "Cemetery Map – Digital Memory and Care for Loved Ones"
 description: "A digital platform for preserving memories of deceased loved ones and their burial places using 3D mapping, AR navigation, and multimedia grave profiles."
 pubDate: "2025-03-08"
-tags: ["personal-development-and-lifestyle", "social-innovation", "sustainability"]
+tags: ["digital-platforms", "technology", "social-innovation"]
 language: "en"
-created: "2025-03-08T14:57:57.000Z"
-modified: "2025-03-08T18:04:53.000Z"
-edits: 0
+created: "2025-03-08T22:25:41.000Z"
+modified: "2025-03-08T22:25:41.000Z"
+edits: 1
 ---
 
 # Cemetery Map – Digital Memory and Care for Loved Ones

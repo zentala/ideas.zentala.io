@@ -3,7 +3,7 @@ title: "Robotic Management System"
 description: "A GUI-based configuration system for ROS (Robot Operating System) that simplifies robot setup, configuration, and management."
 
 pubDate: "2025-03-08"
-tags: ["environmental-protection", "community-and-culture", "energy-solutions"]
+tags: ["robotics", "technology", "environmental-protection"]
 created: "2025-03-08T18:04:53.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 1

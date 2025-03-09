@@ -3,7 +3,7 @@ title: "smart height adjustabe desk"
 description: "Innovative desk with smart health features"
 
 pubDate: "2025-03-08"
-tags: ["remote-work", "mobility-and-transport", "productivity-tools"]
+tags: ["productivity-tools", "health-and-wellness", "innovation"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

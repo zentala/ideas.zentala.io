@@ -3,7 +3,7 @@ title: "Robotyka"
 description: "Innovative robotics solutions for communal services and agriculture, addressing economic challenges and demographic shifts"
 
 pubDate: "2025-03-08"
-tags: ["health-and-wellness", "productivity-tools", "innovation"]
+tags: ["robotics", "innovation", "agriculture"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 7

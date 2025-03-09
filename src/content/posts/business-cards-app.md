@@ -3,7 +3,7 @@ title: "Business Cards App"
 description: "Virtual business card exchange via NFC with mobile app integration and event tracking."
 
 pubDate: "2025-03-08"
-tags: ["entertainment-and-media", "micro-payments", "health-and-wellness"]
+tags: ["digital-platforms", "technology", "business-and-commerce"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

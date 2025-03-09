@@ -3,7 +3,7 @@ title: "Semantic Bookmark Manager"
 description: "LLM-powered bookmark manager with semantic search, smart organization, and enhanced visuals"
 
 pubDate: "2025-03-08"
-tags: ["community-and-culture", "sustainability", "education-and-training"]
+tags: ["technology", "education-and-training", "digital-platforms"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 7

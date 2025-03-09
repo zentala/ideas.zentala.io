@@ -3,7 +3,7 @@ title: "Spots for Charging E-Scooters"
 description: "Enhance urban mobility with strategic public charging infrastructure for e-scooters and mobile devices."
 
 pubDate: "2025-03-08"
-tags: ["sustainability", "technology", "education-and-training"]
+tags: ["mobility-and-transport", "technology", "urban-development"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

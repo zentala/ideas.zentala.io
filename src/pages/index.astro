@@ -195,18 +195,16 @@ const tags = [...new Set(allTags)].sort();
         <!-- Tags section -->
         <div class="bg-[#1a1a1a] border border-white/10 p-8 rounded-lg">
           <h2 class="text-2xl md:text-3xl font-bold mb-6 font-['Playfair_Display'] text-white">
-            Browse by <span class="text-[#5b34da]">Tags</span>
+            Browse by <span class="text-[#5b34da]">Tags</span> 
+            <a href="/tags" class="text-[#5b34da] hover:underline text-lg ml-4">
+              View all {tags.length} tags →
+            </a>
           </h2>
           
           <div class="tag-cloud-wrapper">
             <TagCloud tags={tags} posts={posts} limit={30} client:load />
           </div>
           
-          <div class="mt-6 text-center">
-            <a href="/tags" class="text-[#5b34da] hover:underline text-lg">
-              View all {tags.length} tags →
-            </a>
-          </div>
         </div>
       </div>
     </div>

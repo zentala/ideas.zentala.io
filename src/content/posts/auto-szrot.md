@@ -3,7 +3,7 @@ title: "AutoSzrot"
 description: "Subscription-based platform connecting car owners with scrap yards for finding specific used parts with geolocation and photo verification"
 
 pubDate: "2025-03-08"
-tags: ["technology", "entertainment-and-media", "cybersecurity"]
+tags: ["technology", "automotive", "cybersecurity"]
 created: "2025-03-08T18:04:53.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 1

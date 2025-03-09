@@ -3,7 +3,7 @@ title: "customizable.com"
 description: "Platform offering customizable products with a focus on user experience and automation. Explore unique items tailored to your needs."
 
 pubDate: "2025-03-08"
-tags: ["education-and-training", "remote-work", "automotive"]
+tags: ["e-commerce", "technology", "innovation"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 6

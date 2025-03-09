@@ -3,7 +3,7 @@ title: "youtube"
 description: "Enhancing YouTube for seamless cross-device viewing and easy sharing"
 
 pubDate: "2025-03-08"
-tags: ["energy-solutions", "social-innovation", "sustainability"]
+tags: ["technology", "digital-platforms", "social-innovation"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 4

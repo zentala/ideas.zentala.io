@@ -3,7 +3,7 @@ title: "nas"
 description: "Tips for improving Synology NAS software usability"
 
 pubDate: "2025-03-08"
-tags: ["energy-solutions", "urban-development", "robotics"]
+tags: ["technology", "data-management-and-security", "digital-platforms"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

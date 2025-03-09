@@ -3,7 +3,7 @@ title: "iot rfid button"
 description: "Innovative RFiD tag with button for secure access control and minimalist lifestyle, offering convenience and premium appeal"
 
 pubDate: "2025-03-08"
-tags: ["automotive", "education-and-training", "energy-solutions"]
+tags: ["technology", "smart-home", "security"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 4

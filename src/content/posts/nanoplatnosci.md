@@ -3,7 +3,7 @@ title: "mikroplatnosci za artykuly i wiedze"
 description: "Platform for micro payments and knowledge sharing"
 
 pubDate: "2025-03-08"
-tags: ["cybersecurity", "education-and-training", "artificial-intelligence"]
+tags: ["cybersecurity", "education-and-training", "technology"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5

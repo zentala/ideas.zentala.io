@@ -3,7 +3,7 @@ title: "sending gits abroad"
 description: "Innovative service for buying and sending gifts internationally"
 
 pubDate: "2025-03-08"
-tags: ["virtual-reality", "digital-platforms", "urban-development"]
+tags: ["e-commerce", "digital-platforms", "innovation"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
 edits: 5
