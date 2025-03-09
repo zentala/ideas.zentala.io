@@ -7,11 +7,11 @@ A personal idea collection website built with Astro and deployed to GitHub Pages
 ## Deployment
 
 The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. It's accessible at:
-- [https://ideas.zentala.agency](https://ideas.zentala.agency)
+- [https://ideas.zentala.io](https://ideas.zentala.io)
 
 ### Custom Domain Setup
 
-This repository is configured to use the custom domain ideas.zentala.agency through:
+This repository is configured to use the custom domain ideas.zentala.io through:
 1. A CNAME file in the public directory
 2. GitHub Pages settings in the repository
 3. DNS configuration at the domain registrar
@@ -188,7 +188,7 @@ This will add to each post:
 - `modified`: Date of most recent commit
 - `edits`: Number of times the post has been modified
 
-The history data is cached in `src/content/post-history.json` for performance.
+The history data is cached in `src/data/post-history.json` for performance.
 
 ### Multilingual Features
 
