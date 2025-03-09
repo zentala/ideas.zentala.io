@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/copy-sitemap.js",
     "preview": "astro preview",
     "astro": "astro",
     "convert-posts": "node scripts/convert-posts.js",
@@ -21,7 +21,8 @@
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
-    "generate-test": "node scripts/generate-post-test.js"
+    "generate-test": "node scripts/generate-post-test.js",
+    "copy-sitemap": "node scripts/copy-sitemap.js"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
