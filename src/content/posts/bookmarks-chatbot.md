@@ -82,3 +82,31 @@ To ensure optimal performance:
 #### Call to Action:
 
 **"Organize smarter today. Try it for free!"**
+
+## Editor Notes
+
+### Suggests to edit
+. Add a small introductory paragraph after the main description but before the "Features" section. Example : 
+
+```
+## The Problem
+Traditional bookmark managers often become digital graveyards, overflowing with unorganized links that are impossible to find later. Users struggle with generic tags, outdated information, and a distinct lack of context, making their saved content inaccessible and ultimately unusable. The sheer volume of online information today makes manual organization inefficient and unsustainable, leading to valuable links being lost in a chaotic sea of saved pages.
+```
+
+. Add a dew words for the "Visual Improvement" for example : 
+
+```
+4. **Visual Improvements & User Experience** 
+- Display bookmarks with thumbnails (from the page or screenshots) and detailed AI-generated summaries.
+
+- Create a visually appealing and informative interface for easier navigation.
+
+- Thumb Selection: Automatically suggest thumbnails based on the webpage’s content.
+
+- Intuitive Interface: A clean, modern, and user-friendly interface that makes managing bookmarks a pleasure, not a chore.
+
+- Effortless Saving: Streamlined process for adding new bookmarks directly from your browser, with AI immediately beginning its analysis.
+
+- Responsive Design: Optimized for seamless use across desktop, tablet, and mobile devices.
+```
+

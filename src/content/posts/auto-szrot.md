@@ -1,7 +1,6 @@
 ---
 title: "AutoSzrot"
-description: "Subscription-based platform connecting car owners with scrap yards for finding specific used parts with geolocation and photo verification"
-
+description: "A subscription-based platform connecting car owners with scrapyards to find specific used parts, featuring geolocation and photo verification."
 pubDate: "2025-03-08"
 tags: ["technology", "automotive", "cybersecurity"]
 created: "2025-03-08T18:04:53.000Z"
@@ -31,3 +30,14 @@ The platform allows scrap yards to list vehicles they're dismantling, complete w
 - **Upgrades Made Easy**: Find higher-class parts for vehicle customization (e.g., installing Touran II electronics in a Touran I)
 - **Rare Parts Location**: Source parts that are no longer manufactured
 
+----
+
+## Editor Notes
+
+### Old conent that wasnt moved
+
+....
+
+### Suggests to edit
+
+- autoszrot in english can be named (Scrapyard Finder, Yardspot, Scrapyard Link, or anything using scrapyard words that 3 is my sugggestion, wasnt the best but ill still think an idea to how to named autoszrot in english)
