@@ -1,5 +1,5 @@
 ---
-title: "agd for offices"
+title: "Home Appliances for Offices"
 description: "Enhance productivity in office spaces with Agile Project Management."
 
 pubDate: "2025-03-08"
@@ -10,4 +10,4 @@ edits: 5
 language: "en"
 ---
 
-## AGD for Offices
+## Home Appliances for Offices
