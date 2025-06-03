@@ -36,7 +36,6 @@ const t = {
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -62,14 +61,14 @@ const t = {
       }
       
       html {
-        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         background-color: var(--bg-color);
         color: var(--text-color);
       }
       
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Playfair Display', serif;
-        font-weight: 600;
+        font-weight: 100;
         line-height: 1.2;
         letter-spacing: -0.02em;
       }
@@ -150,11 +149,11 @@ const t = {
   <body class={`min-h-screen bg-[#0f0f0f] text-white ${isDraft ? 'opacity-85' : ''}`}>
     <header class="border-b border-white/10 py-6">
       <div class="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-bold font-['Playfair_Display']">
+        <a href="/" class="text-2xl">
           <span class="text-[#5b34da]">Innovations</span> & Ideas <span class="text-[#5b34da]">by Paweł Zentala</span>
         </a>
         <div class="relative">
-          <div class="flex items-center border border-white/20 rounded-md px-3 py-2 bg-[#1a1a1a]">
+          <div class="flex items-center border border-white/20 rounded px-3 py-2 bg-[#1a1a1a]">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/50 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
@@ -176,7 +175,7 @@ const t = {
     <footer class="border-t border-white/10 py-8 mt-12">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} Paweł Zentala. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} <a href="https://zentala.io" target="_blank" rel="noopener noreferrer" class="hover:text-[#5b34da] transition-colors">Paweł Zentala</a>. All rights reserved.</p>
           <div class="flex space-x-4 mt-4 md:mt-0">
             <a href="/tags" class="text-white hover:text-[#5b34da] transition-colors">Tags</a>
             <a href="/terms" class="text-white hover:text-[#5b34da] transition-colors">Terms of Use</a>

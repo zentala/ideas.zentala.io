@@ -47,10 +47,10 @@ const tags = [...new Set(allTags)].sort();
   description="A collection of innovative ideas by Paweł Zentala"
   language={currentLanguage}
 >
-  <section class="hero border border-white/10 bg-[#1a1a1a] text-white py-16 mb-12 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#3b1d89]/20 to-transparent"></div>
+  <section class="hero border border-white/10 bg-black text-white py-16 mb-12 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-center bg-cover"></div>
     <div class="container mx-auto px-4 text-center relative z-10">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 font-['Playfair_Display']">
+      <h1 class="text-4xl md:text-6xl mb-6">
         <span class="text-[#5b34da]">Innovations</span> & Ideas
       </h1>
       <p class="text-xl max-w-2xl mx-auto text-white/80 leading-relaxed">
@@ -118,14 +118,14 @@ const tags = [...new Set(allTags)].sort();
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         
         <!-- About Me section -->
-        <div class="bg-[#1a1a1a] border border-white/10 p-8 rounded-lg">
-          <h2 class="text-2xl md:text-3xl font-bold mb-6 font-['Playfair_Display'] text-white">
+        <div class="bg-[#1a1a1a] border border-white/10 p-8">
+          <!-- <h2 class="text-2xl md:text-3xl mb-6 text-white">
             About <span class="text-[#5b34da]">Me</span>
-          </h2>
-          
+          </h2> -->
+          <!-- TODO Align vertically to center content -->
           <div class="flex flex-col md:flex-row gap-6">
             <div class="md:w-1/3 flex justify-center md:justify-start">
-              <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#2a2a2a]">
+              <div class="w-52 h-52 rounded-full overflow-hidden border-4 border-[#2a2a2a]">
                 <img 
                   src="https://id.zentala.io/pawel-zentala-scaled.6e896144.jpg" 
                   alt="Paweł Zentala" 
@@ -135,7 +135,7 @@ const tags = [...new Set(allTags)].sort();
             </div>
             
             <div class="md:w-2/3">
-              <h3 class="text-xl font-bold mb-3">Paweł Zentala</h3>
+              <h3 class="text-2xl mb-3">Paweł Zentala</h3>
               <p class="text-white/80 mb-4">
                 I'm a Developer Experience consultant, programmer, and innovation activist. 
                 This site is a collection of my ideas and concepts across various domains of technology,
@@ -193,8 +193,8 @@ const tags = [...new Set(allTags)].sort();
         </div>
         
         <!-- Tags section -->
-        <div class="bg-[#1a1a1a] border border-white/10 p-8 rounded-lg">
-          <h2 class="text-2xl md:text-3xl font-bold mb-6 font-['Playfair_Display'] text-white">
+        <div class="bg-[#1a1a1a] border border-white/10 p-8">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">
             Browse by <span class="text-[#5b34da]">Tags</span> 
             <a href="/tags" class="text-[#5b34da] hover:underline text-lg ml-4">
               View all {tags.length} tags →

@@ -22,3 +22,6 @@ pnpm-debug.log*
 .astro/
 playwright-report/
 test-results/
+
+## TEMP
+_editor-references/

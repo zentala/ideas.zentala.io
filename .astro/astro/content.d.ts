@@ -180,13 +180,6 @@ declare module 'astro:content' {
   collection: "posts";
   data: InferEntrySchema<"posts">
 } & { render(): Render[".md"] };
-"backstage-io-ideas.md": {
-	id: "backstage-io-ideas.md";
-  slug: "backstage-io-ideas";
-  body: string;
-  collection: "posts";
-  data: InferEntrySchema<"posts">
-} & { render(): Render[".md"] };
 "banery-do-wynajecia.md": {
 	id: "banery-do-wynajecia.md";
   slug: "banery-do-wynajecia";
@@ -442,5 +435,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = typeof import("./../../src/content/config.js");
 }

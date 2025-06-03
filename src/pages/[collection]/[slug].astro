@@ -47,7 +47,7 @@ const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
   <article class="max-w-6xl mx-auto">
     <div class="bg-[#1a1a1a] p-14 border border-white/10 mb-12">
       <header class="mb-10">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 font-['Playfair_Display'] leading-tight">{title}</h1>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">{title}</h1>
         <p class="text-white/70 text-base mb-8">Published on {formattedDate}</p>
         
         {image && (
@@ -65,7 +65,7 @@ const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
           margin-top: 4rem;
           margin-bottom: 2.25rem;
           font-size: 2.4rem;
-          font-weight: bold;
+          /* font-weight: bold; */
           border-bottom: 1px solid rgba(255, 255, 255, 0.15);
           padding-bottom: 1rem;
           max-width: 95%;
@@ -75,7 +75,7 @@ const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
           margin-top: 3rem;
           margin-bottom: 1.75rem;
           font-size: 2rem;
-          font-weight: bold;
+          font-weight: 500;
           color: #e5e5e5;
           max-width: 90%;
         }
@@ -139,7 +139,7 @@ const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
         /* Poprawa wyróżnienia dla pogrubionego tekstu */
         .prose strong {
           color: white;
-          font-weight: 700;
+          font-weight: 500;
         }
         
         /* Poprawa wizualna dla inline code */
@@ -153,7 +153,7 @@ const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
       
       {normalizedTags && normalizedTags.length > 0 && (
         <div class="mt-12 pt-8 border-t border-white/20">
-          <h3 class="text-lg font-bold mb-4 font-['Playfair_Display']">Tags</h3>
+          <h3 class="text-lg font-bold mb-4">Tags</h3>
           <div class="flex flex-wrap gap-2">
             {normalizedTags.map(tag => (
               <a href={`/tags/${tag}?lang=${language}`} class="px-3 py-1 bg-[#2a2a2a] text-white/70 text-sm border border-white/10 hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
