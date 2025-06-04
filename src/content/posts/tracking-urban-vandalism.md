@@ -1,13 +1,13 @@
 ---
-title: "tracking urban vandalism"
+title: "Tracking Urban Vandalism"
 description: "Discussion on tracking graffiti taggers through database systems to combat urban vandalism"
 
 pubDate: "2025-03-08"
 tags: ["urban-development", "technology", "social-innovation"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 6
-language: "pl"
+edits: 7
+language: "en"
 ---
 
 # Tracking Urban Vandalism

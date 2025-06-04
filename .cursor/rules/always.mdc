@@ -1,0 +1,59 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## Content migration instuction
+
+We wanna move content (ideas) from `posts/` (1st) to `src\content\posts` (2nd). 
+
+I already made migration of this previusly. But I am not sure if I made it correctly. Maybe I lost something creating new articles - some files, ideas, addtionnal context of idea, etc. 
+
+Usually related posts are (or should be) already in 2nd location, but check if there is something (info/ideas) missing (some ideas from 1st location). Check there is something additonal in 1st location, what we may want to add to 2nd, if not remove old file from 1st location.
+
+At the end the process folder `posts/` should not exists and all infomations from 1st location should be migrated to 2nd. Only source of posts should be `src/content/posts`.
+
+You should suppose that post in 2nd location is improved, so it will not be 1:1, it may use different words, but ideas must be moved. 
+
+Addionally final posts must be always in english (translate if needed), and I also want you to propose me (if there is enough context) to add metadata (---) to 2nd location, at the top of file. Is important to focus in particualr on title and short desc, but u can also read it and add editor notes as in some already.
+
+### Desition post format
+
+```md
+---
+title: "Home Appliances for Airbnb"
+description: "Ideas about Home Appliances for Airbnb"
+pubDate: "2025-03-08"
+tags: ["innovation", "technology", "hospitality", "urban-development"]
+created: "2025-03-08T14:57:57.000Z"
+modified: "2025-03-08T18:04:53.000Z" <autogen druing commit>
+edits: 5
+language: "en"
+---
+
+# <article_title/>
+
+<article_content/>
+
+## Editor Notes
+
+### Old conent that wasnt moved
+
+- <old_content_not_migrated/>
+
+### Suggests to edit
+
+- <edit_suggestions/>
+```
+
+
+## summary
+0) clean contnent of `posts/` moving info/ideas to `src/contnet/posts/`
+1) improve text, dont lost my style, fix grama, translate to eng, add editor notes
+2) create proper metadata - title desc (visible on hompe page) - most important
+
+## additional instruction
+
+- if there is any post (Anywhere) about backstage or developer expiernce move it to zentala.agency repository (and commit! and push!)
+- dont paste indonesian into articles, I will ask u for indonesian translation because I am (editor) Indonesian, so I want to know on what I am working on
+

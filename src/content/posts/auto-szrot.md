@@ -1,43 +1,98 @@
 ---
-title: "AutoSzrot"
-description: "A subscription-based platform connecting car owners with scrapyards to find specific used parts, featuring geolocation and photo verification."
+title: "ScrapYard Link"
+description: "A digital platform connecting car owners with scrapyards for sourcing specific used parts, featuring geolocation and photo verification"
 pubDate: "2025-03-08"
-tags: ["technology", "automotive", "cybersecurity"]
+tags: ["technology", "automotive", "digital-platforms", "marketplace", "location-based-services"]
 created: "2025-03-08T18:04:53.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 1
-language: "pl"
+edits: 3
+language: "en"
 ---
 
-# AutoSzrot
+# ScrapYard Link
 
-## Introduction
-AutoSzrot is a platform connecting car owners seeking specific parts with scrap yards ("szrot" in Polish) that dismantle vehicles. In Poland, where the average car age is among the highest in Europe, finding specific used parts for older models is challenging without a centralized system.
+## Overview
+A digital marketplace connecting car owners seeking specific parts with scrapyards, particularly valuable in regions like Poland where the average vehicle age is high and finding parts for older models can be challenging.
 
-## How It Works
-The platform allows scrap yards to list vehicles they're dismantling, complete with photos and detailed information. Users can subscribe to notifications for specific parts they need, such as "Touran hubcaps" or "steering wheel electronics," and receive alerts when matching vehicles become available.
+## Core Features
 
-## Key Features
-- **Geolocation**: Find parts within a specific radius (e.g., Touran within 50km)
-- **Detailed Photos**: Visual verification of parts condition before purchase
-- **Subscription System**: Get notified when parts you need become available
-- **AI-Assisted Part Identification**: Future feature to help users identify needed parts from photos
-- **Part Number Database**: Search by manufacturer part numbers
+### Search and Discovery
+- Geolocation-based search
+- Part number database
+- Model-specific filtering
+- Condition verification
+- Price comparison
 
-## Benefits
-- **Cost-effective**: Access affordable used parts for older vehicles
-- **Time-saving**: No need to constantly call or visit multiple scrap yards
-- **Upgrades Made Easy**: Find higher-class parts for vehicle customization (e.g., installing Touran II electronics in a Touran I)
-- **Rare Parts Location**: Source parts that are no longer manufactured
+### Notification System
+- Part availability alerts
+- Price drop notifications
+- New listing updates
+- Location-based alerts
+- Custom search subscriptions
 
-----
+### Visual Verification
+- Detailed part photos
+- Condition documentation
+- Video verification option
+- AI damage assessment
+- Quality rating system
+
+### Business Tools
+- Inventory management
+- Pricing analytics
+- Customer communication
+- Order tracking
+- Payment processing
+
+## User Benefits
+
+### Car Owners
+- Cost-effective parts sourcing
+- Time-saving search
+- Quality verification
+- Easy communication
+- Secure transactions
+
+### Scrapyards
+- Wider customer reach
+- Inventory management
+- Digital presence
+- Automated listings
+- Customer analytics
+
+## Future Features
+- AI part identification
+- AR part visualization
+- Mobile app integration
+- Real-time inventory
+- Smart pricing system
 
 ## Editor Notes
 
-### Old conent that wasnt moved
+### Original Content (Polish)
+```
+Szrot wstawia info że jest dane auto dostępne a klienci subskrybuja szukane modele aut. Np kupić dekielki czy podbitke do Tourana. Mogą też zamawiać części np piasty. Do tego jest geolokalizacja bp Touran w odległości do 50km. Są zdjęcia aut. Ogłoszenie za dychę.
 
-....
+bussines/
+client/
+szrot/ - lokalizacja i inne dane
+samochody/
+```
 
-### Suggests to edit
+### English Translation from original content (Polish)
+```
+Scrapyards post information about available vehicles, and customers subscribe to specific car models they're looking for. For example, buying hubcaps or underbody panels for a Touran. They can also order parts like wheel hubs. There's also geolocation, e.g., finding a Touran within 50km radius. Vehicle photos are included. Listing cost is ten units.
 
-- autoszrot in english can be named (Scrapyard Finder, Yardspot, Scrapyard Link, or anything using scrapyard words that 3 is my sugggestion, wasnt the best but ill still think an idea to how to named autoszrot in english)
+Proposed structure:
+business/
+client/
+scrapyard/ - location and other data
+vehicles/
+```
+
+### Suggestions to Edit
+- Add payment system
+- Include rating system
+- Detail shipping options
+- Consider warranty policies
+- Develop dispute resolution

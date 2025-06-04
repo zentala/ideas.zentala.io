@@ -119,3 +119,14 @@ Social Impact
 An aging population means that every living person increasingly has more ancestors and relatives to remember. Our platform preserves this memory digitally while simplifying the care of a growing number of graves.
 
 Cemetery Map isn't just an app—it's a comprehensive form of digital care, preserving and immortalizing memories of our deceased loved ones, ushering their legacies into a digital eternity.
+
+## Editor Notes
+
+### Suggests to edit
+
+- Suggestion to add a new section : 
+
+```
+##Data Security & Privacy: Your Memories, Protected
+
+We understand the deeply personal nature of your memories and data. Cemetery Map is built with robust security measures to ensure your peace of mind. All personal information and uploaded multimedia content are protected with industry-standard encryption (e.g., end-to-end encryption for sensitive communications). You will have full control over your privacy settings, allowing you to decide who can view grave profiles and shared memories – whether it's public, limited to family members, or entirely private. Our strict data policy ensures that your information is used solely for the purpose of preserving memories and facilitating grave care on the platform, and will never be shared or sold to third parties without your explicit consent. 

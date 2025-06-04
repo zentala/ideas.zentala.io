@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import MainLayout from '../../layouts/MainLayout.astro';
-import { normalizeTag } from '../../utils';
+import { normalizeTag } from '../../utils'; // FIXME
 
 // Generate static paths for all posts
 export async function getStaticPaths() {
@@ -47,7 +47,7 @@ const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
   <article class="max-w-6xl mx-auto">
     <div class="bg-[#1a1a1a] p-14 border border-white/10 mb-12">
       <header class="mb-10">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">{title}</h1>
+        <h1 class="text-4xl md:text-5xl mb-4 leading-tight">{title}</h1>
         <p class="text-white/70 text-base mb-8">Published on {formattedDate}</p>
         
         {image && (

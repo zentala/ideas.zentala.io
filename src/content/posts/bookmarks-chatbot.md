@@ -1,18 +1,115 @@
 ---
 title: "Semantic Bookmark Manager"
 description: "LLM-powered bookmark manager with semantic search, smart organization, and enhanced visuals"
-
 pubDate: "2025-03-08"
-tags: ["technology", "education-and-training", "digital-platforms"]
+tags: ["technology", "education-and-training", "digital-platforms", "ai", "productivity-tools"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 7
-language: "pl"
+edits: 8
+language: "en"
 ---
 
 # Semantic Bookmark Manager
 
+## Overview
 An LLM-powered bookmark manager that organizes, searches, and enhances your bookmarks with smart automation, semantic search, and collaborative tools.
+
+## The Problem
+Traditional bookmark managers often become digital graveyards, overflowing with unorganized links that are impossible to find later. Users struggle with generic tags, outdated information, and a lack of context, making their saved content inaccessible and ultimately unusable.
+
+## Core Features
+
+### Semantic Search
+- Natural language queries
+- Multi-parameter search
+- Context-aware results
+- Time-based filtering
+- Example: "Gold LED chandelier I added last month from a Chinese supplier"
+
+### Smart Organization
+- Automated content analysis
+- Pattern-based suggestions
+- Intelligent categorization
+- Contextual relocation
+- Example: "Found 3 movies outside your 'To Watch' folder. Move them?"
+
+### Enhanced Management
+- Automatic typo correction
+- Naming pattern refinement
+- AI-generated titles
+- Contextual descriptions
+- Adaptive folder rules
+
+### Visual Experience
+- Page thumbnails and screenshots
+- AI-generated summaries
+- Modern, intuitive interface
+- Responsive design
+- Cross-device optimization
+
+### Interactive Features
+- Proactive context gathering
+- Smart thumbnail selection
+- Folder-specific rules
+- Usage pattern analysis
+- Collaborative sharing
+
+## Advanced Capabilities
+
+### Search Widget
+- Natural language processing
+- Multi-criteria filtering
+- Real-time suggestions
+- Historical context
+
+### Smart Assistance
+- Context prompts when saving
+- Location suggestions
+- Category recommendations
+- Usage insights
+
+### Collaboration Tools
+- Shared folders
+- Permission management
+- Team workspaces
+- Activity tracking
+
+## Integration
+
+### Browser Support
+- Chrome extension
+- Firefox add-on
+- Safari plugin
+- Edge integration
+
+### Third-party Apps
+- Trello integration
+- Notion connectivity
+- Task manager sync
+- Cloud backup
+
+## Pricing Tiers
+
+### Free Plan
+- Basic organization
+- Limited analysis
+- Standard search
+- Core features
+
+### Premium Plan
+- Unlimited analysis
+- Advanced AI features
+- Team collaboration
+- Priority support
+
+## Editor Notes
+
+### Suggestions to Edit
+- Add API documentation
+- Include backup strategies
+- Detail privacy measures
+- Outline offline capabilities
+- Consider enterprise features
 
 ## Features
 
@@ -39,7 +136,7 @@ An LLM-powered bookmark manager that organizes, searches, and enhances your book
 ### Additional Features
 
 - **Advanced Search Widget**: Perform natural language searches, e.g., _"Show me bookmarks added last month about eco-friendly furniture."_
-- **Thumb Selection**: Automatically suggest thumbnails based on the webpage’s content.
+- **Thumb Selection**: Automatically suggest thumbnails based on the webpage's content.
 - **Folder Insights**: Add instructions for each folder, e.g., _"Only add products for the village house here, not for the city apartment."_
 
 ### Planned Features
@@ -101,7 +198,7 @@ Traditional bookmark managers often become digital graveyards, overflowing with 
 
 - Create a visually appealing and informative interface for easier navigation.
 
-- Thumb Selection: Automatically suggest thumbnails based on the webpage’s content.
+- Thumb Selection: Automatically suggest thumbnails based on the webpage's content.
 
 - Intuitive Interface: A clean, modern, and user-friendly interface that makes managing bookmarks a pleasure, not a chore.
 
@@ -110,3 +207,9 @@ Traditional bookmark managers often become digital graveyards, overflowing with 
 - Responsive Design: Optimized for seamless use across desktop, tablet, and mobile devices.
 ```
 
+
+. add a feature where the system proactively asks users for additional context (like "Is this for the village house or the city apartment?") when they're adding a new bookmark. 
+
+The idea of the system proactively asking users for extra context when they're adding a new bookmark is in Draft 1 'Post/' ("when adding bookmark asks users for additional info...") but it's not explicitly and separately detailed in Draft 2 'src/content/post'.
+
+Draft 2 'src/content/post'. has "Folder Insights" (where users can set rules for folders), but Draft 1 suggests a more active AI interaction where the AI itself asks the contextual questions during the bookmark-adding process. This would be a valuable addition to the user experience.

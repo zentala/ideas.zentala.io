@@ -1,13 +1,12 @@
 ---
-title: "iot rfid button"
-description: "Innovative RFiD tag with button for secure access control and minimalist lifestyle, offering convenience and premium appeal"
-
+title: "IoT RFID Button"
+description: "An innovative RFID tag with a button for secure access control and minimalist lifestyle, offering enhanced security and premium appeal"
 pubDate: "2025-03-08"
-tags: ["technology", "smart-home", "security"]
+tags: ["technology", "smart-home", "security", "iot", "access-control"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 4
-language: "pl"
+edits: 5
+language: "en"
 ---
 
 # IoT RFID Button
