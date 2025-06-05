@@ -1,5 +1,5 @@
 ---
-title: "ScrapYard Link"
+title: "ScrapYard Link sdsad"
 description: "A digital platform connecting car owners with scrapyards for sourcing specific used parts, featuring geolocation and photo verification"
 pubDate: "2025-03-08"
 tags: ["technology", "automotive", "digital-platforms", "marketplace", "location-based-services"]
@@ -8,8 +8,6 @@ modified: "2025-03-08T18:04:53.000Z"
 edits: 3
 language: "en"
 ---
-
-# ScrapYard Link
 
 ## Overview
 A digital marketplace connecting car owners seeking specific parts with scrapyards, particularly valuable in regions like Poland where the average vehicle age is high and finding parts for older models can be challenging.
