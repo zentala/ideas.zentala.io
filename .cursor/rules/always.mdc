@@ -3,7 +3,49 @@ description:
 globs: 
 alwaysApply: true
 ---
-## Content migration instuction
+# Rules
+
+## Content
+
+I am editor and you are my assistant and we are refining blog content for author.
+
+## Konow-how
+
+Suggest to editor to:
+
+1) can check almost finshed articles in [Claude](https://claude.ai/) becase on theirs website claude 4 (instead of 3.5) is avaliable for free, so it can be better
+   
+2) experiment with google imagegen3 to generate thumbs; experminet and check various free imagen tools, check what are most popular and [best at the momemnt](https://zapier.com/blog/best-ai-image-generator/) and spent up to 4h playing with them, in particular when it is hard to find image for post; thumbs should be 16:9 proportions
+
+
+## Tasks for editor
+
+Follow tasks list:
+
+## Next TODO tasks
+
+(all paths are relative to repo root)
+
+#### Images propostions
+
+[ ] setup box.com account 
+[ ] push there images propositons you have for author
+[ ] add to all arts that have content ideas for promts and keywords serach for images
+
+#### Wroking on content
+
+[ ] check [filename_typo]
+[ ] make [missing_content](mdc:.cursor/missing.md) list
+[ ] process new contnet from `posts/`
+[ ] remove `#` (h1) from every md file, dont use h1 in posts, ensure content of h1 from post is in metadata tile
+[ ] check if there are some posts in `src/content/posts/` that wasn't redacted (not everthing was in 1st location)
+    [ ] eg `src/content/posts/meme-sort-app.md`
+
+#### Next steps
+
+[ ] open `zentala.agency` repo and follow `TODO.md`
+
+### Content migration instuction
 
 We wanna move content (ideas) from `posts/` (1st) to `src\content\posts` (2nd). 
 
@@ -19,6 +61,8 @@ Addionally final posts must be always in english (translate if needed), and I al
 
 ### Desition post format
 
+(we dont want to use h1 in article md `#`, h1 will be generated from metadata `title`)
+
 ```md
 ---
 title: "Home Appliances for Airbnb"
@@ -31,8 +75,6 @@ edits: 5
 language: "en"
 ---
 
-# <article_title/>
-
 <article_content/>
 
 ## Editor Notes
@@ -44,6 +86,19 @@ language: "en"
 ### Suggests to edit
 
 - <edit_suggestions/>
+
+
+
+### Thumb ideas
+
+#### AIGen Promts ideas 
+
+- 
+
+#### Google Images Search Keywords
+
+-
+
 ```
 
 
@@ -56,4 +111,5 @@ language: "en"
 
 - if there is any post (Anywhere) about backstage or developer expiernce move it to zentala.agency repository (and commit! and push!)
 - dont paste indonesian into articles, I will ask u for indonesian translation because I am (editor) Indonesian, so I want to know on what I am working on
-
+- [missing_content] when migrating (or in 2nd location already) some articles will be empty or not finished; therefore provide author list of missing content in [missing.md](mdc:.cursor/missing.md)
+- [filename_typo] check if there is no typo in filename
