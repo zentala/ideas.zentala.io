@@ -46,6 +46,15 @@ Jak stoją takie przy drodze reklamy to można wrzucić swoje ogłoszenie że wy
 To wynajmij miejsce na reklamę przy drodze i promuj swoje ogłoszenie. Dostępne lokalizacje.
 ```
 
+### English Translation
+```
+Advertisements for Rent
+
+When there are such roadside advertisements, you can post your listing that you're renting. Location is included.
+
+So rent an advertising space by the road and promote your listing. Available locations.
+```
+
 ### Suggestions to Edit
 - Add pricing models
 - Include legal requirements
