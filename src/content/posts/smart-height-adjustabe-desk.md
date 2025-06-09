@@ -10,8 +10,6 @@ edits: 6
 language: "en"
 ---
 
-# Smart Height Adjustable Desk
-
 I bought a height-adjustable desk but noticed I rarely use this feature. I've observed that others with similar desks also rarely adjust them, which is a shame. After all, we invest in these desks to change body positions and take care of our health.
 
 This observation led to the idea of an intelligent controller that would:

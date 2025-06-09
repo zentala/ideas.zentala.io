@@ -6,11 +6,11 @@ pubDate: "2025-03-08"
 tags: ["robotics", "innovation", "agriculture", "automation", "municipal-services", "sustainability"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 8
+edits: 5
 language: "en"
 ---
 
-# Robotics for Municipal Services and Agriculture
+## Municipal Applications
 
 ## Business Vision
 If I had significant capital to invest right now - living in Poland with access to our European-quality software engineers - I would establish a robotics company. Unlike Boston Dynamics, I'd focus on simpler but highly impactful automation of time-consuming and labor-intensive tasks in municipal services and agriculture. This approach doesn't require state-of-the-art robotics and could achieve significant results immediately.

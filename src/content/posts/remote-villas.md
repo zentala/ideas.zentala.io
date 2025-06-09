@@ -9,8 +9,6 @@ edits: 5
 language: "en"
 ---
 
-# Remote Villas
-
 ## Overview
 A concept for converting historic townhouses into remote work villas specifically designed for tech professionals, combining:
 - Professional coworking spaces

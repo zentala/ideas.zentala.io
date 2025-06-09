@@ -9,8 +9,6 @@ edits: 6
 language: "en"
 ---
 
-# IoT Innovation Showroom
-
 ## Singapore Model
 Based on observations from Singapore's IoT showrooms, we can learn about:
 - Interior organization and layout

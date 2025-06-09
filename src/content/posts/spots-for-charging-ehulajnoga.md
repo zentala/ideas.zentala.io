@@ -10,7 +10,7 @@ edits: 5
 language: "en"
 ---
 
-# Spots for Charging E-Scooters
+## Overview
 
 Strategic placement of charging spots for e-scooters near public seating areas and in urban environments. Private e-scooters could be equipped with standardized charging connectors (e.g., 24V). We need a standard for charging small devices and public chargers.
 

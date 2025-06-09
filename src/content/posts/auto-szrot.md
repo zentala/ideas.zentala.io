@@ -1,5 +1,5 @@
 ---
-title: "ScrapYard Link sdsad"
+title: "ScrapYard Link"
 description: "A digital platform connecting car owners with scrapyards for sourcing specific used parts, featuring geolocation and photo verification"
 pubDate: "2025-03-08"
 tags: ["technology", "automotive", "digital-platforms", "marketplace", "location-based-services"]

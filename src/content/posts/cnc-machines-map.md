@@ -10,8 +10,6 @@ edits: 5
 language: "en"
 ---
 
-# CNC Machines Map
-
 A comprehensive map showing various manufacturing machines and their locations. Find out who has a 3D printer, 3D scanner, metal lathe (standard or large), laser cutter, and more. Discover where you can order custom parts or access services, including the locations of fab labs and makerspaces.
 
 ## Editor Notes

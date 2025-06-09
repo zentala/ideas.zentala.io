@@ -10,8 +10,6 @@ edits: 6
 language: "en"
 ---
 
-# Time Machine App
-
 ## Features
 - Post messages to the future to document thoughts and feelings
 - Make bets with rules and receive future notifications

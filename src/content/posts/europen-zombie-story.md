@@ -9,8 +9,6 @@ edits: 6
 language: "en"
 ---
 
-# Fortress Europe: A Zombie Apocalypse Story
-
 ## Overview
 **Logline:** In a Europe ravaged by the undead, survivors find strength in community, ingenuity, and the resilient spirit of their homelands.
 

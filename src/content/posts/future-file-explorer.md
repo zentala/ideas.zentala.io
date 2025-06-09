@@ -9,8 +9,6 @@ edits: 7
 language: "en"
 ---
 
-# Future File Explorer
-
 ## Core Features
 
 ### AI-Powered Organization

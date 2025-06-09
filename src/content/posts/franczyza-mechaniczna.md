@@ -9,8 +9,6 @@ edits: 6
 language: "en"
 ---
 
-# Automotive Service Franchise
-
 ## Network Features
 - Shared parts inventory system
 - Common diagnostic tools and applications

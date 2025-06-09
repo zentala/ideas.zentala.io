@@ -9,8 +9,6 @@ edits: 6
 language: "en"
 ---
 
-# Business Cards App
-
 ## Overview
 A revolutionary approach to professional networking through seamless, NFC-powered business card exchange and intelligent contact management.
 
@@ -73,6 +71,14 @@ A revolutionary approach to professional networking through seamless, NFC-powere
 ## Editor Notes
 
 ### Original Content (Polish)
+```
+Virtualize business cards.
+* Whenever we touch others' phones with NFC, we can automatically exchange our business cards.
+* This could be the default behavior for NFC when two phones touch each other. No additional action needed. Adding a comment or photo is possible but optional.
+* There should be a mobile app with a list of business cards (contacts) exchanged this way, linked to some kind of calendar (indicating when it happened). This way, I could easily browse all the people I meet at specific events.
+```
+
+### English Translation
 ```
 Virtualize business cards.
 * Whenever we touch others' phones with NFC, we can automatically exchange our business cards.

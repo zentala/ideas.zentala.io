@@ -10,7 +10,7 @@ edits: 6
 language: "en"
 ---
 
-# IT Talent Management in Central Europe
+## Overview
 
 While Western businesses hire our programmers for substantial salaries, local businesses have access to many IT professionals but fail to engage them in ambitious projects like robotics.
 

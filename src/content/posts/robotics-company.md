@@ -5,11 +5,11 @@ pubDate: "2025-03-08"
 tags: ["robotics", "technology", "agriculture", "urban-development"]
 created: "2025-03-08T14:57:57.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 1
+edits: 5
 language: "en"
 ---
 
-# Robotics Company Vision
+## Business Opportunity
 
 If I had significant capital to invest right now - living in Poland and having access to our Central European IT talent pool - I would establish a robotics company. Not like Boston Dynamics, but much simpler - focusing on automating straightforward but time-consuming and tedious tasks such as municipal services and agriculture.
 
@@ -76,7 +76,7 @@ As a second pillar, I would build semi-autonomous robots for agriculture:
 
 ## Editor Notes
 
-### Original Polish Content
+### Original Content (Polish)
 ```
 # Robotyka
 

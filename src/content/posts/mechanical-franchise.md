@@ -9,8 +9,6 @@ edits: 1
 language: "en"
 ---
 
-# Smart Mechanic Network Franchise
-
 A network of mechanics sharing a common parts store, diagnostic information, and applications. Built around a forum integrated with the store to quickly identify what parts to buy and where. Includes the ability to consult with other mechanics and specialists - sharing diagnostic video data and online conferences.
 
 ## Key Features

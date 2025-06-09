@@ -9,8 +9,6 @@ edits: 6
 language: "en"
 ---
 
-# Clean My Forest
-
 ## Overview
 An interactive platform connecting forest owners with community members for cleanup initiatives, combining environmental stewardship with educational opportunities.
 

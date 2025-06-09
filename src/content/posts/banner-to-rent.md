@@ -10,8 +10,6 @@ edits: 5
 language: "en"
 ---
 
-# Roadside Advertising Space Rental
-
 ## Overview
 A digital platform connecting property owners with advertisers, facilitating the rental of roadside advertising spaces through location-based listings.
 

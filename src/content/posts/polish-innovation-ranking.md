@@ -9,8 +9,6 @@ edits: 1
 language: "en"
 ---
 
-# Poland's Innovation Ranking in the EU
-
 According to the European Commission, Poland ranks 5th from the bottom in the EU innovation ranking.
 
 ## Key Factors Contributing to Low Ranking

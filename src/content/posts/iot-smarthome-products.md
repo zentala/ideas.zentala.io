@@ -10,8 +10,6 @@ edits: 8
 language: "en"
 ---
 
-# IoT Smart Home Products
-
 ## Vision
 Leveraging Poland's strengths in design, software development, and furniture manufacturing to become a leader in smart home technology.
 

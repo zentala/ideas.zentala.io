@@ -9,8 +9,6 @@ edits: 8
 language: "en"
 ---
 
-# Semantic Bookmark Manager
-
 ## Overview
 An LLM-powered bookmark manager that organizes, searches, and enhances your bookmarks with smart automation, semantic search, and collaborative tools.
 

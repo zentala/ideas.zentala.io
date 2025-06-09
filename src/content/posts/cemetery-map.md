@@ -9,8 +9,6 @@ modified: "2025-03-08T22:25:41.000Z"
 edits: 1
 ---
 
-# Cemetery Map – Digital Memory and Care for Loved Ones
-
 Cemetery Map is an innovative web and mobile platform designed to preserve the memory of your loved ones and their burial places for eternity. It utilizes precise 3D mapping technology derived from drone photography, satellite imagery, and LIDAR scans of cemeteries. The mobile application will offer AR navigation around cemeteries, allowing users to save grave locations and easily revisit them using augmented reality.
 
 Thanks to this, you will never forget where your loved ones are buried. Next time you visit the cemetery, a fully charged smartphone will be all you need to locate their graves effortlessly. Our mission is to permanently preserve the locations of graves, how to reach them, and especially the memories of the deceased themselves. In 30 years, when visiting a cemetery you haven't seen since childhood, you'll easily find graves introduced to you by your parents or grandparents. You will be able to travel back in time by viewing digitized scans of family photo negatives or listening to audio recordings of deceased ancestors recounting memories of the buried individuals. We aim to add a digital layer to the physical cemetery, enhancing and preserving memory.
@@ -130,3 +128,4 @@ Cemetery Map isn't just an app—it's a comprehensive form of digital care, pres
 ##Data Security & Privacy: Your Memories, Protected
 
 We understand the deeply personal nature of your memories and data. Cemetery Map is built with robust security measures to ensure your peace of mind. All personal information and uploaded multimedia content are protected with industry-standard encryption (e.g., end-to-end encryption for sensitive communications). You will have full control over your privacy settings, allowing you to decide who can view grave profiles and shared memories – whether it's public, limited to family members, or entirely private. Our strict data policy ensures that your information is used solely for the purpose of preserving memories and facilitating grave care on the platform, and will never be shared or sold to third parties without your explicit consent. 
+```

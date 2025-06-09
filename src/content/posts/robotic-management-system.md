@@ -5,11 +5,9 @@ pubDate: "2025-03-08"
 tags: ["robotics", "technology", "software-development", "automation", "ros"]
 created: "2025-03-08T18:04:53.000Z"
 modified: "2025-03-08T18:04:53.000Z"
-edits: 2
+edits: 5
 language: "en"
 ---
-
-# Robotic Management System
 
 ## Overview
 A proposal for a WordPress-like management system for ROS (Robot Operating System) that simplifies robot configuration and management through a user-friendly GUI interface.

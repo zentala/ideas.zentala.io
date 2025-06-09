@@ -9,8 +9,6 @@ edits: 1
 language: "en"
 ---
 
-# Remote Worker Equipment Rental Service
-
 ## Core Service
 Rental service for monitors, chairs, and desks for remote workers. When you arrive in a new city without equipment, locals can rent and deliver what you need. Good profit margins as people are willing to pay more since apartments with such amenities are expensive.
 

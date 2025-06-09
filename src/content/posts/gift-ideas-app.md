@@ -9,8 +9,6 @@ edits: 1
 language: "en"
 ---
 
-# Gift Ideas App
-
 ## Product Categories
 - Consumables (e.g., coffee syrups)
 - Thoughtful packages (e.g., enhanced student care package)

@@ -10,6 +10,4 @@ edits: 5
 language: "en"
 ---
 
-# YouTube Enhancement Ideas
-
 When switching devices, it would be convenient to have 'Open on Other Device' cards to continue watching videos or podcasts seamlessly. Another useful feature would be the ability to share videos to mobile devices by scanning a QR code.

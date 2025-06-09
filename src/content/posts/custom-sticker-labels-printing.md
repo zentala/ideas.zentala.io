@@ -9,8 +9,6 @@ edits: 7
 language: "en"
 ---
 
-# Custom Sticker Generator Platform
-
 ## Overview
 A modern, minimalist website for online sticker generation and sales, targeting DIY enthusiasts and personalized gift seekers. The platform enables custom sticker creation, high-resolution printing, and seamless ordering.
 

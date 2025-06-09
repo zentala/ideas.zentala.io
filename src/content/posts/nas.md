@@ -10,8 +10,6 @@ edits: 6
 language: "en"
 ---
 
-# NAS Software Improvements
-
 ## Current Limitations
 NAS software, particularly Synology's Drive desktop app, has several usability limitations:
 - Forced choice between QuickConnect and local network synchronization

@@ -9,8 +9,6 @@ edits: 1
 language: "en"
 ---
 
-# Customizable Marketplace
-
 A marketplace for custom-made, made-to-measure, and customizable products.
 
 ## Customer Value Proposition

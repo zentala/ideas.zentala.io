@@ -9,8 +9,6 @@ edits: 2
 language: "en"
 ---
 
-# Free Volunteer Service Platform
-
 ## Overview
 A platform connecting individuals seeking portfolio-building opportunities with organizations needing volunteer expertise. This creates a win-win situation where volunteers gain experience while supporting meaningful causes.
 

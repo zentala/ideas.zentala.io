@@ -10,8 +10,6 @@ edits: 5
 language: "en"
 ---
 
-# Home Appliances for Offices
-
 ## Overview
 A comprehensive suite of smart appliances and IoT solutions designed to transform traditional office spaces into intelligent, productive, and comfortable work environments.
 

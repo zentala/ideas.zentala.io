@@ -10,8 +10,6 @@ edits: 6
 language: "en"
 ---
 
-# Scrum My Life
-
 ## Overview
 A personal project management tool that combines Scrum methodology with AI coaching to help users design and manage their life goals, projects, and habits effectively.
 

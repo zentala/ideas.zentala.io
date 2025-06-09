@@ -10,7 +10,7 @@ edits: 6
 language: "en"
 ---
 
-# YT.Zentala.eu
+## Overview
 
 ## Technical Specification for LLM-based YouTube Summarizer Service
 

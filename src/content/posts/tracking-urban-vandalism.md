@@ -10,7 +10,7 @@ edits: 7
 language: "en"
 ---
 
-# Tracking Urban Vandalism
+## Overview
 
 ## Graffiti Tagging Database - A Solution to Urban Vandalism?
 

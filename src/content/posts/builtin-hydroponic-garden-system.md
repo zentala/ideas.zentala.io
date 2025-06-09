@@ -9,8 +9,6 @@ edits: 6
 language: "en"
 ---
 
-# Built-In Hydroponic Garden System
-
 ## Overview
 In the rapidly evolving world of home automation and sustainable living, we propose a paradigm shift in home gardening: a built-in hydroponic system that seamlessly integrates into modern kitchens.
 

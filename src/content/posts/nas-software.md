@@ -9,8 +9,6 @@ edits: 1
 language: "en"
 ---
 
-# NAS Software Improvements
-
 Current NAS software solutions have significant limitations. Taking Synology as an example:
 
 ## Drive Desktop App Issues
