@@ -1,0 +1,45 @@
+{
+  "name": "ideas-zentala-io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node scripts/generate-local-sitemap.js && astro dev",
+    "start": "node scripts/generate-local-sitemap.js && astro dev",
+    "build": "astro build && node scripts/copy-sitemap.js",
+    "preview": "astro preview",
+    "astro": "astro",
+    "convert-posts": "node scripts/convert-posts.js",
+    "generate-taxonomy": "node scripts/taxonomy-generator.js",
+    "translate-post": "node scripts/translate-post.js",
+    "create-bilingual": "node scripts/create-bilingual-post.js",
+    "post-history": "node scripts/generate-post-history.js",
+    "post-history:all": "node scripts/generate-post-history.js",
+    "post-history:force": "node scripts/generate-post-history.js --force",
+    "interactive-editor": "node scripts/interactive-content-editor.js",
+    "content-pipeline": "node scripts/content-pipeline.js",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "generate-test": "node scripts/generate-post-test.js",
+    "copy-sitemap": "node scripts/copy-sitemap.js",
+    "generate-local-sitemap": "node scripts/generate-local-sitemap.js"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.0.3",
+    "@astrojs/react": "^4.2.1",
+    "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.1.1",
+    "dotenv": "^16.4.5",
+    "openai": "^4.32.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-tagcloud": "^2.3.3",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0"
+  }
+}

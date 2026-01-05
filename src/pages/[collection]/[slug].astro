@@ -1,0 +1,185 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import { normalizeTag } from '../../utils'; // FIXME
+
+// Generate static paths for all posts
+export async function getStaticPaths() {
+  const postsEntries = await getCollection('posts');
+  const draftsEntries = import.meta.env.DEV 
+    ? await getCollection('drafts') 
+    : [];
+  
+  const entries = [...postsEntries, ...draftsEntries];
+  
+  return entries.map(entry => ({
+    params: { 
+      collection: entry.collection, 
+      slug: entry.slug 
+    },
+    props: { entry },
+  }));
+}
+
+// Get the post entry from props
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Get language from URL query parameter
+const langParam = Astro.url.searchParams.get('lang');
+const language = (langParam === 'en' || langParam === 'pl') ? langParam : entry.data.language || 'en';
+
+const { title, description, image, tags, pubDate, created, modified, draft } = entry.data;
+
+// Use created date from Git if available, otherwise use pubDate
+const displayDate = created ? new Date(created) : pubDate;
+const formattedDate = displayDate.toLocaleDateString(language === 'pl' ? 'pl-PL' : 'en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+// Normalize tags to the current language
+const normalizedTags = tags ? tags.map(tag => normalizeTag(tag, language)) : [];
+---
+
+<MainLayout title={title} description={description} image={image} isDraft={draft || entry.collection === 'drafts'} language={language}>
+  <article class="max-w-6xl mx-auto">
+    <div class="bg-[#1a1a1a] p-14 border border-white/10 mb-12">
+      <header class="mb-10">
+        <h1 class="text-4xl md:text-5xl mb-4 leading-tight">{title}</h1>
+        <p class="text-white/70 text-base mb-8">Published on {formattedDate}</p>
+        
+        {image && (
+          <img src={image} alt={title} class="w-full h-auto mb-8 max-h-80 object-cover border border-white/10" />
+        )}
+      </header>
+      
+      <div class="prose prose-2xl prose-invert max-w-none">
+        <Content />
+      </div>
+      
+      <style is:global>
+        /* Poprawa stylowania nagłówków */
+        .prose h2 {
+          margin-top: 4rem;
+          margin-bottom: 2.25rem;
+          font-size: 2.4rem;
+          /* font-weight: bold; */
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          padding-bottom: 1rem;
+          max-width: 95%;
+        }
+        
+        .prose h3 {
+          margin-top: 3rem;
+          margin-bottom: 1.75rem;
+          font-size: 2rem;
+          font-weight: 500;
+          color: #e5e5e5;
+          max-width: 90%;
+        }
+        
+        /* Poprawa stylowania paragrafów */
+        .prose p {
+          margin-top: 1.75rem;
+          margin-bottom: 1.75rem;
+          line-height: 1.95;
+          font-size: 1.4rem;
+          color: rgba(255, 255, 255, 0.9);
+          max-width: 90%;
+        }
+        
+        /* Poprawa stylowania list */
+        .prose ul {
+          margin-top: 1.75rem;
+          margin-bottom: 2.25rem;
+          padding-left: 3.5rem;
+          list-style-type: disc;
+          max-width: 85%;
+        }
+        
+        .prose ul li::marker {
+          color: #9d7dea;
+          font-size: 1.3em;
+        }
+        
+        .prose li {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          line-height: 1.75;
+          font-size: 1.35rem;
+          padding-left: 0.75rem;
+        }
+        
+        /* Poprawa stylowania odnośników */
+        .prose a {
+          color: #a485ee;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+        
+        .prose a:hover {
+          color: #b8a1f1;
+        }
+        
+        /* Poprawa odstępów między sekcjami */
+        .prose hr {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Poprawa marginesów dla list zagnieżdżonych */
+        .prose ul ul {
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+        }
+        
+        /* Poprawa wyróżnienia dla pogrubionego tekstu */
+        .prose strong {
+          color: white;
+          font-weight: 500;
+        }
+        
+        /* Poprawa wizualna dla inline code */
+        .prose code {
+          background-color: rgba(255, 255, 255, 0.1);
+          padding: 0.2em 0.4em;
+          border-radius: 0.25rem;
+          font-size: 0.9em;
+        }
+      </style>
+      
+      {normalizedTags && normalizedTags.length > 0 && (
+        <div class="mt-12 pt-8 border-t border-white/20">
+          <h3 class="text-lg font-bold mb-4">Tags</h3>
+          <div class="flex flex-wrap gap-2">
+            {normalizedTags.map(tag => (
+              <a href={`/tags/${tag}?lang=${language}`} class="px-3 py-1 bg-[#2a2a2a] text-white/70 text-sm border border-white/10 hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+      
+      {modified && (
+        <div class="mt-8 text-sm text-white/50">
+          <p>Last modified: {new Date(modified).toLocaleDateString(language === 'pl' ? 'pl-PL' : 'en-US')}</p>
+          {entry.data.edits && <p>Edit count: {entry.data.edits}</p>}
+        </div>
+      )}
+    </div>
+    
+    <div class="flex justify-between mt-8">
+      <a href={`/?lang=${language}`} class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
+        ← Back to ideas
+      </a>
+      
+      <a href={`/tags?lang=${language}`} class="px-4 py-2 bg-[#2a2a2a] text-white/80 text-sm border border-white/10 hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all">
+        Browse by tags
+      </a>
+    </div>
+  </article>
+</MainLayout>

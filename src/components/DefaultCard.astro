@@ -1,0 +1,73 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  url: string;
+  tags?: string[];
+  isDraft?: boolean;
+  language?: 'en' | 'pl';
+}
+
+const { title, description, image, url, tags = [], isDraft = false } = Astro.props;
+
+// All tags are now in English
+const normalizedTags = tags;
+---
+
+<div class="card-wrapper">
+  <div 
+    class={`relative card flex flex-col bg-[#1a1a1a] border border-white/10 overflow-hidden transition-all duration-300 hover:border-[#5b34da] ${isDraft ? 'opacity-85' : ''}`}
+  >
+    {isDraft && (
+      <div class="absolute top-0 right-0 bg-yellow-900/50 text-yellow-200 text-xs px-2 py-1 border-l border-b border-yellow-500/50 z-10">
+        Draft
+      </div>
+    )}
+    
+    <a href={url} class="block">
+      {image ? (
+        <div class="card-image h-48 overflow-hidden">
+          <img 
+            src={image} 
+            alt={title} 
+            class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+          />
+        </div>
+      ) : (
+        <div class="card-image h-32 bg-gradient-to-r from-[#3b1d89] to-[#5b34da]"></div>
+      )}
+      
+      <div class="card-content p-5 flex-1 flex flex-col">
+        <h3 class="text-2xl mb-3 text-white">{title}</h3>
+        
+        {description && (
+          <p class="text-white/80 text-sm mb-4 flex-1">{description}</p>
+        )}
+      </div>
+    </a>
+    
+    {normalizedTags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-auto p-5 pt-0">
+        {normalizedTags.slice(0, 3).map((tag) => {
+          return (
+            <a href={`/tags/${encodeURIComponent(tag)}`} class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5 hover:bg-[#3a3a3a] transition-colors truncate max-w-full">
+              {tag}
+            </a>
+          );
+        })}
+        {normalizedTags.length > 3 && (
+          <span class="px-2 py-1 bg-[#2a2a2a] text-white/70 text-xs border border-white/5">
+            +{normalizedTags.length - 3}
+          </span>
+        )}
+      </div>
+    )}
+  </div>
+</div>
+
+<style>
+  .card-wrapper {
+    display: contents;
+  }
+</style>

@@ -1,0 +1,125 @@
+---
+import MainLayout from "./MainLayout.astro";
+import { formatDate } from "../utils";
+
+const { frontmatter } = Astro.props;
+const isDraft = frontmatter.draft || Astro.url.pathname.includes('/drafts/');
+const formattedDate = frontmatter.pubDate ? formatDate(frontmatter.pubDate) : null;
+---
+
+<MainLayout 
+  title={frontmatter.title} 
+  description={frontmatter.description} 
+  image={frontmatter.image}
+  isDraft={isDraft}
+>
+  <article class="max-w-4xl mx-auto">
+    <div class="hero-section mb-8 bg-gray-100 p-6 rounded-lg">
+      {frontmatter.image && (
+        <img
+          src={frontmatter.image}
+          alt={frontmatter.title}
+          class="w-full h-64 object-cover rounded-lg mb-4"
+        />
+      )}
+      <h1 class="text-4xl font-bold mb-4">{frontmatter.title}</h1>
+      {frontmatter.description && (
+        <p class="text-xl text-gray-700 mb-4">{frontmatter.description}</p>
+      )}
+      
+      <div class="flex flex-wrap items-center gap-4">
+        {formattedDate && (
+          <div class="text-gray-600">
+            <time datetime={frontmatter.pubDate}>{formattedDate}</time>
+          </div>
+        )}
+        
+        {frontmatter.tags && (
+          <div class="flex flex-wrap gap-2">
+            {frontmatter.tags.map((tag: string) => (
+              <a
+                href={`/tags/${tag}`}
+                class="px-2 py-1 bg-primary text-white text-sm rounded-md hover:bg-primary/80"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+
+    <div class="prose max-w-none">
+      <slot />
+    </div>
+
+    {frontmatter.tags && frontmatter.tags.length > 0 && (
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <h2 class="text-2xl font-bold mb-4">Related Ideas</h2>
+        <div class="related-posts">
+          <!-- Related posts will be rendered here via client script -->
+          <p>Loading related ideas...</p>
+        </div>
+      </div>
+    )}
+  </article>
+</MainLayout>
+
+<script>
+  // Client-side script to fetch related posts based on tags
+  async function loadRelatedPosts() {
+    const articleTags = document.querySelector('article')?.dataset.tags?.split(',') || [];
+    const currentPath = window.location.pathname;
+    
+    if (articleTags.length === 0) return;
+    
+    try {
+      const response = await fetch('/api/related-posts.json', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          tags: articleTags,
+          currentPath,
+          limit: 3,
+        }),
+      });
+      
+      if (!response.ok) throw new Error('Failed to fetch related posts');
+      
+      const relatedPosts = await response.json();
+      const relatedPostsContainer = document.querySelector('.related-posts');
+      
+      if (relatedPosts.length === 0) {
+        if (relatedPostsContainer) {
+          relatedPostsContainer.innerHTML = '<p>No related ideas found.</p>';
+        }
+        return;
+      }
+      
+      if (relatedPostsContainer) {
+        relatedPostsContainer.innerHTML = `
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            ${relatedPosts.map(post => `
+              <a href="${post.url}" class="block bg-gray-100 rounded-lg p-4 hover:shadow-md transition-shadow">
+                ${post.image ? `<img src="${post.image}" alt="${post.title}" class="w-full h-32 object-cover rounded-lg mb-2">` : ''}
+                <h3 class="font-bold text-lg">${post.title}</h3>
+                ${post.description ? `<p class="text-gray-700 text-sm">${post.description}</p>` : ''}
+              </a>
+            `).join('')}
+          </div>
+        `;
+      }
+    } catch (error) {
+      console.error('Error loading related posts:', error);
+      const relatedPostsContainer = document.querySelector('.related-posts');
+      if (relatedPostsContainer) {
+        relatedPostsContainer.innerHTML = '<p>Failed to load related ideas.</p>';
+      }
+    }
+  }
+  
+  // Run when DOM is loaded
+  document.addEventListener('DOMContentLoaded', loadRelatedPosts);
+</script>

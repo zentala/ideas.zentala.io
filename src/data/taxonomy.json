@@ -1,0 +1,106 @@
+{
+  "bilingualTags": {
+    "innovation": {
+      "enDescription": "Posts related to new ideas and approaches in various fields."
+    },
+    "technology": {
+      "enDescription": "Content focused on technological advancements and digital tools."
+    },
+    "sustainability": {
+      "enDescription": "Posts that discuss environmental sustainability and green technologies."
+    },
+    "urban-development": {
+      "enDescription": "Ideas and innovations related to city planning and urban infrastructure."
+    },
+    "remote-work": {
+      "enDescription": "Posts discussing the dynamics, tools, and culture of working remotely."
+    },
+    "agriculture": {
+      "enDescription": "Content about farming technologies, sustainable agriculture, and food production."
+    },
+    "health-and-wellness": {
+      "enDescription": "Posts focused on health, wellness, and medical innovations."
+    },
+    "education-and-training": {
+      "enDescription": "Content related to educational tools, platforms, and methodologies."
+    },
+    "marketing-and-advertising": {
+      "enDescription": "Innovations and ideas in the field of marketing and advertising."
+    },
+    "community-and-culture": {
+      "enDescription": "Posts that address cultural, social, or communal topics and innovations."
+    },
+    "digital-platforms": {
+      "enDescription": "Posts about online platforms and digital services."
+    },
+    "cybersecurity": {
+      "enDescription": "Content related to security in digital and networked environments."
+    },
+    "mobility-and-transport": {
+      "enDescription": "Ideas and advancements related to transport and mobility solutions."
+    },
+    "environmental-protection": {
+      "enDescription": "Posts on protecting the environment and ecological systems."
+    },
+    "social-innovation": {
+      "enDescription": "Innovative solutions aimed at improving societal issues."
+    },
+    "e-commerce": {
+      "enDescription": "Posts about online commerce, shopping platforms, and retail innovations."
+    },
+    "robotics": {
+      "enDescription": "Content on robotic technologies and their applications."
+    },
+    "data-management-and-security": {
+      "enDescription": "Issues and innovations in managing, securing, and leveraging data."
+    },
+    "smart-home": {
+      "enDescription": "Innovations related to automated home systems and IoT devices in residences."
+    },
+    "business-and-commerce": {
+      "enDescription": "Content related to business strategies, models, and commercial innovations."
+    },
+    "micro-payments": {
+      "enDescription": "Posts discussing small-scale financial transactions and related technologies."
+    },
+    "personal-development-and-lifestyle": {
+      "enDescription": "Ideas and tools for personal growth and lifestyle improvement."
+    },
+    "productivity-tools": {
+      "enDescription": "Tools and strategies for enhancing personal and professional productivity."
+    },
+    "automotive": {
+      "enDescription": "Posts related to the automotive industry, including cars and related technologies."
+    },
+    "virtual-reality": {
+      "enDescription": "Content focused on virtual reality technology and its applications."
+    }
+  },
+  "synonymMap": {
+    "innovation": "innovation",
+    "technology": "technology",
+    "sustainability": "sustainability",
+    "urban-development": "urban-development",
+    "remote-work": "remote-work",
+    "agriculture": "agriculture",
+    "health-and-wellness": "health-and-wellness",
+    "education-and-training": "education-and-training",
+    "marketing-and-advertising": "marketing-and-advertising",
+    "community-and-culture": "community-and-culture",
+    "digital-platforms": "digital-platforms",
+    "cybersecurity": "cybersecurity",
+    "mobility-and-transport": "mobility-and-transport",
+    "environmental-protection": "environmental-protection",
+    "social-innovation": "social-innovation",
+    "e-commerce": "e-commerce",
+    "robotics": "robotics",
+    "data-management-and-security": "data-management-and-security",
+    "smart-home": "smart-home",
+    "business-and-commerce": "business-and-commerce",
+    "micro-payments": "micro-payments",
+    "personal-development-and-lifestyle": "personal-development-and-lifestyle",
+    "productivity-tools": "productivity-tools",
+    "automotive": "automotive",
+    "virtual-reality": "virtual-reality"
+  }
+}

@@ -1,0 +1,105 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from 'astro:content';
+import fs from 'fs';
+import path from 'path';
+
+// Set English as the only language
+const currentLanguage = 'en';
+
+// Get all posts and drafts
+const isDev = import.meta.env.DEV;
+const posts = await getCollection('posts');
+
+// Try to get drafts, but handle the case when the collection doesn't exist
+let drafts = [];
+if (isDev) {
+  try {
+    drafts = await getCollection('drafts');
+  } catch (error) {
+    console.warn('No drafts collection found or it is empty');
+  }
+}
+
+// Include all posts regardless of language
+const languageFilteredPosts = [...posts, ...drafts];
+
+// Load taxonomy if it exists
+let taxonomy = { bilingualTags: {}, synonymMap: {} };
+try {
+  const taxonomyPath = path.join(process.cwd(), 'src/data/taxonomy.json');
+  if (fs.existsSync(taxonomyPath)) {
+    taxonomy = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
+  }
+} catch (error) {
+  console.warn('Could not load taxonomy:', error);
+}
+
+// Get all unique tags and translate to English using taxonomy
+const allTags = languageFilteredPosts
+  .flatMap(post => post.data.tags || [])
+  .map(tag => (taxonomy.synonymMap && taxonomy.synonymMap[tag]) || tag);
+
+const tags = [...new Set(allTags)].sort();
+
+// Count posts per tag (using taxonomy for tag mapping)
+const tagCounts = tags.reduce((acc, tag) => {
+  // Get all possible names (synonyms) for this tag
+  const possibleTagNames = Object.entries(taxonomy.synonymMap || {})
+    .filter(([_, canonicalTag]) => canonicalTag === tag)
+    .map(([synonym]) => synonym);
+  
+  // Always include the tag itself in possible names
+  possibleTagNames.push(tag);
+  
+  acc[tag] = languageFilteredPosts
+    .filter(post => {
+      if (!post.data.tags) return false;
+      // Match any of the possible tag names
+      return post.data.tags.some(postTag => possibleTagNames.includes(postTag));
+    })
+    .length;
+  return acc;
+}, {} as Record<string, number>);
+---
+
+<MainLayout 
+  title="Browse Ideas by Tags"
+  description="Browse all ideas organized by tags"
+  language={currentLanguage}
+>
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-8 text-center">
+      <span class="text-[#5b34da]">Browse</span> Ideas by Tags
+    </h1>
+    
+    <div class="border border-white/10 p-8 bg-[#1a1a1a]">
+      <div class="flex flex-wrap gap-4 justify-center">
+        {tags.map(tag => {
+          // Calculate font size based on tag frequency
+          const count = tagCounts[tag];
+          const fontSize = Math.max(0.8, Math.min(1.8, 0.8 + (count / 5) * 0.25));
+          
+          return (
+            <a 
+              href={`/tags/${encodeURIComponent(tag)}`}
+              class="px-5 py-3 bg-[#2a2a2a] border border-white/10 hover:bg-[#3a3a3a] hover:border-[#5b34da]/50 transition-all flex items-center"
+              style={`font-size: ${fontSize}rem;`}
+            >
+              <span class="font-medium font-['Montserrat']">{tag}</span>
+              <span class="ml-2 px-3 py-0.5 bg-[#5b34da] text-white text-sm">
+                {tagCounts[tag]}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a href="/" class="px-6 py-3 bg-[#5b34da] text-white border border-white/10 hover:bg-[#4a2ab8] transition-colors">
+        Back to all ideas
+      </a>
+    </div>
+  </div>
+</MainLayout>
